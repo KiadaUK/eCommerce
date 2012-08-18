@@ -1,0 +1,20 @@
+﻿@using CumbriaMD.Infrastructure.ViewModels.DisplayAttributes
+@{
+    var key = "Knockout";
+    bool? value = null;
+    if(ViewData.Model != null)
+    {
+        value = Convert.ToBoolean(ViewData.Model, System.Globalization.CultureInfo.InvariantCulture);
+    }
+}
+
+@if (ViewData.ModelMetadata.AdditionalValues.ContainsKey(key))
+{
+    var knockout = ViewData.ModelMetadata.AdditionalValues[key] as Knockout;
+    @Html.CheckBox("", value ?? false, knockout.OptionalAttributes())
+}
+else
+{
+    @Html.CheckBox("", value ?? false, new { @class = "check-box" })
+}
+

@@ -1,0 +1,4 @@
+E:\Users\KiadaDev\documents\visual studio 2010\Projects\CumbriaMD\CumbriaMD.Domain\bin\Release\CumbriaMD.Domain.dll
+E:\Users\KiadaDev\documents\visual studio 2010\Projects\CumbriaMD\CumbriaMD.Domain\bin\Release\CumbriaMD.Domain.pdb
+E:\Users\KiadaDev\documents\visual studio 2010\Projects\CumbriaMD\CumbriaMD.Domain\obj\Release\CumbriaMD.Domain.dll
+E:\Users\KiadaDev\documents\visual studio 2010\Projects\CumbriaMD\CumbriaMD.Domain\obj\Release\CumbriaMD.Domain.pdb

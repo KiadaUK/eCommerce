@@ -1,0 +1,247 @@
+DEBUG 22 NHibernate.Loader.Entity.AbstractEntityLoader - Static select for entity CumbriaMD.Domain.Category: SELECT category0_.Id as Id1_0_, category0_.Name as Name1_0_, category0_.IsActive as IsActive1_0_, category0_.OrderInList as OrderInL4_1_0_, category0_.ParentCategory as ParentCa5_1_0_ FROM [Category] category0_ with (updlock, rowlock, nowait) WHERE category0_.Id=?
+DEBUG 22 NHibernate.Loader.Entity.AbstractEntityLoader - Static select for entity CumbriaMD.Domain.Category: SELECT category0_.Id as Id1_0_, category0_.Name as Name1_0_, category0_.IsActive as IsActive1_0_, category0_.OrderInList as OrderInL4_1_0_, category0_.ParentCategory as ParentCa5_1_0_ FROM [Category] category0_ with (updlock, rowlock) WHERE category0_.Id=?
+DEBUG 22 NHibernate.Loader.Entity.AbstractEntityLoader - Static select for action NHibernate.Engine.CascadingAction+MergeCascadingAction on entity CumbriaMD.Domain.Category: SELECT category0_.Id as Id1_1_, category0_.Name as Name1_1_, category0_.IsActive as IsActive1_1_, category0_.OrderInList as OrderInL4_1_1_, category0_.ParentCategory as ParentCa5_1_1_, products1_.Category_id as Category1_3_, product2_.Id as Product2_3_, product2_.Id as Id4_0_, product2_.Name as Name4_0_, product2_.Code as Code4_0_, product2_.Description as Descript4_4_0_, product2_.Price as Price4_0_, product2_.IsDiscounted as IsDiscou6_4_0_, product2_.IsInStock as IsInStock4_0_, product2_.AddedAt as AddedAt4_0_, product2_.UpdatedAt as UpdatedAt4_0_, product2_.Brand_id as Brand10_4_0_ FROM [Category] category0_ left outer join CategoriesProducts products1_ on category0_.Id=products1_.Category_id left outer join [Product] product2_ on products1_.Product_id=product2_.Id WHERE category0_.Id=?
+DEBUG 22 NHibernate.Loader.Entity.AbstractEntityLoader - Static select for action NHibernate.Engine.CascadingAction+RefreshCascadingAction on entity CumbriaMD.Domain.Category: SELECT category0_.Id as Id1_1_, category0_.Name as Name1_1_, category0_.IsActive as IsActive1_1_, category0_.OrderInList as OrderInL4_1_1_, category0_.ParentCategory as ParentCa5_1_1_, products1_.Category_id as Category1_3_, product2_.Id as Product2_3_, product2_.Id as Id4_0_, product2_.Name as Name4_0_, product2_.Code as Code4_0_, product2_.Description as Descript4_4_0_, product2_.Price as Price4_0_, product2_.IsDiscounted as IsDiscou6_4_0_, product2_.IsInStock as IsInStock4_0_, product2_.AddedAt as AddedAt4_0_, product2_.UpdatedAt as UpdatedAt4_0_, product2_.Brand_id as Brand10_4_0_ FROM [Category] category0_ left outer join CategoriesProducts products1_ on category0_.Id=products1_.Category_id left outer join [Product] product2_ on products1_.Product_id=product2_.Id WHERE category0_.Id=?
+DEBUG 22 NHibernate.Persister.Entity.AbstractEntityPersister - Static SQL for entity: eDetectors.Domain.Image
+DEBUG 22 NHibernate.Persister.Entity.AbstractEntityPersister -  Version select: SELECT Id FROM [Image] WHERE Id = ?
+DEBUG 22 NHibernate.Persister.Entity.AbstractEntityPersister -  Snapshot select: SELECT image_.Id, image_.FileName as FileName3_, image_.FileSize as FileSize3_, image_.FileType as FileType3_, image_.Caption as Caption3_, image_.Width as Width3_, image_.Height as Height3_, image_.AddedAt as AddedAt3_, image_.UpdatedAt as UpdatedAt3_, image_.Folder as Folder3_ FROM [Image] image_ WHERE image_.Id=?
+DEBUG 22 NHibernate.Persister.Entity.AbstractEntityPersister -  Insert 0: INSERT INTO [Image] (FileName, FileSize, FileType, Caption, Width, Height, AddedAt, UpdatedAt, Folder, Id) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+DEBUG 22 NHibernate.Persister.Entity.AbstractEntityPersister -  Update 0: UPDATE [Image] SET FileName = ?, FileSize = ?, FileType = ?, Caption = ?, Width = ?, Height = ?, AddedAt = ?, UpdatedAt = ?, Folder = ? WHERE Id = ?
+DEBUG 22 NHibernate.Persister.Entity.AbstractEntityPersister -  Delete 0: DELETE FROM [Image] WHERE Id = ?
+DEBUG 22 NHibernate.Persister.Entity.AbstractEntityPersister -  Identity insert: INSERT INTO [Image] (FileName, FileSize, FileType, Caption, Width, Height, AddedAt, UpdatedAt, Folder) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?); select SCOPE_IDENTITY()
+DEBUG 22 NHibernate.Loader.Entity.AbstractEntityLoader - Static select for entity eDetectors.Domain.Image: SELECT image0_.Id as Id3_0_, image0_.FileName as FileName3_0_, image0_.FileSize as FileSize3_0_, image0_.FileType as FileType3_0_, image0_.Caption as Caption3_0_, image0_.Width as Width3_0_, image0_.Height as Height3_0_, image0_.AddedAt as AddedAt3_0_, image0_.UpdatedAt as UpdatedAt3_0_, image0_.Folder as Folder3_0_ FROM [Image] image0_ WHERE image0_.Id=?
+DEBUG 22 NHibernate.Loader.Entity.AbstractEntityLoader - Static select for entity eDetectors.Domain.Image: SELECT image0_.Id as Id3_0_, image0_.FileName as FileName3_0_, image0_.FileSize as FileSize3_0_, image0_.FileType as FileType3_0_, image0_.Caption as Caption3_0_, image0_.Width as Width3_0_, image0_.Height as Height3_0_, image0_.AddedAt as AddedAt3_0_, image0_.UpdatedAt as UpdatedAt3_0_, image0_.Folder as Folder3_0_ FROM [Image] image0_ WHERE image0_.Id=?
+DEBUG 22 NHibernate.Loader.Entity.AbstractEntityLoader - Static select for entity eDetectors.Domain.Image: SELECT image0_.Id as Id3_0_, image0_.FileName as FileName3_0_, image0_.FileSize as FileSize3_0_, image0_.FileType as FileType3_0_, image0_.Caption as Caption3_0_, image0_.Width as Width3_0_, image0_.Height as Height3_0_, image0_.AddedAt as AddedAt3_0_, image0_.UpdatedAt as UpdatedAt3_0_, image0_.Folder as Folder3_0_ FROM [Image] image0_ with (updlock, rowlock) WHERE image0_.Id=?
+DEBUG 22 NHibernate.Loader.Entity.AbstractEntityLoader - Static select for entity eDetectors.Domain.Image: SELECT image0_.Id as Id3_0_, image0_.FileName as FileName3_0_, image0_.FileSize as FileSize3_0_, image0_.FileType as FileType3_0_, image0_.Caption as Caption3_0_, image0_.Width as Width3_0_, image0_.Height as Height3_0_, image0_.AddedAt as AddedAt3_0_, image0_.UpdatedAt as UpdatedAt3_0_, image0_.Folder as Folder3_0_ FROM [Image] image0_ with (updlock, rowlock, nowait) WHERE image0_.Id=?
+DEBUG 22 NHibernate.Loader.Entity.AbstractEntityLoader - Static select for entity eDetectors.Domain.Image: SELECT image0_.Id as Id3_0_, image0_.FileName as FileName3_0_, image0_.FileSize as FileSize3_0_, image0_.FileType as FileType3_0_, image0_.Caption as Caption3_0_, image0_.Width as Width3_0_, image0_.Height as Height3_0_, image0_.AddedAt as AddedAt3_0_, image0_.UpdatedAt as UpdatedAt3_0_, image0_.Folder as Folder3_0_ FROM [Image] image0_ with (updlock, rowlock) WHERE image0_.Id=?
+DEBUG 22 NHibernate.Loader.Entity.AbstractEntityLoader - Static select for action NHibernate.Engine.CascadingAction+MergeCascadingAction on entity eDetectors.Domain.Image: SELECT image0_.Id as Id3_0_, image0_.FileName as FileName3_0_, image0_.FileSize as FileSize3_0_, image0_.FileType as FileType3_0_, image0_.Caption as Caption3_0_, image0_.Width as Width3_0_, image0_.Height as Height3_0_, image0_.AddedAt as AddedAt3_0_, image0_.UpdatedAt as UpdatedAt3_0_, image0_.Folder as Folder3_0_ FROM [Image] image0_ WHERE image0_.Id=?
+DEBUG 22 NHibernate.Loader.Entity.AbstractEntityLoader - Static select for action NHibernate.Engine.CascadingAction+RefreshCascadingAction on entity eDetectors.Domain.Image: SELECT image0_.Id as Id3_0_, image0_.FileName as FileName3_0_, image0_.FileSize as FileSize3_0_, image0_.FileType as FileType3_0_, image0_.Caption as Caption3_0_, image0_.Width as Width3_0_, image0_.Height as Height3_0_, image0_.AddedAt as AddedAt3_0_, image0_.UpdatedAt as UpdatedAt3_0_, image0_.Folder as Folder3_0_ FROM [Image] image0_ WHERE image0_.Id=?
+DEBUG 22 NHibernate.Persister.Entity.AbstractEntityPersister - Static SQL for entity: CumbriaMD.Domain.Product
+DEBUG 22 NHibernate.Persister.Entity.AbstractEntityPersister -  Version select: SELECT Id FROM [Product] WHERE Id = ?
+DEBUG 22 NHibernate.Persister.Entity.AbstractEntityPersister -  Snapshot select: SELECT product_.Id, product_.Name as Name4_, product_.Code as Code4_, product_.Description as Descript4_4_, product_.Price as Price4_, product_.IsDiscounted as IsDiscou6_4_, product_.IsInStock as IsInStock4_, product_.AddedAt as AddedAt4_, product_.UpdatedAt as UpdatedAt4_, product_.Brand_id as Brand10_4_ FROM [Product] product_ WHERE product_.Id=?
+DEBUG 22 NHibernate.Persister.Entity.AbstractEntityPersister -  Insert 0: INSERT INTO [Product] (Name, Code, Description, Price, IsDiscounted, IsInStock, AddedAt, UpdatedAt, Brand_id, Id) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+DEBUG 22 NHibernate.Persister.Entity.AbstractEntityPersister -  Update 0: UPDATE [Product] SET Name = ?, Code = ?, Description = ?, Price = ?, IsDiscounted = ?, IsInStock = ?, AddedAt = ?, UpdatedAt = ?, Brand_id = ? WHERE Id = ?
+DEBUG 22 NHibernate.Persister.Entity.AbstractEntityPersister -  Delete 0: DELETE FROM [Product] WHERE Id = ?
+DEBUG 22 NHibernate.Persister.Entity.AbstractEntityPersister -  Identity insert: INSERT INTO [Product] (Name, Code, Description, Price, IsDiscounted, IsInStock, AddedAt, UpdatedAt, Brand_id) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?); select SCOPE_IDENTITY()
+DEBUG 22 NHibernate.Loader.Entity.AbstractEntityLoader - Static select for entity CumbriaMD.Domain.Product: SELECT product0_.Id as Id4_0_, product0_.Name as Name4_0_, product0_.Code as Code4_0_, product0_.Description as Descript4_4_0_, product0_.Price as Price4_0_, product0_.IsDiscounted as IsDiscou6_4_0_, product0_.IsInStock as IsInStock4_0_, product0_.AddedAt as AddedAt4_0_, product0_.UpdatedAt as UpdatedAt4_0_, product0_.Brand_id as Brand10_4_0_ FROM [Product] product0_ WHERE product0_.Id=?
+DEBUG 22 NHibernate.Loader.Entity.AbstractEntityLoader - Static select for entity CumbriaMD.Domain.Product: SELECT product0_.Id as Id4_0_, product0_.Name as Name4_0_, product0_.Code as Code4_0_, product0_.Description as Descript4_4_0_, product0_.Price as Price4_0_, product0_.IsDiscounted as IsDiscou6_4_0_, product0_.IsInStock as IsInStock4_0_, product0_.AddedAt as AddedAt4_0_, product0_.UpdatedAt as UpdatedAt4_0_, product0_.Brand_id as Brand10_4_0_ FROM [Product] product0_ WHERE product0_.Id=?
+DEBUG 22 NHibernate.Loader.Entity.AbstractEntityLoader - Static select for entity CumbriaMD.Domain.Product: SELECT product0_.Id as Id4_0_, product0_.Name as Name4_0_, product0_.Code as Code4_0_, product0_.Description as Descript4_4_0_, product0_.Price as Price4_0_, product0_.IsDiscounted as IsDiscou6_4_0_, product0_.IsInStock as IsInStock4_0_, product0_.AddedAt as AddedAt4_0_, product0_.UpdatedAt as UpdatedAt4_0_, product0_.Brand_id as Brand10_4_0_ FROM [Product] product0_ with (updlock, rowlock) WHERE product0_.Id=?
+DEBUG 22 NHibernate.Loader.Entity.AbstractEntityLoader - Static select for entity CumbriaMD.Domain.Product: SELECT product0_.Id as Id4_0_, product0_.Name as Name4_0_, product0_.Code as Code4_0_, product0_.Description as Descript4_4_0_, product0_.Price as Price4_0_, product0_.IsDiscounted as IsDiscou6_4_0_, product0_.IsInStock as IsInStock4_0_, product0_.AddedAt as AddedAt4_0_, product0_.UpdatedAt as UpdatedAt4_0_, product0_.Brand_id as Brand10_4_0_ FROM [Product] product0_ with (updlock, rowlock, nowait) WHERE product0_.Id=?
+DEBUG 22 NHibernate.Loader.Entity.AbstractEntityLoader - Static select for entity CumbriaMD.Domain.Product: SELECT product0_.Id as Id4_0_, product0_.Name as Name4_0_, product0_.Code as Code4_0_, product0_.Description as Descript4_4_0_, product0_.Price as Price4_0_, product0_.IsDiscounted as IsDiscou6_4_0_, product0_.IsInStock as IsInStock4_0_, product0_.AddedAt as AddedAt4_0_, product0_.UpdatedAt as UpdatedAt4_0_, product0_.Brand_id as Brand10_4_0_ FROM [Product] product0_ with (updlock, rowlock) WHERE product0_.Id=?
+DEBUG 22 NHibernate.Loader.Entity.AbstractEntityLoader - Static select for action NHibernate.Engine.CascadingAction+MergeCascadingAction on entity CumbriaMD.Domain.Product: SELECT product0_.Id as Id4_1_, product0_.Name as Name4_1_, product0_.Code as Code4_1_, product0_.Description as Descript4_4_1_, product0_.Price as Price4_1_, product0_.IsDiscounted as IsDiscou6_4_1_, product0_.IsInStock as IsInStock4_1_, product0_.AddedAt as AddedAt4_1_, product0_.UpdatedAt as UpdatedAt4_1_, product0_.Brand_id as Brand10_4_1_, categories1_.Product_id as Product2_3_, category2_.Id as Category1_3_, category2_.Id as Id1_0_, category2_.Name as Name1_0_, category2_.IsActive as IsActive1_0_, category2_.OrderInList as OrderInL4_1_0_, category2_.ParentCategory as ParentCa5_1_0_ FROM [Product] product0_ left outer join CategoriesProducts categories1_ on product0_.Id=categories1_.Product_id left outer join [Category] category2_ on categories1_.Category_id=category2_.Id WHERE product0_.Id=?
+DEBUG 22 NHibernate.Loader.Entity.AbstractEntityLoader - Static select for action NHibernate.Engine.CascadingAction+RefreshCascadingAction on entity CumbriaMD.Domain.Product: SELECT product0_.Id as Id4_1_, product0_.Name as Name4_1_, product0_.Code as Code4_1_, product0_.Description as Descript4_4_1_, product0_.Price as Price4_1_, product0_.IsDiscounted as IsDiscou6_4_1_, product0_.IsInStock as IsInStock4_1_, product0_.AddedAt as AddedAt4_1_, product0_.UpdatedAt as UpdatedAt4_1_, product0_.Brand_id as Brand10_4_1_, categories1_.Product_id as Product2_3_, category2_.Id as Category1_3_, category2_.Id as Id1_0_, category2_.Name as Name1_0_, category2_.IsActive as IsActive1_0_, category2_.OrderInList as OrderInL4_1_0_, category2_.ParentCategory as ParentCa5_1_0_ FROM [Product] product0_ left outer join CategoriesProducts categories1_ on product0_.Id=categories1_.Product_id left outer join [Category] category2_ on categories1_.Category_id=category2_.Id WHERE product0_.Id=?
+DEBUG 22 NHibernate.Loader.Collection.OneToManyLoader - Static select for one-to-many CumbriaMD.Domain.Brand.Products: SELECT products0_.Brand_id as Brand10_1_, products0_.Id as Id1_, products0_.Id as Id4_0_, products0_.Name as Name4_0_, products0_.Code as Code4_0_, products0_.Description as Descript4_4_0_, products0_.Price as Price4_0_, products0_.IsDiscounted as IsDiscou6_4_0_, products0_.IsInStock as IsInStock4_0_, products0_.AddedAt as AddedAt4_0_, products0_.UpdatedAt as UpdatedAt4_0_, products0_.Brand_id as Brand10_4_0_ FROM [Product] products0_ WHERE products0_.Brand_id=?
+DEBUG 22 NHibernate.Loader.Collection.BasicCollectionLoader - Static select for collection CumbriaMD.Domain.Category.Products: SELECT products0_.Category_id as Category1_1_, products0_.Product_id as Product2_1_, product1_.Id as Id4_0_, product1_.Name as Name4_0_, product1_.Code as Code4_0_, product1_.Description as Descript4_4_0_, product1_.Price as Price4_0_, product1_.IsDiscounted as IsDiscou6_4_0_, product1_.IsInStock as IsInStock4_0_, product1_.AddedAt as AddedAt4_0_, product1_.UpdatedAt as UpdatedAt4_0_, product1_.Brand_id as Brand10_4_0_ FROM CategoriesProducts products0_ left outer join [Product] product1_ on products0_.Product_id=product1_.Id WHERE products0_.Category_id=?
+DEBUG 22 NHibernate.Loader.Collection.OneToManyLoader - Static select for one-to-many CumbriaMD.Domain.Category.Subcategories: SELECT subcategor0_.ParentCategory as ParentCa5_1_, subcategor0_.Id as Id1_, subcategor0_.Id as Id1_0_, subcategor0_.Name as Name1_0_, subcategor0_.IsActive as IsActive1_0_, subcategor0_.OrderInList as OrderInL4_1_0_, subcategor0_.ParentCategory as ParentCa5_1_0_ FROM [Category] subcategor0_ WHERE subcategor0_.ParentCategory=?
+DEBUG 22 NHibernate.Loader.Collection.BasicCollectionLoader - Static select for collection CumbriaMD.Domain.Product.Categories: SELECT categories0_.Product_id as Product2_1_, categories0_.Category_id as Category1_1_, category1_.Id as Id1_0_, category1_.Name as Name1_0_, category1_.IsActive as IsActive1_0_, category1_.OrderInList as OrderInL4_1_0_, category1_.ParentCategory as ParentCa5_1_0_ FROM CategoriesProducts categories0_ left outer join [Category] category1_ on categories0_.Category_id=category1_.Id WHERE categories0_.Product_id=?
+DEBUG 22 NHibernate.Impl.SessionFactoryObjectFactory - initializing class SessionFactoryObjectFactory
+DEBUG 22 NHibernate.Impl.SessionFactoryObjectFactory - registered: 7ccc0f91173b4bec86bf3601428fe2ab(unnamed)
+INFO 22 NHibernate.Impl.SessionFactoryObjectFactory - no name configured
+DEBUG 22 NHibernate.Impl.SessionFactoryImpl - Instantiated session factory
+DEBUG 22 NHibernate.Impl.SessionFactoryImpl - Checking 0 named HQL queries
+DEBUG 22 NHibernate.Impl.SessionFactoryImpl - Checking 0 named SQL queries
+DEBUG 22 NHibernate.Impl.SessionImpl - [session-id=67f36311-a95e-4b48-923c-1fe50bd93df3] opened session at timestamp: 634807207016, for session factory: [/7ccc0f91173b4bec86bf3601428fe2ab]
+DEBUG 22 NHibernate.Impl.SessionImpl - [session-id=67f36311-a95e-4b48-923c-1fe50bd93df3] running ISession.Dispose()
+DEBUG 22 NHibernate.Impl.SessionImpl - [session-id=67f36311-a95e-4b48-923c-1fe50bd93df3] executing real Dispose(True)
+DEBUG 22 NHibernate.Impl.SessionImpl - closing session
+DEBUG 22 NHibernate.AdoNet.AbstractBatcher - running BatcherImpl.Dispose(true)
+DEBUG 106 NHibernate.Impl.SessionImpl - [session-id=896c9fc2-d5b9-49ff-82ba-1cdf824eaec5] opened session at timestamp: 634807207086, for session factory: [/7ccc0f91173b4bec86bf3601428fe2ab]
+DEBUG 106 NHibernate.Engine.IdentifierValue - unsaved-value: 0
+DEBUG 106 NHibernate.Event.Default.AbstractSaveEventListener - transient instance of: eDetectors.Domain.Image
+DEBUG 106 NHibernate.Event.Default.DefaultSaveOrUpdateEventListener - saving transient instance
+DEBUG 106 NHibernate.Event.Default.AbstractSaveEventListener - saving [eDetectors.Domain.Image#<null>]
+DEBUG 106 NHibernate.Event.Default.AbstractSaveEventListener - executing insertions
+DEBUG 106 NHibernate.Event.Default.AbstractSaveEventListener - executing identity-insert immediately
+DEBUG 106 NHibernate.Persister.Entity.AbstractEntityPersister - Inserting entity: eDetectors.Domain.Image (native id)
+DEBUG 106 NHibernate.AdoNet.AbstractBatcher - Opened new IDbCommand, open IDbCommands: 1
+DEBUG 106 NHibernate.AdoNet.AbstractBatcher - Building an IDbCommand object for the SqlString: INSERT INTO [Image] (FileName, FileSize, FileType, Caption, Width, Height, AddedAt, UpdatedAt, Folder) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?); select SCOPE_IDENTITY()
+DEBUG 106 NHibernate.Persister.Entity.AbstractEntityPersister - Dehydrating entity: [eDetectors.Domain.Image#<null>]
+DEBUG 106 NHibernate.Type.StringType - binding 'whites-logo-3d.gif' to parameter: 0
+DEBUG 106 NHibernate.Type.Int64Type - binding '146535' to parameter: 1
+DEBUG 106 NHibernate.Type.StringType - binding 'image/gif' to parameter: 2
+DEBUG 106 NHibernate.Type.StringType - binding null to parameter: 3
+DEBUG 106 NHibernate.Type.Int32Type - binding '1110' to parameter: 4
+DEBUG 106 NHibernate.Type.Int32Type - binding '870' to parameter: 5
+DEBUG 106 NHibernate.Type.DateTimeType - binding '16/08/2012 13:31:48' to parameter: 6
+DEBUG 106 NHibernate.Type.DateTimeType - binding '16/08/2012 13:31:48' to parameter: 7
+DEBUG 106 NHibernate.Type.StringType - binding 'Content\images\whites\' to parameter: 8
+DEBUG 106 NHibernate.SQL - INSERT INTO [Image] (FileName, FileSize, FileType, Caption, Width, Height, AddedAt, UpdatedAt, Folder) VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7, @p8); select SCOPE_IDENTITY();@p0 = 'whites-logo-3d.gif' [Type: String (4000)], @p1 = 146535 [Type: Int64 (0)], @p2 = 'image/gif' [Type: String (4000)], @p3 = NULL [Type: String (4000)], @p4 = 1110 [Type: Int32 (0)], @p5 = 870 [Type: Int32 (0)], @p6 = 16/08/2012 13:31:48 [Type: DateTime (0)], @p7 = 16/08/2012 13:31:48 [Type: DateTime (0)], @p8 = 'Content\images\whites\' [Type: String (4000)]
+DEBUG 106 NHibernate.Connection.DriverConnectionProvider - Obtaining IDbConnection from Driver
+DEBUG 106 NHibernate.AdoNet.AbstractBatcher - ExecuteReader took 1 ms
+DEBUG 106 NHibernate.AdoNet.AbstractBatcher - Opened IDataReader, open IDataReaders: 1
+DEBUG 106 NHibernate.Type.Int32Type - returning '3' as column: 
+DEBUG 106 NHibernate.Id.IdentifierGeneratorFactory - Natively generated identity: 3
+DEBUG 106 NHibernate.Driver.NHybridDataReader - running NHybridDataReader.Dispose()
+DEBUG 106 NHibernate.AdoNet.AbstractBatcher - Closed IDataReader, open IDataReaders :0
+DEBUG 106 NHibernate.AdoNet.AbstractBatcher - DataReader was closed after 3 ms
+DEBUG 106 NHibernate.AdoNet.AbstractBatcher - Closed IDbCommand, open IDbCommands: 0
+DEBUG 106 NHibernate.AdoNet.ConnectionManager - aggressively releasing database connection
+DEBUG 106 NHibernate.Connection.ConnectionProvider - Closing connection
+DEBUG 106 NHibernate.Engine.IdentifierValue - unsaved-value: 0
+DEBUG 106 NHibernate.Event.Default.AbstractSaveEventListener - transient instance of: CumbriaMD.Domain.Brand
+DEBUG 106 NHibernate.Event.Default.DefaultSaveOrUpdateEventListener - saving transient instance
+DEBUG 106 NHibernate.Event.Default.AbstractSaveEventListener - saving [CumbriaMD.Domain.Brand#<null>]
+DEBUG 106 NHibernate.Event.Default.AbstractSaveEventListener - executing insertions
+DEBUG 106 NHibernate.Event.Default.AbstractSaveEventListener - executing identity-insert immediately
+DEBUG 106 NHibernate.Persister.Entity.AbstractEntityPersister - Inserting entity: CumbriaMD.Domain.Brand (native id)
+DEBUG 106 NHibernate.AdoNet.AbstractBatcher - Opened new IDbCommand, open IDbCommands: 1
+DEBUG 106 NHibernate.AdoNet.AbstractBatcher - Building an IDbCommand object for the SqlString: INSERT INTO [Brand] (Name, IsActive, DefaultProduct_id) VALUES (?, ?, ?); select SCOPE_IDENTITY()
+DEBUG 106 NHibernate.Persister.Entity.AbstractEntityPersister - Dehydrating entity: [CumbriaMD.Domain.Brand#<null>]
+DEBUG 106 NHibernate.Type.StringType - binding 'Whites' to parameter: 0
+DEBUG 106 NHibernate.Type.BooleanType - binding 'True' to parameter: 1
+DEBUG 106 NHibernate.Type.Int32Type - binding null to parameter: 2
+DEBUG 106 NHibernate.SQL - INSERT INTO [Brand] (Name, IsActive, DefaultProduct_id) VALUES (@p0, @p1, @p2); select SCOPE_IDENTITY();@p0 = 'Whites' [Type: String (4000)], @p1 = True [Type: Boolean (0)], @p2 = NULL [Type: Int32 (0)]
+DEBUG 106 NHibernate.Connection.DriverConnectionProvider - Obtaining IDbConnection from Driver
+DEBUG 106 NHibernate.AdoNet.AbstractBatcher - ExecuteReader took 1 ms
+DEBUG 106 NHibernate.AdoNet.AbstractBatcher - Opened IDataReader, open IDataReaders: 1
+DEBUG 106 NHibernate.Type.Int32Type - returning '3' as column: 
+DEBUG 106 NHibernate.Id.IdentifierGeneratorFactory - Natively generated identity: 3
+DEBUG 106 NHibernate.Driver.NHybridDataReader - running NHybridDataReader.Dispose()
+DEBUG 106 NHibernate.AdoNet.AbstractBatcher - Closed IDataReader, open IDataReaders :0
+DEBUG 106 NHibernate.AdoNet.AbstractBatcher - DataReader was closed after 1 ms
+DEBUG 106 NHibernate.AdoNet.AbstractBatcher - Closed IDbCommand, open IDbCommands: 0
+DEBUG 106 NHibernate.AdoNet.ConnectionManager - aggressively releasing database connection
+DEBUG 106 NHibernate.Connection.ConnectionProvider - Closing connection
+DEBUG 106 NHibernate.Event.Default.AbstractFlushingEventListener - flushing session
+DEBUG 106 NHibernate.Event.Default.AbstractFlushingEventListener - processing flush-time cascades
+DEBUG 106 NHibernate.Event.Default.AbstractFlushingEventListener - dirty checking collections
+DEBUG 106 NHibernate.Event.Default.AbstractFlushingEventListener - Flushing entities and processing referenced collections
+DEBUG 106 NHibernate.Event.Default.AbstractFlushingEventListener - Processing unreferenced collections
+DEBUG 106 NHibernate.Event.Default.AbstractFlushingEventListener - Scheduling collection removes/(re)creates/updates
+DEBUG 106 NHibernate.Event.Default.AbstractFlushingEventListener - Flushed: 0 insertions, 0 updates, 0 deletions to 2 objects
+DEBUG 106 NHibernate.Event.Default.AbstractFlushingEventListener - Flushed: 0 (re)creations, 0 updates, 0 removals to 0 collections
+DEBUG 106 NHibernate.Impl.Printer - listing entities:
+DEBUG 106 NHibernate.Impl.Printer - eDetectors.Domain.Image{'Id'='3', 'FileName'='whites-logo-3d.gif', 'FileSize'='146535', 'FileType'='image/gif', 'Caption'=null, 'Width'='1110', 'Height'='870', 'AddedAt'='16/08/2012 13:31:48', 'UpdatedAt'='16/08/2012 13:31:48', 'Folder'='Content\images\whites\'}
+DEBUG 106 NHibernate.Impl.Printer - CumbriaMD.Domain.Brand{'Id'='3', 'Products'='null', 'Name'='Whites', 'IsActive'='True', 'DefaultProduct'='null'}
+DEBUG 106 NHibernate.Event.Default.AbstractFlushingEventListener - executing flush
+DEBUG 106 NHibernate.AdoNet.ConnectionManager - registering flush begin
+DEBUG 106 NHibernate.AdoNet.ConnectionManager - registering flush end
+DEBUG 106 NHibernate.AdoNet.ConnectionManager - aggressively releasing database connection
+DEBUG 106 NHibernate.Event.Default.AbstractFlushingEventListener - post flush
+DEBUG 106 NHibernate.Impl.SessionImpl - [session-id=896c9fc2-d5b9-49ff-82ba-1cdf824eaec5] running ISession.Dispose()
+DEBUG 106 NHibernate.Impl.SessionImpl - [session-id=896c9fc2-d5b9-49ff-82ba-1cdf824eaec5] executing real Dispose(True)
+DEBUG 106 NHibernate.Impl.SessionImpl - closing session
+DEBUG 106 NHibernate.AdoNet.AbstractBatcher - running BatcherImpl.Dispose(true)
+DEBUG 103 NHibernate.Impl.SessionImpl - [session-id=8f678fcd-1bf3-400b-b103-8c846147f6be] opened session at timestamp: 634807207087, for session factory: [/7ccc0f91173b4bec86bf3601428fe2ab]
+DEBUG 103 NHibernate.Loader.Criteria.CriteriaQueryTranslator - put criteria= alias=this0_
+DEBUG 103 NHibernate.AdoNet.AbstractBatcher - Opened new IDbCommand, open IDbCommands: 1
+DEBUG 103 NHibernate.AdoNet.AbstractBatcher - Building an IDbCommand object for the SqlString: SELECT this_.Id as Id0_0_, this_.Name as Name0_0_, this_.IsActive as IsActive0_0_, this_.DefaultProduct_id as DefaultP4_0_0_ FROM [Brand] this_
+INFO 103 NHibernate.Loader.Loader - SELECT this_.Id as Id0_0_, this_.Name as Name0_0_, this_.IsActive as IsActive0_0_, this_.DefaultProduct_id as DefaultP4_0_0_ FROM [Brand] this_
+DEBUG 103 NHibernate.SQL - SELECT this_.Id as Id0_0_, this_.Name as Name0_0_, this_.IsActive as IsActive0_0_, this_.DefaultProduct_id as DefaultP4_0_0_ FROM [Brand] this_
+DEBUG 103 NHibernate.Connection.DriverConnectionProvider - Obtaining IDbConnection from Driver
+DEBUG 103 NHibernate.AdoNet.AbstractBatcher - ExecuteReader took 0 ms
+DEBUG 103 NHibernate.AdoNet.AbstractBatcher - Opened IDataReader, open IDataReaders: 1
+DEBUG 103 NHibernate.Loader.Loader - processing result set
+DEBUG 103 NHibernate.Loader.Loader - result set row: 0
+DEBUG 103 NHibernate.Type.Int32Type - returning '3' as column: Id0_0_
+DEBUG 103 NHibernate.Loader.Loader - result row: EntityKey[CumbriaMD.Domain.Brand#3]
+DEBUG 103 NHibernate.Loader.Loader - Initializing object from DataReader: [CumbriaMD.Domain.Brand#3]
+DEBUG 103 NHibernate.Persister.Entity.AbstractEntityPersister - Hydrating entity: [CumbriaMD.Domain.Brand#3]
+DEBUG 103 NHibernate.Type.StringType - returning 'Whites' as column: Name0_0_
+DEBUG 103 NHibernate.Type.BooleanType - returning 'True' as column: IsActive0_0_
+DEBUG 103 NHibernate.Type.Int32Type - returning null as column: DefaultP4_0_0_
+DEBUG 103 NHibernate.Loader.Loader - done processing result set (1 rows)
+DEBUG 103 NHibernate.Driver.NHybridDataReader - running NHybridDataReader.Dispose()
+DEBUG 103 NHibernate.AdoNet.AbstractBatcher - Closed IDataReader, open IDataReaders :0
+DEBUG 103 NHibernate.AdoNet.AbstractBatcher - DataReader was closed after 9 ms
+DEBUG 103 NHibernate.AdoNet.AbstractBatcher - Closed IDbCommand, open IDbCommands: 0
+DEBUG 103 NHibernate.AdoNet.ConnectionManager - aggressively releasing database connection
+DEBUG 103 NHibernate.Connection.ConnectionProvider - Closing connection
+DEBUG 103 NHibernate.Loader.Loader - total objects hydrated: 1
+DEBUG 103 NHibernate.Engine.TwoPhaseLoad - resolving associations for [CumbriaMD.Domain.Brand#3]
+DEBUG 103 NHibernate.Engine.Loading.LoadContexts - creating collection wrapper:[CumbriaMD.Domain.Brand.Products#3]
+DEBUG 103 NHibernate.Engine.TwoPhaseLoad - done materializing entity [CumbriaMD.Domain.Brand#3]
+DEBUG 103 NHibernate.Engine.StatefulPersistenceContext - initializing non-lazy collections
+DEBUG 103 NHibernate.AdoNet.ConnectionManager - after autocommit
+DEBUG 103 NHibernate.Impl.SessionImpl - transaction completion
+DEBUG 103 NHibernate.AdoNet.ConnectionManager - aggressively releasing database connection
+DEBUG 103 NHibernate.Impl.SessionImpl - [session-id=8f678fcd-1bf3-400b-b103-8c846147f6be] running ISession.Dispose()
+DEBUG 103 NHibernate.Impl.SessionImpl - [session-id=8f678fcd-1bf3-400b-b103-8c846147f6be] executing real Dispose(True)
+DEBUG 103 NHibernate.Impl.SessionImpl - closing session
+DEBUG 103 NHibernate.AdoNet.AbstractBatcher - running BatcherImpl.Dispose(true)
+DEBUG 103 NHibernate.Impl.SessionImpl - [session-id=0b5ed445-cc85-4ee8-a1e8-8164600822ce] opened session at timestamp: 634807207399, for session factory: [/7ccc0f91173b4bec86bf3601428fe2ab]
+DEBUG 103 NHibernate.Event.Default.DefaultLoadEventListener - loading entity: [CumbriaMD.Domain.Brand#3]
+DEBUG 103 NHibernate.Event.Default.DefaultLoadEventListener - attempting to resolve: [CumbriaMD.Domain.Brand#3]
+DEBUG 103 NHibernate.Event.Default.DefaultLoadEventListener - object not resolved in any cache: [CumbriaMD.Domain.Brand#3]
+DEBUG 103 NHibernate.Persister.Entity.AbstractEntityPersister - Fetching entity: [CumbriaMD.Domain.Brand#3]
+DEBUG 103 NHibernate.Loader.Loader - loading entity: [CumbriaMD.Domain.Brand#3]
+DEBUG 103 NHibernate.AdoNet.AbstractBatcher - Opened new IDbCommand, open IDbCommands: 1
+DEBUG 103 NHibernate.AdoNet.AbstractBatcher - Building an IDbCommand object for the SqlString: SELECT brand0_.Id as Id0_0_, brand0_.Name as Name0_0_, brand0_.IsActive as IsActive0_0_, brand0_.DefaultProduct_id as DefaultP4_0_0_ FROM [Brand] brand0_ WHERE brand0_.Id=?
+DEBUG 103 NHibernate.Type.Int32Type - binding '3' to parameter: 0
+INFO 103 NHibernate.Loader.Loader - SELECT brand0_.Id as Id0_0_, brand0_.Name as Name0_0_, brand0_.IsActive as IsActive0_0_, brand0_.DefaultProduct_id as DefaultP4_0_0_ FROM [Brand] brand0_ WHERE brand0_.Id=@p0
+DEBUG 103 NHibernate.SQL - SELECT brand0_.Id as Id0_0_, brand0_.Name as Name0_0_, brand0_.IsActive as IsActive0_0_, brand0_.DefaultProduct_id as DefaultP4_0_0_ FROM [Brand] brand0_ WHERE brand0_.Id=@p0;@p0 = 3 [Type: Int32 (0)]
+DEBUG 103 NHibernate.Connection.DriverConnectionProvider - Obtaining IDbConnection from Driver
+DEBUG 103 NHibernate.AdoNet.AbstractBatcher - ExecuteReader took 0 ms
+DEBUG 103 NHibernate.AdoNet.AbstractBatcher - Opened IDataReader, open IDataReaders: 1
+DEBUG 103 NHibernate.Loader.Loader - processing result set
+DEBUG 103 NHibernate.Loader.Loader - result set row: 0
+DEBUG 103 NHibernate.Loader.Loader - result row: EntityKey[CumbriaMD.Domain.Brand#3]
+DEBUG 103 NHibernate.Loader.Loader - Initializing object from DataReader: [CumbriaMD.Domain.Brand#3]
+DEBUG 103 NHibernate.Persister.Entity.AbstractEntityPersister - Hydrating entity: [CumbriaMD.Domain.Brand#3]
+DEBUG 103 NHibernate.Type.StringType - returning 'Whites' as column: Name0_0_
+DEBUG 103 NHibernate.Type.BooleanType - returning 'True' as column: IsActive0_0_
+DEBUG 103 NHibernate.Type.Int32Type - returning null as column: DefaultP4_0_0_
+DEBUG 103 NHibernate.Loader.Loader - done processing result set (1 rows)
+DEBUG 103 NHibernate.Driver.NHybridDataReader - running NHybridDataReader.Dispose()
+DEBUG 103 NHibernate.AdoNet.AbstractBatcher - Closed IDataReader, open IDataReaders :0
+DEBUG 103 NHibernate.AdoNet.AbstractBatcher - DataReader was closed after 1 ms
+DEBUG 103 NHibernate.AdoNet.AbstractBatcher - Closed IDbCommand, open IDbCommands: 0
+DEBUG 103 NHibernate.AdoNet.ConnectionManager - aggressively releasing database connection
+DEBUG 103 NHibernate.Connection.ConnectionProvider - Closing connection
+DEBUG 103 NHibernate.Loader.Loader - total objects hydrated: 1
+DEBUG 103 NHibernate.Engine.TwoPhaseLoad - resolving associations for [CumbriaMD.Domain.Brand#3]
+DEBUG 103 NHibernate.Engine.Loading.LoadContexts - creating collection wrapper:[CumbriaMD.Domain.Brand.Products#3]
+DEBUG 103 NHibernate.Engine.TwoPhaseLoad - done materializing entity [CumbriaMD.Domain.Brand#3]
+DEBUG 103 NHibernate.Engine.StatefulPersistenceContext - initializing non-lazy collections
+DEBUG 103 NHibernate.Loader.Loader - done entity load
+DEBUG 103 NHibernate.AdoNet.ConnectionManager - after autocommit
+DEBUG 103 NHibernate.Impl.SessionImpl - transaction completion
+DEBUG 103 NHibernate.AdoNet.ConnectionManager - aggressively releasing database connection
+DEBUG 103 NHibernate.Impl.SessionImpl - [session-id=0b5ed445-cc85-4ee8-a1e8-8164600822ce] running ISession.Dispose()
+DEBUG 103 NHibernate.Impl.SessionImpl - [session-id=0b5ed445-cc85-4ee8-a1e8-8164600822ce] executing real Dispose(True)
+DEBUG 103 NHibernate.Impl.SessionImpl - closing session
+DEBUG 103 NHibernate.AdoNet.AbstractBatcher - running BatcherImpl.Dispose(true)
+DEBUG 95 NHibernate.Impl.SessionImpl - [session-id=1b21852d-0c3e-4a9c-aa6c-dadee1ac709e] opened session at timestamp: 634807207437, for session factory: [/7ccc0f91173b4bec86bf3601428fe2ab]
+DEBUG 95 NHibernate.Loader.Criteria.CriteriaQueryTranslator - put criteria= alias=this0_
+DEBUG 95 NHibernate.AdoNet.AbstractBatcher - Opened new IDbCommand, open IDbCommands: 1
+DEBUG 95 NHibernate.AdoNet.AbstractBatcher - Building an IDbCommand object for the SqlString: SELECT this_.Id as Id0_0_, this_.Name as Name0_0_, this_.IsActive as IsActive0_0_, this_.DefaultProduct_id as DefaultP4_0_0_ FROM [Brand] this_
+INFO 95 NHibernate.Loader.Loader - SELECT this_.Id as Id0_0_, this_.Name as Name0_0_, this_.IsActive as IsActive0_0_, this_.DefaultProduct_id as DefaultP4_0_0_ FROM [Brand] this_
+DEBUG 95 NHibernate.SQL - SELECT this_.Id as Id0_0_, this_.Name as Name0_0_, this_.IsActive as IsActive0_0_, this_.DefaultProduct_id as DefaultP4_0_0_ FROM [Brand] this_
+DEBUG 95 NHibernate.Connection.DriverConnectionProvider - Obtaining IDbConnection from Driver
+DEBUG 95 NHibernate.AdoNet.AbstractBatcher - ExecuteReader took 0 ms
+DEBUG 95 NHibernate.AdoNet.AbstractBatcher - Opened IDataReader, open IDataReaders: 1
+DEBUG 95 NHibernate.Loader.Loader - processing result set
+DEBUG 95 NHibernate.Loader.Loader - result set row: 0
+DEBUG 95 NHibernate.Type.Int32Type - returning '3' as column: Id0_0_
+DEBUG 95 NHibernate.Loader.Loader - result row: EntityKey[CumbriaMD.Domain.Brand#3]
+DEBUG 95 NHibernate.Loader.Loader - Initializing object from DataReader: [CumbriaMD.Domain.Brand#3]
+DEBUG 95 NHibernate.Persister.Entity.AbstractEntityPersister - Hydrating entity: [CumbriaMD.Domain.Brand#3]
+DEBUG 95 NHibernate.Type.StringType - returning 'Whites' as column: Name0_0_
+DEBUG 95 NHibernate.Type.BooleanType - returning 'True' as column: IsActive0_0_
+DEBUG 95 NHibernate.Type.Int32Type - returning null as column: DefaultP4_0_0_
+DEBUG 95 NHibernate.Loader.Loader - done processing result set (1 rows)
+DEBUG 95 NHibernate.Driver.NHybridDataReader - running NHybridDataReader.Dispose()
+DEBUG 95 NHibernate.AdoNet.AbstractBatcher - Closed IDataReader, open IDataReaders :0
+DEBUG 95 NHibernate.AdoNet.AbstractBatcher - DataReader was closed after 0 ms
+DEBUG 95 NHibernate.AdoNet.AbstractBatcher - Closed IDbCommand, open IDbCommands: 0
+DEBUG 95 NHibernate.AdoNet.ConnectionManager - aggressively releasing database connection
+DEBUG 95 NHibernate.Connection.ConnectionProvider - Closing connection
+DEBUG 95 NHibernate.Loader.Loader - total objects hydrated: 1
+DEBUG 95 NHibernate.Engine.TwoPhaseLoad - resolving associations for [CumbriaMD.Domain.Brand#3]
+DEBUG 95 NHibernate.Engine.Loading.LoadContexts - creating collection wrapper:[CumbriaMD.Domain.Brand.Products#3]
+DEBUG 95 NHibernate.Engine.TwoPhaseLoad - done materializing entity [CumbriaMD.Domain.Brand#3]
+DEBUG 95 NHibernate.Engine.StatefulPersistenceContext - initializing non-lazy collections
+DEBUG 95 NHibernate.AdoNet.ConnectionManager - after autocommit
+DEBUG 95 NHibernate.Impl.SessionImpl - transaction completion
+DEBUG 95 NHibernate.AdoNet.ConnectionManager - aggressively releasing database connection
+DEBUG 95 NHibernate.Impl.SessionImpl - [session-id=1b21852d-0c3e-4a9c-aa6c-dadee1ac709e] running ISession.Dispose()
+DEBUG 95 NHibernate.Impl.SessionImpl - [session-id=1b21852d-0c3e-4a9c-aa6c-dadee1ac709e] executing real Dispose(True)
+DEBUG 95 NHibernate.Impl.SessionImpl - closing session
+DEBUG 95 NHibernate.AdoNet.AbstractBatcher - running BatcherImpl.Dispose(true)
+INFO 102 NHibernate.Impl.SessionFactoryImpl - Closing
+DEBUG 102 NHibernate.Connection.ConnectionProvider - Disposing of ConnectionProvider.
+INFO 140 NHibernate.Cfg.Environment - NHibernate 3.3.1.4000 (3.3.1.4000)
+INFO 140 NHibernate.Cfg.Environment - hibernate-configuration section not found in application configuration file
+INFO 140 NHibernate.Cfg.Environment - Bytecode provider name : lcg
+INFO 140 NHibernate.Cfg.Environment - Using reflection optimizer
+INFO 114 CumbriaMD.Web.Controllers.HomeController - Test message for Log4Net

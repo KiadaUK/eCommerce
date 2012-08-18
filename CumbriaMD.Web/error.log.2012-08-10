@@ -1,0 +1,40 @@
+DEBUG 14 NHibernate.Engine.TwoPhaseLoad - resolving associations for [CumbriaMD.Domain.Category#5]
+DEBUG 14 NHibernate.Engine.Loading.LoadContexts - creating collection wrapper:[CumbriaMD.Domain.Category.Products#5]
+DEBUG 14 NHibernate.Event.Default.DefaultLoadEventListener - loading entity: [CumbriaMD.Domain.Category#2]
+DEBUG 14 NHibernate.Event.Default.DefaultLoadEventListener - entity found in session cache
+DEBUG 14 NHibernate.Engine.TwoPhaseLoad - done materializing entity [CumbriaMD.Domain.Category#5]
+DEBUG 14 NHibernate.Engine.TwoPhaseLoad - resolving associations for [CumbriaMD.Domain.Category#6]
+DEBUG 14 NHibernate.Engine.Loading.LoadContexts - creating collection wrapper:[CumbriaMD.Domain.Category.Products#6]
+DEBUG 14 NHibernate.Event.Default.DefaultLoadEventListener - loading entity: [CumbriaMD.Domain.Category#3]
+DEBUG 14 NHibernate.Event.Default.DefaultLoadEventListener - entity found in session cache
+DEBUG 14 NHibernate.Engine.TwoPhaseLoad - done materializing entity [CumbriaMD.Domain.Category#6]
+DEBUG 14 NHibernate.Engine.TwoPhaseLoad - resolving associations for [CumbriaMD.Domain.Category#7]
+DEBUG 14 NHibernate.Engine.Loading.LoadContexts - creating collection wrapper:[CumbriaMD.Domain.Category.Products#7]
+DEBUG 14 NHibernate.Event.Default.DefaultLoadEventListener - loading entity: [CumbriaMD.Domain.Category#2]
+DEBUG 14 NHibernate.Event.Default.DefaultLoadEventListener - entity found in session cache
+DEBUG 14 NHibernate.Engine.TwoPhaseLoad - done materializing entity [CumbriaMD.Domain.Category#7]
+DEBUG 14 NHibernate.Engine.TwoPhaseLoad - resolving associations for [CumbriaMD.Domain.Category#8]
+DEBUG 14 NHibernate.Engine.Loading.LoadContexts - creating collection wrapper:[CumbriaMD.Domain.Category.Products#8]
+DEBUG 14 NHibernate.Event.Default.DefaultLoadEventListener - loading entity: [CumbriaMD.Domain.Category#3]
+DEBUG 14 NHibernate.Event.Default.DefaultLoadEventListener - entity found in session cache
+DEBUG 14 NHibernate.Engine.TwoPhaseLoad - done materializing entity [CumbriaMD.Domain.Category#8]
+DEBUG 14 NHibernate.Engine.TwoPhaseLoad - resolving associations for [CumbriaMD.Domain.Category#11]
+DEBUG 14 NHibernate.Engine.Loading.LoadContexts - creating collection wrapper:[CumbriaMD.Domain.Category.Products#11]
+DEBUG 14 NHibernate.Event.Default.DefaultLoadEventListener - loading entity: [CumbriaMD.Domain.Category#3]
+DEBUG 14 NHibernate.Event.Default.DefaultLoadEventListener - entity found in session cache
+DEBUG 14 NHibernate.Engine.TwoPhaseLoad - done materializing entity [CumbriaMD.Domain.Category#11]
+DEBUG 14 NHibernate.Engine.TwoPhaseLoad - resolving associations for [CumbriaMD.Domain.Category#13]
+DEBUG 14 NHibernate.Engine.Loading.LoadContexts - creating collection wrapper:[CumbriaMD.Domain.Category.Products#13]
+DEBUG 14 NHibernate.Event.Default.DefaultLoadEventListener - loading entity: [CumbriaMD.Domain.Category#3]
+DEBUG 14 NHibernate.Event.Default.DefaultLoadEventListener - entity found in session cache
+DEBUG 14 NHibernate.Engine.TwoPhaseLoad - done materializing entity [CumbriaMD.Domain.Category#13]
+DEBUG 14 NHibernate.Engine.StatefulPersistenceContext - initializing non-lazy collections
+DEBUG 14 NHibernate.AdoNet.ConnectionManager - after autocommit
+DEBUG 14 NHibernate.Impl.SessionImpl - transaction completion
+DEBUG 14 NHibernate.AdoNet.ConnectionManager - aggressively releasing database connection
+DEBUG 14 NHibernate.Impl.SessionImpl - [session-id=731c4bd5-3d34-4e24-9ad9-5d9eaccbdbaf] running ISession.Dispose()
+DEBUG 14 NHibernate.Impl.SessionImpl - [session-id=731c4bd5-3d34-4e24-9ad9-5d9eaccbdbaf] executing real Dispose(True)
+DEBUG 14 NHibernate.Impl.SessionImpl - closing session
+DEBUG 14 NHibernate.AdoNet.AbstractBatcher - running BatcherImpl.Dispose(true)
+INFO 13 NHibernate.Impl.SessionFactoryImpl - Closing
+DEBUG 13 NHibernate.Connection.ConnectionProvider - Disposing of ConnectionProvider.

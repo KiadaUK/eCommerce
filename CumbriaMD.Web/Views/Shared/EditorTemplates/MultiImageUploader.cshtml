@@ -1,0 +1,18 @@
+﻿@using CumbriaMD.Infrastructure.ViewModels.DisplayAttributes
+@model CumbriaMD.Infrastructure.ViewModels.ImageViewModels.MultiImageUploader
+@{
+    var key = "Knockout";
+}
+<div class="editor-field">
+
+@if (ViewData.ModelMetadata.AdditionalValues.ContainsKey(key))
+{
+    var knockout = ViewData.ModelMetadata.AdditionalValues[key] as Knockout;
+    @Html.TextBoxFor(model => model.File, knockout.OptionalAttributes())
+}
+else
+{
+    @Html.TextBoxFor(model => model.File, new {type="file"})
+}
+@Html.ValidationMessageFor(model => model.File)
+</div>

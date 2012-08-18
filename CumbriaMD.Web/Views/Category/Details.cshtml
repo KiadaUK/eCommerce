@@ -1,0 +1,47 @@
+﻿@model CumbriaMD.Infrastructure.ViewModels.CategoryViewModels.DetailsCategoryViewModel
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<fieldset>
+    <legend>DetailsCategoryViewModel</legend>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.ParentName)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.ParentName)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.Name)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.Name)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.IsActive)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.IsActive)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.OrderInList)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.OrderInList)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.Subcategories)
+    </div>
+    
+</fieldset>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id=Model.Id }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

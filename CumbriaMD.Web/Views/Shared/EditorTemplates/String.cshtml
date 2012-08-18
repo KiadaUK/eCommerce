@@ -1,0 +1,17 @@
+﻿@using CumbriaMD.Infrastructure.ViewModels.DisplayAttributes
+@{
+    var key = "Knockout";
+}
+
+@if (ViewData.ModelMetadata.AdditionalValues.ContainsKey(key))
+{
+
+    var knockout = ViewData.ModelMetadata.AdditionalValues[key] as Knockout;
+    @Html.TextBoxFor(model => model, knockout.OptionalAttributes())
+
+}
+else
+{
+    @Html.TextBoxFor(model => model)
+}
+

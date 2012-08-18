@@ -1,0 +1,5 @@
+e:\users\kiadadev\documents\visual studio 2010\Projects\CumbriaMD\CumbriaMD.Domain\bin\Debug\CumbriaMD.Domain.dll
+e:\users\kiadadev\documents\visual studio 2010\Projects\CumbriaMD\CumbriaMD.Domain\bin\Debug\CumbriaMD.Domain.pdb
+e:\users\kiadadev\documents\visual studio 2010\Projects\CumbriaMD\CumbriaMD.Domain\obj\Debug\CumbriaMD.Domain.dll
+e:\users\kiadadev\documents\visual studio 2010\Projects\CumbriaMD\CumbriaMD.Domain\obj\Debug\CumbriaMD.Domain.pdb
+E:\Users\KiadaDev\documents\visual studio 2010\Projects\CumbriaMD\CumbriaMD.Domain\obj\Debug\CumbriaMD.Domain.csprojResolveAssemblyReference.cache

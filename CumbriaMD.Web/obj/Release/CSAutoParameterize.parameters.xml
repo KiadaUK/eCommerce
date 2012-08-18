@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parameters>
+  <parameter name="DefaultConnection-Web.config Connection String" description="DefaultConnection Connection String used in web.config by the application to access the database." defaultValue="Data Source=tcp:stc95uuyfn.database.windows.net,1433;Initial Catalog=cumbriamd;User ID=Kiada@stc95uuyfn;Password=Cr41g111" tags="SqlConnectionString">
+    <parameterEntry kind="XmlFile" scope="E:\\Users\\KiadaDev\\documents\\visual\ studio\ 2010\\Projects\\CumbriaMD\\CumbriaMD\.Web\\obj\\Release\\Package\\PackageTmp\\Web\.config$" match="/configuration/connectionStrings/add[@name='DefaultConnection']/@connectionString" />
+  </parameter>
+</parameters>

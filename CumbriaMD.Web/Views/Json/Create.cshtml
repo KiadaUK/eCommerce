@@ -1,0 +1,57 @@
+﻿@model CumbriaMD.Infrastructure.ViewModels.CategoryViewModels.CreateCategoryViewModel
+
+@{
+    ViewBag.Title = "Create";
+}
+
+<h2>Create</h2>
+        <div class="category-preview">
+         <h3>Preview</h3>
+        </div>
+@using (Html.BeginForm()) {
+    @Html.ValidationSummary(true)
+
+    <fieldset>
+        <legend>CreateCategoryViewModel</legend>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.Name)
+        </div>
+        <div class="parent-category-text">
+            <input type="text" name="categoryName" required="true" id="categoryName" maxlength="150" />
+        </div>
+        <div class="editor-label">
+            @Html.LabelFor(model => model.Categories)
+        </div>
+        <div class="editor-field">
+            @Html.DropDownListFor(model => model.ParentCategoryId, Model.Categories)
+        </div>
+        <div class="editor-label">
+            @Html.LabelFor(model => model.IsActive)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.IsActive)
+            @Html.ValidationMessageFor(model => model.IsActive)
+        </div>
+        
+        <div>
+        <ul id="orderInList_test">
+        
+        </ul>
+        </div>
+        <p>
+            <input type="submit" value="Create" />
+        </p>
+
+    </fieldset>
+}
+
+
+
+<div>
+    @Html.ActionLink("Back to List", "Index")
+</div>
+
+@section Scripts {
+    @Scripts.Render("~/bundles/jqueryval")
+}

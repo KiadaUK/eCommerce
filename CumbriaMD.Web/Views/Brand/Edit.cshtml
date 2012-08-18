@@ -1,0 +1,60 @@
+﻿@model CumbriaMD.Infrastructure.ViewModels.BrandViewModels.EditBrandViewModel
+
+@{
+    ViewBag.Title = "Edit";
+    var imageSrc = Model.Image.Uri + Model.Image.FileName;
+}
+
+<h2>Edit</h2>
+
+@using (Html.BeginForm()) {
+    @Html.ValidationSummary(true)
+
+    <fieldset>
+        <legend>EditBrandViewModel</legend>
+
+        @Html.HiddenFor(model => model.Id)
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.Name)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.Name)
+            @Html.ValidationMessageFor(model => model.Name)
+        </div>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.IsActive)  @Html.EditorFor(model => model.IsActive)
+        </div>
+        <div class="editor-field">       
+            @Html.ValidationMessageFor(model => model.IsActive)
+        </div>
+        <div class="editor-field">
+            @Html.Image(Url.Content(imageSrc), Model.Image.Caption, Model.Image.Width.ToString(), Model.Image.Height.ToString(), "data-edit-image",null, null)
+        </div>
+        <div class="editor-label">
+            @Html.LabelFor(model => model.EditImage) @Html.EditorFor(model => model.EditImage)
+        </div>
+        <div class="editor-field">          
+            @Html.ValidationMessageFor(model => model.EditImage)
+        </div>
+        <div id="data-image-upload" data-bind="if: editImage">
+            <div class="editor-label">
+                @Html.LabelFor(model => model.File)
+            </div>
+            <div class="editor-field">
+                @Html.EditorFor(model => model.File, "EditorTemplates/MultiImageUploader")
+                
+            </div>
+        </div>
+        <p>
+            <input type="submit" value="Save" />
+        </p>
+    </fieldset>
+}
+
+<div>
+    @Html.ActionLink("Back to List", "Index")
+</div>
+
+<script type="text/javascript" src="@Url.Content("~/Scripts/modules/knockout/main.js")"></script>

@@ -1,0 +1,6 @@
+<Modules>
+  <Module PersistentId="B6B65907-AC2F-4913-80D4-0F4190822C1E" ModuleId="CumbriaMD.Domain" />
+  <Module PersistentId="466B33B5-0F3E-404A-B725-DA3DB8CD91F9" ModuleId="CumbriaMD.Infrastructure" />
+  <Module PersistentId="FE6C682A-6AC7-4C32-8B8B-3103F292BA2C" ModuleId="CumbriaMD.Tests" />
+  <Module PersistentId="A836BAE0-0831-480C-A843-C4A62F4DEE72" ModuleId="CumbriaMD.Web" />
+</Modules>

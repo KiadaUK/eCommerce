@@ -1,0 +1,16 @@
+﻿@model CumbriaMD.Infrastructure.ViewModels.ImageViewModels.MultiImageUploader
+
+@using (Html.BeginForm("Index", "Test", FormMethod.Post, new { enctype = "multipart/form-data" }))
+{
+    @Html.ValidationSummary(true)
+    <fieldset>
+    <div class="editor-field">
+         @Html.TextBoxFor(x => x.Image, new { type = "file" })
+         @Html.ValidationMessageFor(x => x.Image)
+    </div>
+    <input type="submit" value="Upload"/>
+    </fieldset>
+}
+@section Scripts {
+    @Scripts.Render("~/bundles/jqueryval")
+}

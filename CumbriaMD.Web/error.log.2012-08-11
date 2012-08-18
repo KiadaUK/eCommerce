@@ -1,0 +1,262 @@
+DEBUG 37 NHibernate.Engine.Loading.CollectionLoadContext - ending loading collection [NHibernate.Engine.Loading.LoadingCollectionEntry<rs=NHibernate.Driver.NHybridDataReader, coll=[CumbriaMD.Domain.Category.Products#4]>@20a3b3]
+DEBUG 37 NHibernate.Engine.Loading.CollectionLoadContext - collection fully initialized: [CumbriaMD.Domain.Category.Products#4]
+DEBUG 37 NHibernate.Engine.Loading.CollectionLoadContext - 1 collections initialized for role: CumbriaMD.Domain.Category.Products
+DEBUG 37 NHibernate.Engine.StatefulPersistenceContext - initializing non-lazy collections
+DEBUG 37 NHibernate.Loader.Loader - done loading collection
+DEBUG 37 NHibernate.Event.Default.DefaultInitializeCollectionEventListener - collection initialized
+DEBUG 37 NHibernate.Event.Default.DefaultInitializeCollectionEventListener - initializing collection [CumbriaMD.Domain.Category.Subcategories#4]
+DEBUG 37 NHibernate.Event.Default.DefaultInitializeCollectionEventListener - checking second-level cache
+DEBUG 37 NHibernate.Event.Default.DefaultInitializeCollectionEventListener - collection not cached
+DEBUG 37 NHibernate.Loader.Loader - loading collection: [CumbriaMD.Domain.Category.Subcategories#4]
+DEBUG 37 NHibernate.AdoNet.AbstractBatcher - Opened new IDbCommand, open IDbCommands: 1
+DEBUG 37 NHibernate.AdoNet.AbstractBatcher - Building an IDbCommand object for the SqlString: SELECT subcategor0_.ParentCategory as ParentCa5_1_, subcategor0_.Id as Id1_, subcategor0_.Id as Id1_0_, subcategor0_.Name as Name1_0_, subcategor0_.IsActive as IsActive1_0_, subcategor0_.OrderInList as OrderInL4_1_0_, subcategor0_.ParentCategory as ParentCa5_1_0_ FROM [Category] subcategor0_ WHERE subcategor0_.ParentCategory=?
+DEBUG 37 NHibernate.Type.Int32Type - binding '4' to parameter: 0
+INFO 37 NHibernate.Loader.Loader - SELECT subcategor0_.ParentCategory as ParentCa5_1_, subcategor0_.Id as Id1_, subcategor0_.Id as Id1_0_, subcategor0_.Name as Name1_0_, subcategor0_.IsActive as IsActive1_0_, subcategor0_.OrderInList as OrderInL4_1_0_, subcategor0_.ParentCategory as ParentCa5_1_0_ FROM [Category] subcategor0_ WHERE subcategor0_.ParentCategory=@p0
+DEBUG 37 NHibernate.SQL - SELECT subcategor0_.ParentCategory as ParentCa5_1_, subcategor0_.Id as Id1_, subcategor0_.Id as Id1_0_, subcategor0_.Name as Name1_0_, subcategor0_.IsActive as IsActive1_0_, subcategor0_.OrderInList as OrderInL4_1_0_, subcategor0_.ParentCategory as ParentCa5_1_0_ FROM [Category] subcategor0_ WHERE subcategor0_.ParentCategory=@p0;@p0 = 4 [Type: Int32 (0)]
+DEBUG 37 NHibernate.Connection.DriverConnectionProvider - Obtaining IDbConnection from Driver
+DEBUG 37 NHibernate.AdoNet.AbstractBatcher - ExecuteReader took 0 ms
+DEBUG 37 NHibernate.AdoNet.AbstractBatcher - Opened IDataReader, open IDataReaders: 1
+DEBUG 37 NHibernate.Loader.Loader - result set contains (possibly empty) collection: [CumbriaMD.Domain.Category.Subcategories#4]
+DEBUG 37 NHibernate.Engine.Loading.LoadContexts - constructing collection load context for result set [NHibernate.Driver.NHybridDataReader]
+DEBUG 37 NHibernate.Engine.Loading.CollectionLoadContext - starting attempt to find loading collection [[CumbriaMD.Domain.Category.Subcategories#4]]
+DEBUG 37 NHibernate.Engine.Loading.LoadContexts - attempting to locate loading collection entry [CollectionKey[CumbriaMD.Domain.Category.Subcategories#4]] in any result-set context
+DEBUG 37 NHibernate.Engine.Loading.LoadContexts - collection [CollectionKey[CumbriaMD.Domain.Category.Subcategories#4]] located in load context
+DEBUG 37 NHibernate.Engine.Loading.CollectionLoadContext - collection not yet initialized; initializing
+DEBUG 37 NHibernate.Loader.Loader - processing result set
+DEBUG 37 NHibernate.Loader.Loader - result set row: 0
+DEBUG 37 NHibernate.Type.Int32Type - returning '5' as column: Id1_0_
+DEBUG 37 NHibernate.Loader.Loader - result row: EntityKey[CumbriaMD.Domain.Category#5]
+DEBUG 37 NHibernate.Type.Int32Type - returning '4' as column: ParentCa5_1_
+DEBUG 37 NHibernate.Loader.Loader - found row of collection: [CumbriaMD.Domain.Category.Subcategories#4]
+DEBUG 37 NHibernate.Engine.Loading.CollectionLoadContext - starting attempt to find loading collection [[CumbriaMD.Domain.Category.Subcategories#4]]
+DEBUG 37 NHibernate.Engine.Loading.LoadContexts - attempting to locate loading collection entry [CollectionKey[CumbriaMD.Domain.Category.Subcategories#4]] in any result-set context
+DEBUG 37 NHibernate.Engine.Loading.LoadContexts - collection [CollectionKey[CumbriaMD.Domain.Category.Subcategories#4]] not located in load context
+DEBUG 37 NHibernate.Engine.Loading.CollectionLoadContext - found loading collection bound to current result set processing; reading row
+DEBUG 37 NHibernate.Type.Int32Type - returning '5' as column: Id1_
+DEBUG 37 NHibernate.Event.Default.DefaultLoadEventListener - loading entity: [CumbriaMD.Domain.Category#5]
+DEBUG 37 NHibernate.Event.Default.DefaultLoadEventListener - attempting to resolve: [CumbriaMD.Domain.Category#5]
+DEBUG 37 NHibernate.Event.Default.DefaultLoadEventListener - resolved object in session cache: [CumbriaMD.Domain.Category#5]
+DEBUG 37 NHibernate.Loader.Loader - result set row: 1
+DEBUG 37 NHibernate.Type.Int32Type - returning '6' as column: Id1_0_
+DEBUG 37 NHibernate.Loader.Loader - result row: EntityKey[CumbriaMD.Domain.Category#6]
+DEBUG 37 NHibernate.Type.Int32Type - returning '4' as column: ParentCa5_1_
+DEBUG 37 NHibernate.Loader.Loader - found row of collection: [CumbriaMD.Domain.Category.Subcategories#4]
+DEBUG 37 NHibernate.Engine.Loading.CollectionLoadContext - starting attempt to find loading collection [[CumbriaMD.Domain.Category.Subcategories#4]]
+DEBUG 37 NHibernate.Engine.Loading.LoadContexts - attempting to locate loading collection entry [CollectionKey[CumbriaMD.Domain.Category.Subcategories#4]] in any result-set context
+DEBUG 37 NHibernate.Engine.Loading.LoadContexts - collection [CollectionKey[CumbriaMD.Domain.Category.Subcategories#4]] not located in load context
+DEBUG 37 NHibernate.Engine.Loading.CollectionLoadContext - found loading collection bound to current result set processing; reading row
+DEBUG 37 NHibernate.Type.Int32Type - returning '6' as column: Id1_
+DEBUG 37 NHibernate.Event.Default.DefaultLoadEventListener - loading entity: [CumbriaMD.Domain.Category#6]
+DEBUG 37 NHibernate.Event.Default.DefaultLoadEventListener - attempting to resolve: [CumbriaMD.Domain.Category#6]
+DEBUG 37 NHibernate.Event.Default.DefaultLoadEventListener - resolved object in session cache: [CumbriaMD.Domain.Category#6]
+DEBUG 37 NHibernate.Loader.Loader - done processing result set (2 rows)
+DEBUG 37 NHibernate.Driver.NHybridDataReader - running NHybridDataReader.Dispose()
+DEBUG 37 NHibernate.AdoNet.AbstractBatcher - Closed IDataReader, open IDataReaders :0
+DEBUG 37 NHibernate.AdoNet.AbstractBatcher - DataReader was closed after 4 ms
+DEBUG 37 NHibernate.AdoNet.AbstractBatcher - Closed IDbCommand, open IDbCommands: 0
+DEBUG 37 NHibernate.AdoNet.ConnectionManager - aggressively releasing database connection
+DEBUG 37 NHibernate.Connection.ConnectionProvider - Closing connection
+DEBUG 37 NHibernate.Loader.Loader - total objects hydrated: 0
+DEBUG 37 NHibernate.Engine.Loading.LoadContexts - attempting to locate loading collection entry [CollectionKey[CumbriaMD.Domain.Category.Subcategories#4]] in any result-set context
+DEBUG 37 NHibernate.Engine.Loading.LoadContexts - collection [CollectionKey[CumbriaMD.Domain.Category.Subcategories#4]] not located in load context
+DEBUG 37 NHibernate.Engine.Loading.CollectionLoadContext - removing collection load entry [NHibernate.Engine.Loading.LoadingCollectionEntry<rs=NHibernate.Driver.NHybridDataReader, coll=[CumbriaMD.Domain.Category.Subcategories#4]>@1b39385]
+DEBUG 37 NHibernate.Engine.Loading.CollectionLoadContext - 1 collections were found in result set for role: CumbriaMD.Domain.Category.Subcategories
+DEBUG 37 NHibernate.Engine.Loading.CollectionLoadContext - ending loading collection [NHibernate.Engine.Loading.LoadingCollectionEntry<rs=NHibernate.Driver.NHybridDataReader, coll=[CumbriaMD.Domain.Category.Subcategories#4]>@1b39385]
+DEBUG 37 NHibernate.Engine.Loading.CollectionLoadContext - collection fully initialized: [CumbriaMD.Domain.Category.Subcategories#4]
+DEBUG 37 NHibernate.Engine.Loading.CollectionLoadContext - 1 collections initialized for role: CumbriaMD.Domain.Category.Subcategories
+DEBUG 37 NHibernate.Engine.StatefulPersistenceContext - initializing non-lazy collections
+DEBUG 37 NHibernate.Loader.Loader - done loading collection
+DEBUG 37 NHibernate.Event.Default.DefaultInitializeCollectionEventListener - collection initialized
+DEBUG 37 NHibernate.Event.Default.DefaultInitializeCollectionEventListener - initializing collection [CumbriaMD.Domain.Category.Products#6]
+DEBUG 37 NHibernate.Event.Default.DefaultInitializeCollectionEventListener - checking second-level cache
+DEBUG 37 NHibernate.Event.Default.DefaultInitializeCollectionEventListener - collection not cached
+DEBUG 37 NHibernate.Loader.Loader - loading collection: [CumbriaMD.Domain.Category.Products#6]
+DEBUG 37 NHibernate.AdoNet.AbstractBatcher - Opened new IDbCommand, open IDbCommands: 1
+DEBUG 37 NHibernate.AdoNet.AbstractBatcher - Building an IDbCommand object for the SqlString: SELECT products0_.Category_id as Category1_1_, products0_.Product_id as Product2_1_, product1_.Id as Id3_0_, product1_.Name as Name3_0_, product1_.Code as Code3_0_, product1_.Description as Descript4_3_0_, product1_.Price as Price3_0_, product1_.IsDiscounted as IsDiscou6_3_0_, product1_.IsInStock as IsInStock3_0_, product1_.AddedAt as AddedAt3_0_, product1_.UpdatedAt as UpdatedAt3_0_, product1_.Brand_id as Brand10_3_0_ FROM CategoriesProducts products0_ left outer join [Product] product1_ on products0_.Product_id=product1_.Id WHERE products0_.Category_id=?
+DEBUG 37 NHibernate.Type.Int32Type - binding '6' to parameter: 0
+INFO 37 NHibernate.Loader.Loader - SELECT products0_.Category_id as Category1_1_, products0_.Product_id as Product2_1_, product1_.Id as Id3_0_, product1_.Name as Name3_0_, product1_.Code as Code3_0_, product1_.Description as Descript4_3_0_, product1_.Price as Price3_0_, product1_.IsDiscounted as IsDiscou6_3_0_, product1_.IsInStock as IsInStock3_0_, product1_.AddedAt as AddedAt3_0_, product1_.UpdatedAt as UpdatedAt3_0_, product1_.Brand_id as Brand10_3_0_ FROM CategoriesProducts products0_ left outer join [Product] product1_ on products0_.Product_id=product1_.Id WHERE products0_.Category_id=@p0
+DEBUG 37 NHibernate.SQL - SELECT products0_.Category_id as Category1_1_, products0_.Product_id as Product2_1_, product1_.Id as Id3_0_, product1_.Name as Name3_0_, product1_.Code as Code3_0_, product1_.Description as Descript4_3_0_, product1_.Price as Price3_0_, product1_.IsDiscounted as IsDiscou6_3_0_, product1_.IsInStock as IsInStock3_0_, product1_.AddedAt as AddedAt3_0_, product1_.UpdatedAt as UpdatedAt3_0_, product1_.Brand_id as Brand10_3_0_ FROM CategoriesProducts products0_ left outer join [Product] product1_ on products0_.Product_id=product1_.Id WHERE products0_.Category_id=@p0;@p0 = 6 [Type: Int32 (0)]
+DEBUG 37 NHibernate.Connection.DriverConnectionProvider - Obtaining IDbConnection from Driver
+DEBUG 37 NHibernate.AdoNet.AbstractBatcher - ExecuteReader took 0 ms
+DEBUG 37 NHibernate.AdoNet.AbstractBatcher - Opened IDataReader, open IDataReaders: 1
+DEBUG 37 NHibernate.Loader.Loader - result set contains (possibly empty) collection: [CumbriaMD.Domain.Category.Products#6]
+DEBUG 37 NHibernate.Engine.Loading.LoadContexts - constructing collection load context for result set [NHibernate.Driver.NHybridDataReader]
+DEBUG 37 NHibernate.Engine.Loading.CollectionLoadContext - starting attempt to find loading collection [[CumbriaMD.Domain.Category.Products#6]]
+DEBUG 37 NHibernate.Engine.Loading.LoadContexts - attempting to locate loading collection entry [CollectionKey[CumbriaMD.Domain.Category.Products#6]] in any result-set context
+DEBUG 37 NHibernate.Engine.Loading.LoadContexts - collection [CollectionKey[CumbriaMD.Domain.Category.Products#6]] located in load context
+DEBUG 37 NHibernate.Engine.Loading.CollectionLoadContext - collection not yet initialized; initializing
+DEBUG 37 NHibernate.Loader.Loader - processing result set
+DEBUG 37 NHibernate.Loader.Loader - done processing result set (0 rows)
+DEBUG 37 NHibernate.Driver.NHybridDataReader - running NHybridDataReader.Dispose()
+DEBUG 37 NHibernate.AdoNet.AbstractBatcher - Closed IDataReader, open IDataReaders :0
+DEBUG 37 NHibernate.AdoNet.AbstractBatcher - DataReader was closed after 0 ms
+DEBUG 37 NHibernate.AdoNet.AbstractBatcher - Closed IDbCommand, open IDbCommands: 0
+DEBUG 37 NHibernate.AdoNet.ConnectionManager - aggressively releasing database connection
+DEBUG 37 NHibernate.Connection.ConnectionProvider - Closing connection
+DEBUG 37 NHibernate.Loader.Loader - total objects hydrated: 0
+DEBUG 37 NHibernate.Engine.Loading.LoadContexts - attempting to locate loading collection entry [CollectionKey[CumbriaMD.Domain.Category.Products#6]] in any result-set context
+DEBUG 37 NHibernate.Engine.Loading.LoadContexts - collection [CollectionKey[CumbriaMD.Domain.Category.Products#6]] not located in load context
+DEBUG 37 NHibernate.Engine.Loading.CollectionLoadContext - removing collection load entry [NHibernate.Engine.Loading.LoadingCollectionEntry<rs=NHibernate.Driver.NHybridDataReader, coll=[CumbriaMD.Domain.Category.Products#6]>@37d8bac]
+DEBUG 37 NHibernate.Engine.Loading.CollectionLoadContext - 1 collections were found in result set for role: CumbriaMD.Domain.Category.Products
+DEBUG 37 NHibernate.Engine.Loading.CollectionLoadContext - ending loading collection [NHibernate.Engine.Loading.LoadingCollectionEntry<rs=NHibernate.Driver.NHybridDataReader, coll=[CumbriaMD.Domain.Category.Products#6]>@37d8bac]
+DEBUG 37 NHibernate.Engine.Loading.CollectionLoadContext - collection fully initialized: [CumbriaMD.Domain.Category.Products#6]
+DEBUG 37 NHibernate.Engine.Loading.CollectionLoadContext - 1 collections initialized for role: CumbriaMD.Domain.Category.Products
+DEBUG 37 NHibernate.Engine.StatefulPersistenceContext - initializing non-lazy collections
+DEBUG 37 NHibernate.Loader.Loader - done loading collection
+DEBUG 37 NHibernate.Event.Default.DefaultInitializeCollectionEventListener - collection initialized
+DEBUG 37 NHibernate.Event.Default.DefaultInitializeCollectionEventListener - initializing collection [CumbriaMD.Domain.Category.Subcategories#6]
+DEBUG 37 NHibernate.Event.Default.DefaultInitializeCollectionEventListener - checking second-level cache
+DEBUG 37 NHibernate.Event.Default.DefaultInitializeCollectionEventListener - collection not cached
+DEBUG 37 NHibernate.Loader.Loader - loading collection: [CumbriaMD.Domain.Category.Subcategories#6]
+DEBUG 37 NHibernate.AdoNet.AbstractBatcher - Opened new IDbCommand, open IDbCommands: 1
+DEBUG 37 NHibernate.AdoNet.AbstractBatcher - Building an IDbCommand object for the SqlString: SELECT subcategor0_.ParentCategory as ParentCa5_1_, subcategor0_.Id as Id1_, subcategor0_.Id as Id1_0_, subcategor0_.Name as Name1_0_, subcategor0_.IsActive as IsActive1_0_, subcategor0_.OrderInList as OrderInL4_1_0_, subcategor0_.ParentCategory as ParentCa5_1_0_ FROM [Category] subcategor0_ WHERE subcategor0_.ParentCategory=?
+DEBUG 37 NHibernate.Type.Int32Type - binding '6' to parameter: 0
+INFO 37 NHibernate.Loader.Loader - SELECT subcategor0_.ParentCategory as ParentCa5_1_, subcategor0_.Id as Id1_, subcategor0_.Id as Id1_0_, subcategor0_.Name as Name1_0_, subcategor0_.IsActive as IsActive1_0_, subcategor0_.OrderInList as OrderInL4_1_0_, subcategor0_.ParentCategory as ParentCa5_1_0_ FROM [Category] subcategor0_ WHERE subcategor0_.ParentCategory=@p0
+DEBUG 37 NHibernate.SQL - SELECT subcategor0_.ParentCategory as ParentCa5_1_, subcategor0_.Id as Id1_, subcategor0_.Id as Id1_0_, subcategor0_.Name as Name1_0_, subcategor0_.IsActive as IsActive1_0_, subcategor0_.OrderInList as OrderInL4_1_0_, subcategor0_.ParentCategory as ParentCa5_1_0_ FROM [Category] subcategor0_ WHERE subcategor0_.ParentCategory=@p0;@p0 = 6 [Type: Int32 (0)]
+DEBUG 37 NHibernate.Connection.DriverConnectionProvider - Obtaining IDbConnection from Driver
+DEBUG 37 NHibernate.AdoNet.AbstractBatcher - ExecuteReader took 0 ms
+DEBUG 37 NHibernate.AdoNet.AbstractBatcher - Opened IDataReader, open IDataReaders: 1
+DEBUG 37 NHibernate.Loader.Loader - result set contains (possibly empty) collection: [CumbriaMD.Domain.Category.Subcategories#6]
+DEBUG 37 NHibernate.Engine.Loading.LoadContexts - constructing collection load context for result set [NHibernate.Driver.NHybridDataReader]
+DEBUG 37 NHibernate.Engine.Loading.CollectionLoadContext - starting attempt to find loading collection [[CumbriaMD.Domain.Category.Subcategories#6]]
+DEBUG 37 NHibernate.Engine.Loading.LoadContexts - attempting to locate loading collection entry [CollectionKey[CumbriaMD.Domain.Category.Subcategories#6]] in any result-set context
+DEBUG 37 NHibernate.Engine.Loading.LoadContexts - collection [CollectionKey[CumbriaMD.Domain.Category.Subcategories#6]] located in load context
+DEBUG 37 NHibernate.Engine.Loading.CollectionLoadContext - collection not yet initialized; initializing
+DEBUG 37 NHibernate.Loader.Loader - processing result set
+DEBUG 37 NHibernate.Loader.Loader - done processing result set (0 rows)
+DEBUG 37 NHibernate.Driver.NHybridDataReader - running NHybridDataReader.Dispose()
+DEBUG 37 NHibernate.AdoNet.AbstractBatcher - Closed IDataReader, open IDataReaders :0
+DEBUG 37 NHibernate.AdoNet.AbstractBatcher - DataReader was closed after 0 ms
+DEBUG 37 NHibernate.AdoNet.AbstractBatcher - Closed IDbCommand, open IDbCommands: 0
+DEBUG 37 NHibernate.AdoNet.ConnectionManager - aggressively releasing database connection
+DEBUG 37 NHibernate.Connection.ConnectionProvider - Closing connection
+DEBUG 37 NHibernate.Loader.Loader - total objects hydrated: 0
+DEBUG 37 NHibernate.Engine.Loading.LoadContexts - attempting to locate loading collection entry [CollectionKey[CumbriaMD.Domain.Category.Subcategories#6]] in any result-set context
+DEBUG 37 NHibernate.Engine.Loading.LoadContexts - collection [CollectionKey[CumbriaMD.Domain.Category.Subcategories#6]] not located in load context
+DEBUG 37 NHibernate.Engine.Loading.CollectionLoadContext - removing collection load entry [NHibernate.Engine.Loading.LoadingCollectionEntry<rs=NHibernate.Driver.NHybridDataReader, coll=[CumbriaMD.Domain.Category.Subcategories#6]>@3d13169]
+DEBUG 37 NHibernate.Engine.Loading.CollectionLoadContext - 1 collections were found in result set for role: CumbriaMD.Domain.Category.Subcategories
+DEBUG 37 NHibernate.Engine.Loading.CollectionLoadContext - ending loading collection [NHibernate.Engine.Loading.LoadingCollectionEntry<rs=NHibernate.Driver.NHybridDataReader, coll=[CumbriaMD.Domain.Category.Subcategories#6]>@3d13169]
+DEBUG 37 NHibernate.Engine.Loading.CollectionLoadContext - collection fully initialized: [CumbriaMD.Domain.Category.Subcategories#6]
+DEBUG 37 NHibernate.Engine.Loading.CollectionLoadContext - 1 collections initialized for role: CumbriaMD.Domain.Category.Subcategories
+DEBUG 37 NHibernate.Engine.StatefulPersistenceContext - initializing non-lazy collections
+DEBUG 37 NHibernate.Loader.Loader - done loading collection
+DEBUG 37 NHibernate.Event.Default.DefaultInitializeCollectionEventListener - collection initialized
+DEBUG 37 NHibernate.Event.Default.DefaultInitializeCollectionEventListener - initializing collection [CumbriaMD.Domain.Category.Products#1]
+DEBUG 37 NHibernate.Event.Default.DefaultInitializeCollectionEventListener - checking second-level cache
+DEBUG 37 NHibernate.Event.Default.DefaultInitializeCollectionEventListener - collection not cached
+DEBUG 37 NHibernate.Loader.Loader - loading collection: [CumbriaMD.Domain.Category.Products#1]
+DEBUG 37 NHibernate.AdoNet.AbstractBatcher - Opened new IDbCommand, open IDbCommands: 1
+DEBUG 37 NHibernate.AdoNet.AbstractBatcher - Building an IDbCommand object for the SqlString: SELECT products0_.Category_id as Category1_1_, products0_.Product_id as Product2_1_, product1_.Id as Id3_0_, product1_.Name as Name3_0_, product1_.Code as Code3_0_, product1_.Description as Descript4_3_0_, product1_.Price as Price3_0_, product1_.IsDiscounted as IsDiscou6_3_0_, product1_.IsInStock as IsInStock3_0_, product1_.AddedAt as AddedAt3_0_, product1_.UpdatedAt as UpdatedAt3_0_, product1_.Brand_id as Brand10_3_0_ FROM CategoriesProducts products0_ left outer join [Product] product1_ on products0_.Product_id=product1_.Id WHERE products0_.Category_id=?
+DEBUG 37 NHibernate.Type.Int32Type - binding '1' to parameter: 0
+INFO 37 NHibernate.Loader.Loader - SELECT products0_.Category_id as Category1_1_, products0_.Product_id as Product2_1_, product1_.Id as Id3_0_, product1_.Name as Name3_0_, product1_.Code as Code3_0_, product1_.Description as Descript4_3_0_, product1_.Price as Price3_0_, product1_.IsDiscounted as IsDiscou6_3_0_, product1_.IsInStock as IsInStock3_0_, product1_.AddedAt as AddedAt3_0_, product1_.UpdatedAt as UpdatedAt3_0_, product1_.Brand_id as Brand10_3_0_ FROM CategoriesProducts products0_ left outer join [Product] product1_ on products0_.Product_id=product1_.Id WHERE products0_.Category_id=@p0
+DEBUG 37 NHibernate.SQL - SELECT products0_.Category_id as Category1_1_, products0_.Product_id as Product2_1_, product1_.Id as Id3_0_, product1_.Name as Name3_0_, product1_.Code as Code3_0_, product1_.Description as Descript4_3_0_, product1_.Price as Price3_0_, product1_.IsDiscounted as IsDiscou6_3_0_, product1_.IsInStock as IsInStock3_0_, product1_.AddedAt as AddedAt3_0_, product1_.UpdatedAt as UpdatedAt3_0_, product1_.Brand_id as Brand10_3_0_ FROM CategoriesProducts products0_ left outer join [Product] product1_ on products0_.Product_id=product1_.Id WHERE products0_.Category_id=@p0;@p0 = 1 [Type: Int32 (0)]
+DEBUG 37 NHibernate.Connection.DriverConnectionProvider - Obtaining IDbConnection from Driver
+DEBUG 37 NHibernate.AdoNet.AbstractBatcher - ExecuteReader took 0 ms
+DEBUG 37 NHibernate.AdoNet.AbstractBatcher - Opened IDataReader, open IDataReaders: 1
+DEBUG 37 NHibernate.Loader.Loader - result set contains (possibly empty) collection: [CumbriaMD.Domain.Category.Products#1]
+DEBUG 37 NHibernate.Engine.Loading.LoadContexts - constructing collection load context for result set [NHibernate.Driver.NHybridDataReader]
+DEBUG 37 NHibernate.Engine.Loading.CollectionLoadContext - starting attempt to find loading collection [[CumbriaMD.Domain.Category.Products#1]]
+DEBUG 37 NHibernate.Engine.Loading.LoadContexts - attempting to locate loading collection entry [CollectionKey[CumbriaMD.Domain.Category.Products#1]] in any result-set context
+DEBUG 37 NHibernate.Engine.Loading.LoadContexts - collection [CollectionKey[CumbriaMD.Domain.Category.Products#1]] located in load context
+DEBUG 37 NHibernate.Engine.Loading.CollectionLoadContext - collection not yet initialized; initializing
+DEBUG 37 NHibernate.Loader.Loader - processing result set
+DEBUG 37 NHibernate.Loader.Loader - done processing result set (0 rows)
+DEBUG 37 NHibernate.Driver.NHybridDataReader - running NHybridDataReader.Dispose()
+DEBUG 37 NHibernate.AdoNet.AbstractBatcher - Closed IDataReader, open IDataReaders :0
+DEBUG 37 NHibernate.AdoNet.AbstractBatcher - DataReader was closed after 0 ms
+DEBUG 37 NHibernate.AdoNet.AbstractBatcher - Closed IDbCommand, open IDbCommands: 0
+DEBUG 37 NHibernate.AdoNet.ConnectionManager - aggressively releasing database connection
+DEBUG 37 NHibernate.Connection.ConnectionProvider - Closing connection
+DEBUG 37 NHibernate.Loader.Loader - total objects hydrated: 0
+DEBUG 37 NHibernate.Engine.Loading.LoadContexts - attempting to locate loading collection entry [CollectionKey[CumbriaMD.Domain.Category.Products#1]] in any result-set context
+DEBUG 37 NHibernate.Engine.Loading.LoadContexts - collection [CollectionKey[CumbriaMD.Domain.Category.Products#1]] not located in load context
+DEBUG 37 NHibernate.Engine.Loading.CollectionLoadContext - removing collection load entry [NHibernate.Engine.Loading.LoadingCollectionEntry<rs=NHibernate.Driver.NHybridDataReader, coll=[CumbriaMD.Domain.Category.Products#1]>@1b681fd]
+DEBUG 37 NHibernate.Engine.Loading.CollectionLoadContext - 1 collections were found in result set for role: CumbriaMD.Domain.Category.Products
+DEBUG 37 NHibernate.Engine.Loading.CollectionLoadContext - ending loading collection [NHibernate.Engine.Loading.LoadingCollectionEntry<rs=NHibernate.Driver.NHybridDataReader, coll=[CumbriaMD.Domain.Category.Products#1]>@1b681fd]
+DEBUG 37 NHibernate.Engine.Loading.CollectionLoadContext - collection fully initialized: [CumbriaMD.Domain.Category.Products#1]
+DEBUG 37 NHibernate.Engine.Loading.CollectionLoadContext - 1 collections initialized for role: CumbriaMD.Domain.Category.Products
+DEBUG 37 NHibernate.Engine.StatefulPersistenceContext - initializing non-lazy collections
+DEBUG 37 NHibernate.Loader.Loader - done loading collection
+DEBUG 37 NHibernate.Event.Default.DefaultInitializeCollectionEventListener - collection initialized
+DEBUG 37 NHibernate.Event.Default.DefaultInitializeCollectionEventListener - initializing collection [CumbriaMD.Domain.Category.Subcategories#1]
+DEBUG 37 NHibernate.Event.Default.DefaultInitializeCollectionEventListener - checking second-level cache
+DEBUG 37 NHibernate.Event.Default.DefaultInitializeCollectionEventListener - collection not cached
+DEBUG 37 NHibernate.Loader.Loader - loading collection: [CumbriaMD.Domain.Category.Subcategories#1]
+DEBUG 37 NHibernate.AdoNet.AbstractBatcher - Opened new IDbCommand, open IDbCommands: 1
+DEBUG 37 NHibernate.AdoNet.AbstractBatcher - Building an IDbCommand object for the SqlString: SELECT subcategor0_.ParentCategory as ParentCa5_1_, subcategor0_.Id as Id1_, subcategor0_.Id as Id1_0_, subcategor0_.Name as Name1_0_, subcategor0_.IsActive as IsActive1_0_, subcategor0_.OrderInList as OrderInL4_1_0_, subcategor0_.ParentCategory as ParentCa5_1_0_ FROM [Category] subcategor0_ WHERE subcategor0_.ParentCategory=?
+DEBUG 37 NHibernate.Type.Int32Type - binding '1' to parameter: 0
+INFO 37 NHibernate.Loader.Loader - SELECT subcategor0_.ParentCategory as ParentCa5_1_, subcategor0_.Id as Id1_, subcategor0_.Id as Id1_0_, subcategor0_.Name as Name1_0_, subcategor0_.IsActive as IsActive1_0_, subcategor0_.OrderInList as OrderInL4_1_0_, subcategor0_.ParentCategory as ParentCa5_1_0_ FROM [Category] subcategor0_ WHERE subcategor0_.ParentCategory=@p0
+DEBUG 37 NHibernate.SQL - SELECT subcategor0_.ParentCategory as ParentCa5_1_, subcategor0_.Id as Id1_, subcategor0_.Id as Id1_0_, subcategor0_.Name as Name1_0_, subcategor0_.IsActive as IsActive1_0_, subcategor0_.OrderInList as OrderInL4_1_0_, subcategor0_.ParentCategory as ParentCa5_1_0_ FROM [Category] subcategor0_ WHERE subcategor0_.ParentCategory=@p0;@p0 = 1 [Type: Int32 (0)]
+DEBUG 37 NHibernate.Connection.DriverConnectionProvider - Obtaining IDbConnection from Driver
+DEBUG 37 NHibernate.AdoNet.AbstractBatcher - ExecuteReader took 0 ms
+DEBUG 37 NHibernate.AdoNet.AbstractBatcher - Opened IDataReader, open IDataReaders: 1
+DEBUG 37 NHibernate.Loader.Loader - result set contains (possibly empty) collection: [CumbriaMD.Domain.Category.Subcategories#1]
+DEBUG 37 NHibernate.Engine.Loading.LoadContexts - constructing collection load context for result set [NHibernate.Driver.NHybridDataReader]
+DEBUG 37 NHibernate.Engine.Loading.CollectionLoadContext - starting attempt to find loading collection [[CumbriaMD.Domain.Category.Subcategories#1]]
+DEBUG 37 NHibernate.Engine.Loading.LoadContexts - attempting to locate loading collection entry [CollectionKey[CumbriaMD.Domain.Category.Subcategories#1]] in any result-set context
+DEBUG 37 NHibernate.Engine.Loading.LoadContexts - collection [CollectionKey[CumbriaMD.Domain.Category.Subcategories#1]] located in load context
+DEBUG 37 NHibernate.Engine.Loading.CollectionLoadContext - collection not yet initialized; initializing
+DEBUG 37 NHibernate.Loader.Loader - processing result set
+DEBUG 37 NHibernate.Loader.Loader - result set row: 0
+DEBUG 37 NHibernate.Type.Int32Type - returning '1' as column: Id1_0_
+DEBUG 37 NHibernate.Loader.Loader - result row: EntityKey[CumbriaMD.Domain.Category#1]
+DEBUG 37 NHibernate.Type.Int32Type - returning '1' as column: ParentCa5_1_
+DEBUG 37 NHibernate.Loader.Loader - found row of collection: [CumbriaMD.Domain.Category.Subcategories#1]
+DEBUG 37 NHibernate.Engine.Loading.CollectionLoadContext - starting attempt to find loading collection [[CumbriaMD.Domain.Category.Subcategories#1]]
+DEBUG 37 NHibernate.Engine.Loading.LoadContexts - attempting to locate loading collection entry [CollectionKey[CumbriaMD.Domain.Category.Subcategories#1]] in any result-set context
+DEBUG 37 NHibernate.Engine.Loading.LoadContexts - collection [CollectionKey[CumbriaMD.Domain.Category.Subcategories#1]] not located in load context
+DEBUG 37 NHibernate.Engine.Loading.CollectionLoadContext - found loading collection bound to current result set processing; reading row
+DEBUG 37 NHibernate.Type.Int32Type - returning '1' as column: Id1_
+DEBUG 37 NHibernate.Event.Default.DefaultLoadEventListener - loading entity: [CumbriaMD.Domain.Category#1]
+DEBUG 37 NHibernate.Event.Default.DefaultLoadEventListener - attempting to resolve: [CumbriaMD.Domain.Category#1]
+DEBUG 37 NHibernate.Event.Default.DefaultLoadEventListener - resolved object in session cache: [CumbriaMD.Domain.Category#1]
+DEBUG 37 NHibernate.Loader.Loader - result set row: 1
+DEBUG 37 NHibernate.Type.Int32Type - returning '2' as column: Id1_0_
+DEBUG 37 NHibernate.Loader.Loader - result row: EntityKey[CumbriaMD.Domain.Category#2]
+DEBUG 37 NHibernate.Type.Int32Type - returning '1' as column: ParentCa5_1_
+DEBUG 37 NHibernate.Loader.Loader - found row of collection: [CumbriaMD.Domain.Category.Subcategories#1]
+DEBUG 37 NHibernate.Engine.Loading.CollectionLoadContext - starting attempt to find loading collection [[CumbriaMD.Domain.Category.Subcategories#1]]
+DEBUG 37 NHibernate.Engine.Loading.LoadContexts - attempting to locate loading collection entry [CollectionKey[CumbriaMD.Domain.Category.Subcategories#1]] in any result-set context
+DEBUG 37 NHibernate.Engine.Loading.LoadContexts - collection [CollectionKey[CumbriaMD.Domain.Category.Subcategories#1]] not located in load context
+DEBUG 37 NHibernate.Engine.Loading.CollectionLoadContext - found loading collection bound to current result set processing; reading row
+DEBUG 37 NHibernate.Type.Int32Type - returning '2' as column: Id1_
+DEBUG 37 NHibernate.Event.Default.DefaultLoadEventListener - loading entity: [CumbriaMD.Domain.Category#2]
+DEBUG 37 NHibernate.Event.Default.DefaultLoadEventListener - attempting to resolve: [CumbriaMD.Domain.Category#2]
+DEBUG 37 NHibernate.Event.Default.DefaultLoadEventListener - resolved object in session cache: [CumbriaMD.Domain.Category#2]
+DEBUG 37 NHibernate.Loader.Loader - result set row: 2
+DEBUG 37 NHibernate.Type.Int32Type - returning '4' as column: Id1_0_
+DEBUG 37 NHibernate.Loader.Loader - result row: EntityKey[CumbriaMD.Domain.Category#4]
+DEBUG 37 NHibernate.Type.Int32Type - returning '1' as column: ParentCa5_1_
+DEBUG 37 NHibernate.Loader.Loader - found row of collection: [CumbriaMD.Domain.Category.Subcategories#1]
+DEBUG 37 NHibernate.Engine.Loading.CollectionLoadContext - starting attempt to find loading collection [[CumbriaMD.Domain.Category.Subcategories#1]]
+DEBUG 37 NHibernate.Engine.Loading.LoadContexts - attempting to locate loading collection entry [CollectionKey[CumbriaMD.Domain.Category.Subcategories#1]] in any result-set context
+DEBUG 37 NHibernate.Engine.Loading.LoadContexts - collection [CollectionKey[CumbriaMD.Domain.Category.Subcategories#1]] not located in load context
+DEBUG 37 NHibernate.Engine.Loading.CollectionLoadContext - found loading collection bound to current result set processing; reading row
+DEBUG 37 NHibernate.Type.Int32Type - returning '4' as column: Id1_
+DEBUG 37 NHibernate.Event.Default.DefaultLoadEventListener - loading entity: [CumbriaMD.Domain.Category#4]
+DEBUG 37 NHibernate.Event.Default.DefaultLoadEventListener - attempting to resolve: [CumbriaMD.Domain.Category#4]
+DEBUG 37 NHibernate.Event.Default.DefaultLoadEventListener - resolved object in session cache: [CumbriaMD.Domain.Category#4]
+DEBUG 37 NHibernate.Loader.Loader - done processing result set (3 rows)
+DEBUG 37 NHibernate.Driver.NHybridDataReader - running NHybridDataReader.Dispose()
+DEBUG 37 NHibernate.AdoNet.AbstractBatcher - Closed IDataReader, open IDataReaders :0
+DEBUG 37 NHibernate.AdoNet.AbstractBatcher - DataReader was closed after 0 ms
+DEBUG 37 NHibernate.AdoNet.AbstractBatcher - Closed IDbCommand, open IDbCommands: 0
+DEBUG 37 NHibernate.AdoNet.ConnectionManager - aggressively releasing database connection
+DEBUG 37 NHibernate.Connection.ConnectionProvider - Closing connection
+DEBUG 37 NHibernate.Loader.Loader - total objects hydrated: 0
+DEBUG 37 NHibernate.Engine.Loading.LoadContexts - attempting to locate loading collection entry [CollectionKey[CumbriaMD.Domain.Category.Subcategories#1]] in any result-set context
+DEBUG 37 NHibernate.Engine.Loading.LoadContexts - collection [CollectionKey[CumbriaMD.Domain.Category.Subcategories#1]] not located in load context
+DEBUG 37 NHibernate.Engine.Loading.CollectionLoadContext - removing collection load entry [NHibernate.Engine.Loading.LoadingCollectionEntry<rs=NHibernate.Driver.NHybridDataReader, coll=[CumbriaMD.Domain.Category.Subcategories#1]>@ffd2a6]
+DEBUG 37 NHibernate.Engine.Loading.CollectionLoadContext - 1 collections were found in result set for role: CumbriaMD.Domain.Category.Subcategories
+DEBUG 37 NHibernate.Engine.Loading.CollectionLoadContext - ending loading collection [NHibernate.Engine.Loading.LoadingCollectionEntry<rs=NHibernate.Driver.NHybridDataReader, coll=[CumbriaMD.Domain.Category.Subcategories#1]>@ffd2a6]
+DEBUG 37 NHibernate.Engine.Loading.CollectionLoadContext - collection fully initialized: [CumbriaMD.Domain.Category.Subcategories#1]
+DEBUG 37 NHibernate.Engine.Loading.CollectionLoadContext - 1 collections initialized for role: CumbriaMD.Domain.Category.Subcategories
+DEBUG 37 NHibernate.Engine.StatefulPersistenceContext - initializing non-lazy collections
+DEBUG 37 NHibernate.Loader.Loader - done loading collection
+DEBUG 37 NHibernate.Event.Default.DefaultInitializeCollectionEventListener - collection initialized
+DEBUG 37 NHibernate.Impl.SessionImpl - [session-id=05a12fcb-3d23-4712-991d-e9826a8eecde] running ISession.Dispose()
+DEBUG 37 NHibernate.Impl.SessionImpl - [session-id=05a12fcb-3d23-4712-991d-e9826a8eecde] executing real Dispose(True)
+DEBUG 37 NHibernate.Impl.SessionImpl - closing session
+DEBUG 37 NHibernate.AdoNet.AbstractBatcher - running BatcherImpl.Dispose(true)
+INFO 17 NHibernate.Impl.SessionFactoryImpl - Closing
+DEBUG 17 NHibernate.Connection.ConnectionProvider - Disposing of ConnectionProvider.

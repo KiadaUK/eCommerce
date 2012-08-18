@@ -1,0 +1,67 @@
+﻿@{
+    ViewBag.Title = "TestingSortableJquery";
+}
+
+<h2>TestingSortableJquery</h2>
+
+<ul id="orderInList" class="ui">
+    <li id="order_1">Maps</li>
+    <li id="order_2">Magazines</li>
+    <li id="order_3">Books</li>
+    <li id="order_4">Pads</li>
+    <li id="order_5">Paintings</li>
+</ul>
+
+var result = $('#orderInList').sortable('toArray');
+
+result[0] = order_1
+result[1] = order_2
+result[2] = order_3
+result[3] = order_4
+result[4] = order_5
+
+foreach (var item in result)
+{
+    item.replace("order_", "");
+}
+
+Notation for JSON object:
+
+var categories = 
+{
+    "orderInList": 
+    [
+        {"orderNumber": "1", "Id": "3", "Name": "Maps"}   
+        {"orderNumer": "2", "Id": "1", "Name": "Magazines"}
+    }
+};
+
+function SingleCategory(orderInList, Name, Id)
+{
+    this.orderInList = orderInList;
+    this.Name = Name;
+    this.Id = Id;
+}
+
+var array[] 
+
+Object:
+
+SortableCategoryOrderPartialViewModel
+{
+        public string Id { get; set; }
+        public string Name { get; set; }
+        public string OrderNumber { get; set; }
+}
+
+Name_Id 
+
+	
+categories[category1][Id] "3"
+categories[category1][Name] "Maps"	
+categories[category1][orderInList] "1"
+	
+categories[category2][Id] "2"
+categories[category2][Name] "Books"
+categories[category2][orderInList] "2"
+

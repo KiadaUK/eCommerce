@@ -1,0 +1,8 @@
+﻿@model CumbriaMD.Infrastructure.ViewModels.ImageViewModels.MultiImageUploader
+
+    <div class="editor-field">
+         @Html.TextBoxFor(x => x.File, new { type = "file" })
+         @Html.ValidationMessageFor(x => x.File)
+    </div>
+
+

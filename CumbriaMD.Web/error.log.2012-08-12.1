@@ -1,0 +1,965 @@
+DEBUG 96 NHibernate.Loader.Entity.AbstractEntityLoader - Static select for action NHibernate.Engine.CascadingAction+RefreshCascadingAction on entity CumbriaMD.Domain.Brand: SELECT brand0_.Id as Id0_0_, brand0_.Name as Name0_0_, brand0_.IsActive as IsActive0_0_, brand0_.DefaultProduct_id as DefaultP4_0_0_ FROM [Brand] brand0_ WHERE brand0_.Id=?
+DEBUG 96 NHibernate.Persister.Entity.AbstractEntityPersister - Static SQL for entity: CumbriaMD.Domain.Category
+DEBUG 96 NHibernate.Persister.Entity.AbstractEntityPersister -  Version select: SELECT Id FROM [Category] WHERE Id = ?
+DEBUG 96 NHibernate.Persister.Entity.AbstractEntityPersister -  Snapshot select: SELECT category_.Id, category_.Name as Name1_, category_.IsActive as IsActive1_, category_.OrderInList as OrderInL4_1_, category_.ParentCategory as ParentCa5_1_ FROM [Category] category_ WHERE category_.Id=?
+DEBUG 96 NHibernate.Persister.Entity.AbstractEntityPersister -  Insert 0: INSERT INTO [Category] (Name, IsActive, OrderInList, ParentCategory, Id) VALUES (?, ?, ?, ?, ?)
+DEBUG 96 NHibernate.Persister.Entity.AbstractEntityPersister -  Update 0: UPDATE [Category] SET Name = ?, IsActive = ?, OrderInList = ?, ParentCategory = ? WHERE Id = ?
+DEBUG 96 NHibernate.Persister.Entity.AbstractEntityPersister -  Delete 0: DELETE FROM [Category] WHERE Id = ?
+DEBUG 96 NHibernate.Persister.Entity.AbstractEntityPersister -  Identity insert: INSERT INTO [Category] (Name, IsActive, OrderInList, ParentCategory) VALUES (?, ?, ?, ?); select SCOPE_IDENTITY()
+DEBUG 96 NHibernate.Loader.Entity.AbstractEntityLoader - Static select for entity CumbriaMD.Domain.Category: SELECT category0_.Id as Id1_0_, category0_.Name as Name1_0_, category0_.IsActive as IsActive1_0_, category0_.OrderInList as OrderInL4_1_0_, category0_.ParentCategory as ParentCa5_1_0_ FROM [Category] category0_ WHERE category0_.Id=?
+DEBUG 96 NHibernate.Loader.Entity.AbstractEntityLoader - Static select for entity CumbriaMD.Domain.Category: SELECT category0_.Id as Id1_0_, category0_.Name as Name1_0_, category0_.IsActive as IsActive1_0_, category0_.OrderInList as OrderInL4_1_0_, category0_.ParentCategory as ParentCa5_1_0_ FROM [Category] category0_ WHERE category0_.Id=?
+DEBUG 96 NHibernate.Loader.Entity.AbstractEntityLoader - Static select for entity CumbriaMD.Domain.Category: SELECT category0_.Id as Id1_0_, category0_.Name as Name1_0_, category0_.IsActive as IsActive1_0_, category0_.OrderInList as OrderInL4_1_0_, category0_.ParentCategory as ParentCa5_1_0_ FROM [Category] category0_ with (updlock, rowlock) WHERE category0_.Id=?
+DEBUG 96 NHibernate.Loader.Entity.AbstractEntityLoader - Static select for entity CumbriaMD.Domain.Category: SELECT category0_.Id as Id1_0_, category0_.Name as Name1_0_, category0_.IsActive as IsActive1_0_, category0_.OrderInList as OrderInL4_1_0_, category0_.ParentCategory as ParentCa5_1_0_ FROM [Category] category0_ with (updlock, rowlock, nowait) WHERE category0_.Id=?
+DEBUG 96 NHibernate.Loader.Entity.AbstractEntityLoader - Static select for entity CumbriaMD.Domain.Category: SELECT category0_.Id as Id1_0_, category0_.Name as Name1_0_, category0_.IsActive as IsActive1_0_, category0_.OrderInList as OrderInL4_1_0_, category0_.ParentCategory as ParentCa5_1_0_ FROM [Category] category0_ with (updlock, rowlock) WHERE category0_.Id=?
+DEBUG 96 NHibernate.Loader.Entity.AbstractEntityLoader - Static select for action NHibernate.Engine.CascadingAction+MergeCascadingAction on entity CumbriaMD.Domain.Category: SELECT category0_.Id as Id1_1_, category0_.Name as Name1_1_, category0_.IsActive as IsActive1_1_, category0_.OrderInList as OrderInL4_1_1_, category0_.ParentCategory as ParentCa5_1_1_, products1_.Category_id as Category1_3_, product2_.Id as Product2_3_, product2_.Id as Id3_0_, product2_.Name as Name3_0_, product2_.Code as Code3_0_, product2_.Description as Descript4_3_0_, product2_.Price as Price3_0_, product2_.IsDiscounted as IsDiscou6_3_0_, product2_.IsInStock as IsInStock3_0_, product2_.AddedAt as AddedAt3_0_, product2_.UpdatedAt as UpdatedAt3_0_, product2_.Brand_id as Brand10_3_0_ FROM [Category] category0_ left outer join CategoriesProducts products1_ on category0_.Id=products1_.Category_id left outer join [Product] product2_ on products1_.Product_id=product2_.Id WHERE category0_.Id=?
+DEBUG 96 NHibernate.Loader.Entity.AbstractEntityLoader - Static select for action NHibernate.Engine.CascadingAction+RefreshCascadingAction on entity CumbriaMD.Domain.Category: SELECT category0_.Id as Id1_1_, category0_.Name as Name1_1_, category0_.IsActive as IsActive1_1_, category0_.OrderInList as OrderInL4_1_1_, category0_.ParentCategory as ParentCa5_1_1_, products1_.Category_id as Category1_3_, product2_.Id as Product2_3_, product2_.Id as Id3_0_, product2_.Name as Name3_0_, product2_.Code as Code3_0_, product2_.Description as Descript4_3_0_, product2_.Price as Price3_0_, product2_.IsDiscounted as IsDiscou6_3_0_, product2_.IsInStock as IsInStock3_0_, product2_.AddedAt as AddedAt3_0_, product2_.UpdatedAt as UpdatedAt3_0_, product2_.Brand_id as Brand10_3_0_ FROM [Category] category0_ left outer join CategoriesProducts products1_ on category0_.Id=products1_.Category_id left outer join [Product] product2_ on products1_.Product_id=product2_.Id WHERE category0_.Id=?
+DEBUG 96 NHibernate.Persister.Entity.AbstractEntityPersister - Static SQL for entity: CumbriaMD.Domain.Product
+DEBUG 96 NHibernate.Persister.Entity.AbstractEntityPersister -  Version select: SELECT Id FROM [Product] WHERE Id = ?
+DEBUG 96 NHibernate.Persister.Entity.AbstractEntityPersister -  Snapshot select: SELECT product_.Id, product_.Name as Name3_, product_.Code as Code3_, product_.Description as Descript4_3_, product_.Price as Price3_, product_.IsDiscounted as IsDiscou6_3_, product_.IsInStock as IsInStock3_, product_.AddedAt as AddedAt3_, product_.UpdatedAt as UpdatedAt3_, product_.Brand_id as Brand10_3_ FROM [Product] product_ WHERE product_.Id=?
+DEBUG 96 NHibernate.Persister.Entity.AbstractEntityPersister -  Insert 0: INSERT INTO [Product] (Name, Code, Description, Price, IsDiscounted, IsInStock, AddedAt, UpdatedAt, Brand_id, Id) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+DEBUG 96 NHibernate.Persister.Entity.AbstractEntityPersister -  Update 0: UPDATE [Product] SET Name = ?, Code = ?, Description = ?, Price = ?, IsDiscounted = ?, IsInStock = ?, AddedAt = ?, UpdatedAt = ?, Brand_id = ? WHERE Id = ?
+DEBUG 96 NHibernate.Persister.Entity.AbstractEntityPersister -  Delete 0: DELETE FROM [Product] WHERE Id = ?
+DEBUG 96 NHibernate.Persister.Entity.AbstractEntityPersister -  Identity insert: INSERT INTO [Product] (Name, Code, Description, Price, IsDiscounted, IsInStock, AddedAt, UpdatedAt, Brand_id) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?); select SCOPE_IDENTITY()
+DEBUG 96 NHibernate.Loader.Entity.AbstractEntityLoader - Static select for entity CumbriaMD.Domain.Product: SELECT product0_.Id as Id3_0_, product0_.Name as Name3_0_, product0_.Code as Code3_0_, product0_.Description as Descript4_3_0_, product0_.Price as Price3_0_, product0_.IsDiscounted as IsDiscou6_3_0_, product0_.IsInStock as IsInStock3_0_, product0_.AddedAt as AddedAt3_0_, product0_.UpdatedAt as UpdatedAt3_0_, product0_.Brand_id as Brand10_3_0_ FROM [Product] product0_ WHERE product0_.Id=?
+DEBUG 96 NHibernate.Loader.Entity.AbstractEntityLoader - Static select for entity CumbriaMD.Domain.Product: SELECT product0_.Id as Id3_0_, product0_.Name as Name3_0_, product0_.Code as Code3_0_, product0_.Description as Descript4_3_0_, product0_.Price as Price3_0_, product0_.IsDiscounted as IsDiscou6_3_0_, product0_.IsInStock as IsInStock3_0_, product0_.AddedAt as AddedAt3_0_, product0_.UpdatedAt as UpdatedAt3_0_, product0_.Brand_id as Brand10_3_0_ FROM [Product] product0_ WHERE product0_.Id=?
+DEBUG 96 NHibernate.Loader.Entity.AbstractEntityLoader - Static select for entity CumbriaMD.Domain.Product: SELECT product0_.Id as Id3_0_, product0_.Name as Name3_0_, product0_.Code as Code3_0_, product0_.Description as Descript4_3_0_, product0_.Price as Price3_0_, product0_.IsDiscounted as IsDiscou6_3_0_, product0_.IsInStock as IsInStock3_0_, product0_.AddedAt as AddedAt3_0_, product0_.UpdatedAt as UpdatedAt3_0_, product0_.Brand_id as Brand10_3_0_ FROM [Product] product0_ with (updlock, rowlock) WHERE product0_.Id=?
+DEBUG 96 NHibernate.Loader.Entity.AbstractEntityLoader - Static select for entity CumbriaMD.Domain.Product: SELECT product0_.Id as Id3_0_, product0_.Name as Name3_0_, product0_.Code as Code3_0_, product0_.Description as Descript4_3_0_, product0_.Price as Price3_0_, product0_.IsDiscounted as IsDiscou6_3_0_, product0_.IsInStock as IsInStock3_0_, product0_.AddedAt as AddedAt3_0_, product0_.UpdatedAt as UpdatedAt3_0_, product0_.Brand_id as Brand10_3_0_ FROM [Product] product0_ with (updlock, rowlock, nowait) WHERE product0_.Id=?
+DEBUG 96 NHibernate.Loader.Entity.AbstractEntityLoader - Static select for entity CumbriaMD.Domain.Product: SELECT product0_.Id as Id3_0_, product0_.Name as Name3_0_, product0_.Code as Code3_0_, product0_.Description as Descript4_3_0_, product0_.Price as Price3_0_, product0_.IsDiscounted as IsDiscou6_3_0_, product0_.IsInStock as IsInStock3_0_, product0_.AddedAt as AddedAt3_0_, product0_.UpdatedAt as UpdatedAt3_0_, product0_.Brand_id as Brand10_3_0_ FROM [Product] product0_ with (updlock, rowlock) WHERE product0_.Id=?
+DEBUG 96 NHibernate.Loader.Entity.AbstractEntityLoader - Static select for action NHibernate.Engine.CascadingAction+MergeCascadingAction on entity CumbriaMD.Domain.Product: SELECT product0_.Id as Id3_1_, product0_.Name as Name3_1_, product0_.Code as Code3_1_, product0_.Description as Descript4_3_1_, product0_.Price as Price3_1_, product0_.IsDiscounted as IsDiscou6_3_1_, product0_.IsInStock as IsInStock3_1_, product0_.AddedAt as AddedAt3_1_, product0_.UpdatedAt as UpdatedAt3_1_, product0_.Brand_id as Brand10_3_1_, categories1_.Product_id as Product2_3_, category2_.Id as Category1_3_, category2_.Id as Id1_0_, category2_.Name as Name1_0_, category2_.IsActive as IsActive1_0_, category2_.OrderInList as OrderInL4_1_0_, category2_.ParentCategory as ParentCa5_1_0_ FROM [Product] product0_ left outer join CategoriesProducts categories1_ on product0_.Id=categories1_.Product_id left outer join [Category] category2_ on categories1_.Category_id=category2_.Id WHERE product0_.Id=?
+DEBUG 96 NHibernate.Loader.Entity.AbstractEntityLoader - Static select for action NHibernate.Engine.CascadingAction+RefreshCascadingAction on entity CumbriaMD.Domain.Product: SELECT product0_.Id as Id3_1_, product0_.Name as Name3_1_, product0_.Code as Code3_1_, product0_.Description as Descript4_3_1_, product0_.Price as Price3_1_, product0_.IsDiscounted as IsDiscou6_3_1_, product0_.IsInStock as IsInStock3_1_, product0_.AddedAt as AddedAt3_1_, product0_.UpdatedAt as UpdatedAt3_1_, product0_.Brand_id as Brand10_3_1_, categories1_.Product_id as Product2_3_, category2_.Id as Category1_3_, category2_.Id as Id1_0_, category2_.Name as Name1_0_, category2_.IsActive as IsActive1_0_, category2_.OrderInList as OrderInL4_1_0_, category2_.ParentCategory as ParentCa5_1_0_ FROM [Product] product0_ left outer join CategoriesProducts categories1_ on product0_.Id=categories1_.Product_id left outer join [Category] category2_ on categories1_.Category_id=category2_.Id WHERE product0_.Id=?
+DEBUG 96 NHibernate.Loader.Collection.OneToManyLoader - Static select for one-to-many CumbriaMD.Domain.Brand.Products: SELECT products0_.Brand_id as Brand10_1_, products0_.Id as Id1_, products0_.Id as Id3_0_, products0_.Name as Name3_0_, products0_.Code as Code3_0_, products0_.Description as Descript4_3_0_, products0_.Price as Price3_0_, products0_.IsDiscounted as IsDiscou6_3_0_, products0_.IsInStock as IsInStock3_0_, products0_.AddedAt as AddedAt3_0_, products0_.UpdatedAt as UpdatedAt3_0_, products0_.Brand_id as Brand10_3_0_ FROM [Product] products0_ WHERE products0_.Brand_id=?
+DEBUG 96 NHibernate.Loader.Collection.BasicCollectionLoader - Static select for collection CumbriaMD.Domain.Category.Products: SELECT products0_.Category_id as Category1_1_, products0_.Product_id as Product2_1_, product1_.Id as Id3_0_, product1_.Name as Name3_0_, product1_.Code as Code3_0_, product1_.Description as Descript4_3_0_, product1_.Price as Price3_0_, product1_.IsDiscounted as IsDiscou6_3_0_, product1_.IsInStock as IsInStock3_0_, product1_.AddedAt as AddedAt3_0_, product1_.UpdatedAt as UpdatedAt3_0_, product1_.Brand_id as Brand10_3_0_ FROM CategoriesProducts products0_ left outer join [Product] product1_ on products0_.Product_id=product1_.Id WHERE products0_.Category_id=?
+DEBUG 96 NHibernate.Loader.Collection.OneToManyLoader - Static select for one-to-many CumbriaMD.Domain.Category.Subcategories: SELECT subcategor0_.ParentCategory as ParentCa5_1_, subcategor0_.Id as Id1_, subcategor0_.Id as Id1_0_, subcategor0_.Name as Name1_0_, subcategor0_.IsActive as IsActive1_0_, subcategor0_.OrderInList as OrderInL4_1_0_, subcategor0_.ParentCategory as ParentCa5_1_0_ FROM [Category] subcategor0_ WHERE subcategor0_.ParentCategory=?
+DEBUG 96 NHibernate.Loader.Collection.BasicCollectionLoader - Static select for collection CumbriaMD.Domain.Product.Categories: SELECT categories0_.Product_id as Product2_1_, categories0_.Category_id as Category1_1_, category1_.Id as Id1_0_, category1_.Name as Name1_0_, category1_.IsActive as IsActive1_0_, category1_.OrderInList as OrderInL4_1_0_, category1_.ParentCategory as ParentCa5_1_0_ FROM CategoriesProducts categories0_ left outer join [Category] category1_ on categories0_.Category_id=category1_.Id WHERE categories0_.Product_id=?
+DEBUG 96 NHibernate.Impl.SessionFactoryObjectFactory - initializing class SessionFactoryObjectFactory
+DEBUG 96 NHibernate.Impl.SessionFactoryObjectFactory - registered: fe5e2ffa2d2c400890d52ef777f6d98e(unnamed)
+INFO 96 NHibernate.Impl.SessionFactoryObjectFactory - no name configured
+DEBUG 96 NHibernate.Impl.SessionFactoryImpl - Instantiated session factory
+DEBUG 96 NHibernate.Impl.SessionFactoryImpl - Checking 0 named HQL queries
+DEBUG 96 NHibernate.Impl.SessionFactoryImpl - Checking 0 named SQL queries
+DEBUG 96 NHibernate.Impl.SessionImpl - [session-id=00d7a8d8-0962-4f6e-bdc8-58ac599c4600] opened session at timestamp: 634803946260, for session factory: [/fe5e2ffa2d2c400890d52ef777f6d98e]
+DEBUG 96 NHibernate.Loader.Criteria.CriteriaQueryTranslator - put criteria= alias=this0_
+DEBUG 96 NHibernate.AdoNet.AbstractBatcher - Opened new IDbCommand, open IDbCommands: 1
+DEBUG 96 NHibernate.AdoNet.AbstractBatcher - Building an IDbCommand object for the SqlString: SELECT this_.Id as Id1_0_, this_.Name as Name1_0_, this_.IsActive as IsActive1_0_, this_.OrderInList as OrderInL4_1_0_, this_.ParentCategory as ParentCa5_1_0_ FROM [Category] this_
+INFO 96 NHibernate.Loader.Loader - SELECT this_.Id as Id1_0_, this_.Name as Name1_0_, this_.IsActive as IsActive1_0_, this_.OrderInList as OrderInL4_1_0_, this_.ParentCategory as ParentCa5_1_0_ FROM [Category] this_
+DEBUG 96 NHibernate.SQL - SELECT this_.Id as Id1_0_, this_.Name as Name1_0_, this_.IsActive as IsActive1_0_, this_.OrderInList as OrderInL4_1_0_, this_.ParentCategory as ParentCa5_1_0_ FROM [Category] this_
+DEBUG 96 NHibernate.Connection.DriverConnectionProvider - Obtaining IDbConnection from Driver
+DEBUG 96 NHibernate.AdoNet.AbstractBatcher - ExecuteReader took 0 ms
+DEBUG 96 NHibernate.AdoNet.AbstractBatcher - Opened IDataReader, open IDataReaders: 1
+DEBUG 96 NHibernate.Loader.Loader - processing result set
+DEBUG 96 NHibernate.Loader.Loader - result set row: 0
+DEBUG 96 NHibernate.Type.Int32Type - returning '1' as column: Id1_0_
+DEBUG 96 NHibernate.Loader.Loader - result row: EntityKey[CumbriaMD.Domain.Category#1]
+DEBUG 96 NHibernate.Loader.Loader - Initializing object from DataReader: [CumbriaMD.Domain.Category#1]
+DEBUG 96 NHibernate.Persister.Entity.AbstractEntityPersister - Hydrating entity: [CumbriaMD.Domain.Category#1]
+DEBUG 96 NHibernate.Type.StringType - returning 'TOP LEVEL CATEGORY' as column: Name1_0_
+DEBUG 96 NHibernate.Type.BooleanType - returning 'True' as column: IsActive1_0_
+DEBUG 96 NHibernate.Type.Int32Type - returning '1' as column: OrderInL4_1_0_
+DEBUG 96 NHibernate.Type.Int32Type - returning '1' as column: ParentCa5_1_0_
+DEBUG 96 NHibernate.Loader.Loader - result set row: 1
+DEBUG 96 NHibernate.Type.Int32Type - returning '2' as column: Id1_0_
+DEBUG 96 NHibernate.Loader.Loader - result row: EntityKey[CumbriaMD.Domain.Category#2]
+DEBUG 96 NHibernate.Loader.Loader - Initializing object from DataReader: [CumbriaMD.Domain.Category#2]
+DEBUG 96 NHibernate.Persister.Entity.AbstractEntityPersister - Hydrating entity: [CumbriaMD.Domain.Category#2]
+DEBUG 96 NHibernate.Type.StringType - returning 'Metal Detectors' as column: Name1_0_
+DEBUG 96 NHibernate.Type.BooleanType - returning 'True' as column: IsActive1_0_
+DEBUG 96 NHibernate.Type.Int32Type - returning '2' as column: OrderInL4_1_0_
+DEBUG 96 NHibernate.Type.Int32Type - returning '1' as column: ParentCa5_1_0_
+DEBUG 96 NHibernate.Loader.Loader - result set row: 2
+DEBUG 96 NHibernate.Type.Int32Type - returning '4' as column: Id1_0_
+DEBUG 96 NHibernate.Loader.Loader - result row: EntityKey[CumbriaMD.Domain.Category#4]
+DEBUG 96 NHibernate.Loader.Loader - Initializing object from DataReader: [CumbriaMD.Domain.Category#4]
+DEBUG 96 NHibernate.Persister.Entity.AbstractEntityPersister - Hydrating entity: [CumbriaMD.Domain.Category#4]
+DEBUG 96 NHibernate.Type.StringType - returning 'Books' as column: Name1_0_
+DEBUG 96 NHibernate.Type.BooleanType - returning 'True' as column: IsActive1_0_
+DEBUG 96 NHibernate.Type.Int32Type - returning '3' as column: OrderInL4_1_0_
+DEBUG 96 NHibernate.Type.Int32Type - returning '1' as column: ParentCa5_1_0_
+DEBUG 96 NHibernate.Loader.Loader - result set row: 3
+DEBUG 96 NHibernate.Type.Int32Type - returning '5' as column: Id1_0_
+DEBUG 96 NHibernate.Loader.Loader - result row: EntityKey[CumbriaMD.Domain.Category#5]
+DEBUG 96 NHibernate.Loader.Loader - Initializing object from DataReader: [CumbriaMD.Domain.Category#5]
+DEBUG 96 NHibernate.Persister.Entity.AbstractEntityPersister - Hydrating entity: [CumbriaMD.Domain.Category#5]
+DEBUG 96 NHibernate.Type.StringType - returning 'Maps' as column: Name1_0_
+DEBUG 96 NHibernate.Type.BooleanType - returning 'True' as column: IsActive1_0_
+DEBUG 96 NHibernate.Type.Int32Type - returning '2' as column: OrderInL4_1_0_
+DEBUG 96 NHibernate.Type.Int32Type - returning '4' as column: ParentCa5_1_0_
+DEBUG 96 NHibernate.Loader.Loader - result set row: 4
+DEBUG 96 NHibernate.Type.Int32Type - returning '6' as column: Id1_0_
+DEBUG 96 NHibernate.Loader.Loader - result row: EntityKey[CumbriaMD.Domain.Category#6]
+DEBUG 96 NHibernate.Loader.Loader - Initializing object from DataReader: [CumbriaMD.Domain.Category#6]
+DEBUG 96 NHibernate.Persister.Entity.AbstractEntityPersister - Hydrating entity: [CumbriaMD.Domain.Category#6]
+DEBUG 96 NHibernate.Type.StringType - returning 'Magazines' as column: Name1_0_
+DEBUG 96 NHibernate.Type.BooleanType - returning 'True' as column: IsActive1_0_
+DEBUG 96 NHibernate.Type.Int32Type - returning '1' as column: OrderInL4_1_0_
+DEBUG 96 NHibernate.Type.Int32Type - returning '4' as column: ParentCa5_1_0_
+DEBUG 96 NHibernate.Loader.Loader - done processing result set (5 rows)
+DEBUG 96 NHibernate.Driver.NHybridDataReader - running NHybridDataReader.Dispose()
+DEBUG 96 NHibernate.AdoNet.AbstractBatcher - Closed IDataReader, open IDataReaders :0
+DEBUG 96 NHibernate.AdoNet.AbstractBatcher - DataReader was closed after 14 ms
+DEBUG 96 NHibernate.AdoNet.AbstractBatcher - Closed IDbCommand, open IDbCommands: 0
+DEBUG 96 NHibernate.AdoNet.ConnectionManager - aggressively releasing database connection
+DEBUG 96 NHibernate.Connection.ConnectionProvider - Closing connection
+DEBUG 96 NHibernate.Loader.Loader - total objects hydrated: 5
+DEBUG 96 NHibernate.Engine.TwoPhaseLoad - resolving associations for [CumbriaMD.Domain.Category#1]
+DEBUG 96 NHibernate.Engine.Loading.LoadContexts - creating collection wrapper:[CumbriaMD.Domain.Category.Products#1]
+DEBUG 96 NHibernate.Engine.Loading.LoadContexts - creating collection wrapper:[CumbriaMD.Domain.Category.Subcategories#1]
+DEBUG 96 NHibernate.Event.Default.DefaultLoadEventListener - loading entity: [CumbriaMD.Domain.Category#1]
+DEBUG 96 NHibernate.Event.Default.DefaultLoadEventListener - entity found in session cache
+DEBUG 96 NHibernate.Engine.TwoPhaseLoad - done materializing entity [CumbriaMD.Domain.Category#1]
+DEBUG 96 NHibernate.Engine.TwoPhaseLoad - resolving associations for [CumbriaMD.Domain.Category#2]
+DEBUG 96 NHibernate.Engine.Loading.LoadContexts - creating collection wrapper:[CumbriaMD.Domain.Category.Products#2]
+DEBUG 96 NHibernate.Engine.Loading.LoadContexts - creating collection wrapper:[CumbriaMD.Domain.Category.Subcategories#2]
+DEBUG 96 NHibernate.Event.Default.DefaultLoadEventListener - loading entity: [CumbriaMD.Domain.Category#1]
+DEBUG 96 NHibernate.Event.Default.DefaultLoadEventListener - entity found in session cache
+DEBUG 96 NHibernate.Engine.TwoPhaseLoad - done materializing entity [CumbriaMD.Domain.Category#2]
+DEBUG 96 NHibernate.Engine.TwoPhaseLoad - resolving associations for [CumbriaMD.Domain.Category#4]
+DEBUG 96 NHibernate.Engine.Loading.LoadContexts - creating collection wrapper:[CumbriaMD.Domain.Category.Products#4]
+DEBUG 96 NHibernate.Engine.Loading.LoadContexts - creating collection wrapper:[CumbriaMD.Domain.Category.Subcategories#4]
+DEBUG 96 NHibernate.Event.Default.DefaultLoadEventListener - loading entity: [CumbriaMD.Domain.Category#1]
+DEBUG 96 NHibernate.Event.Default.DefaultLoadEventListener - entity found in session cache
+DEBUG 96 NHibernate.Engine.TwoPhaseLoad - done materializing entity [CumbriaMD.Domain.Category#4]
+DEBUG 96 NHibernate.Engine.TwoPhaseLoad - resolving associations for [CumbriaMD.Domain.Category#5]
+DEBUG 96 NHibernate.Engine.Loading.LoadContexts - creating collection wrapper:[CumbriaMD.Domain.Category.Products#5]
+DEBUG 96 NHibernate.Engine.Loading.LoadContexts - creating collection wrapper:[CumbriaMD.Domain.Category.Subcategories#5]
+DEBUG 96 NHibernate.Event.Default.DefaultLoadEventListener - loading entity: [CumbriaMD.Domain.Category#4]
+DEBUG 96 NHibernate.Event.Default.DefaultLoadEventListener - entity found in session cache
+DEBUG 96 NHibernate.Engine.TwoPhaseLoad - done materializing entity [CumbriaMD.Domain.Category#5]
+DEBUG 96 NHibernate.Engine.TwoPhaseLoad - resolving associations for [CumbriaMD.Domain.Category#6]
+DEBUG 96 NHibernate.Engine.Loading.LoadContexts - creating collection wrapper:[CumbriaMD.Domain.Category.Products#6]
+DEBUG 96 NHibernate.Engine.Loading.LoadContexts - creating collection wrapper:[CumbriaMD.Domain.Category.Subcategories#6]
+DEBUG 96 NHibernate.Event.Default.DefaultLoadEventListener - loading entity: [CumbriaMD.Domain.Category#4]
+DEBUG 96 NHibernate.Event.Default.DefaultLoadEventListener - entity found in session cache
+DEBUG 96 NHibernate.Engine.TwoPhaseLoad - done materializing entity [CumbriaMD.Domain.Category#6]
+DEBUG 96 NHibernate.Engine.StatefulPersistenceContext - initializing non-lazy collections
+DEBUG 96 NHibernate.AdoNet.ConnectionManager - after autocommit
+DEBUG 96 NHibernate.Impl.SessionImpl - transaction completion
+DEBUG 96 NHibernate.AdoNet.ConnectionManager - aggressively releasing database connection
+DEBUG 96 NHibernate.Loader.Criteria.CriteriaQueryTranslator - put criteria= alias=this0_
+DEBUG 96 NHibernate.AdoNet.AbstractBatcher - Opened new IDbCommand, open IDbCommands: 1
+DEBUG 96 NHibernate.AdoNet.AbstractBatcher - Building an IDbCommand object for the SqlString: SELECT this_.Id as Id1_0_, this_.Name as Name1_0_, this_.IsActive as IsActive1_0_, this_.OrderInList as OrderInL4_1_0_, this_.ParentCategory as ParentCa5_1_0_ FROM [Category] this_
+INFO 96 NHibernate.Loader.Loader - SELECT this_.Id as Id1_0_, this_.Name as Name1_0_, this_.IsActive as IsActive1_0_, this_.OrderInList as OrderInL4_1_0_, this_.ParentCategory as ParentCa5_1_0_ FROM [Category] this_
+DEBUG 96 NHibernate.SQL - SELECT this_.Id as Id1_0_, this_.Name as Name1_0_, this_.IsActive as IsActive1_0_, this_.OrderInList as OrderInL4_1_0_, this_.ParentCategory as ParentCa5_1_0_ FROM [Category] this_
+DEBUG 96 NHibernate.Connection.DriverConnectionProvider - Obtaining IDbConnection from Driver
+DEBUG 96 NHibernate.AdoNet.AbstractBatcher - ExecuteReader took 0 ms
+DEBUG 96 NHibernate.AdoNet.AbstractBatcher - Opened IDataReader, open IDataReaders: 1
+DEBUG 96 NHibernate.Loader.Loader - processing result set
+DEBUG 96 NHibernate.Loader.Loader - result set row: 0
+DEBUG 96 NHibernate.Type.Int32Type - returning '1' as column: Id1_0_
+DEBUG 96 NHibernate.Loader.Loader - result row: EntityKey[CumbriaMD.Domain.Category#1]
+DEBUG 96 NHibernate.Loader.Loader - result set row: 1
+DEBUG 96 NHibernate.Type.Int32Type - returning '2' as column: Id1_0_
+DEBUG 96 NHibernate.Loader.Loader - result row: EntityKey[CumbriaMD.Domain.Category#2]
+DEBUG 96 NHibernate.Loader.Loader - result set row: 2
+DEBUG 96 NHibernate.Type.Int32Type - returning '4' as column: Id1_0_
+DEBUG 96 NHibernate.Loader.Loader - result row: EntityKey[CumbriaMD.Domain.Category#4]
+DEBUG 96 NHibernate.Loader.Loader - result set row: 3
+DEBUG 96 NHibernate.Type.Int32Type - returning '5' as column: Id1_0_
+DEBUG 96 NHibernate.Loader.Loader - result row: EntityKey[CumbriaMD.Domain.Category#5]
+DEBUG 96 NHibernate.Loader.Loader - result set row: 4
+DEBUG 96 NHibernate.Type.Int32Type - returning '6' as column: Id1_0_
+DEBUG 96 NHibernate.Loader.Loader - result row: EntityKey[CumbriaMD.Domain.Category#6]
+DEBUG 96 NHibernate.Loader.Loader - done processing result set (5 rows)
+DEBUG 96 NHibernate.Driver.NHybridDataReader - running NHybridDataReader.Dispose()
+DEBUG 96 NHibernate.AdoNet.AbstractBatcher - Closed IDataReader, open IDataReaders :0
+DEBUG 96 NHibernate.AdoNet.AbstractBatcher - DataReader was closed after 1 ms
+DEBUG 96 NHibernate.AdoNet.AbstractBatcher - Closed IDbCommand, open IDbCommands: 0
+DEBUG 96 NHibernate.AdoNet.ConnectionManager - aggressively releasing database connection
+DEBUG 96 NHibernate.Connection.ConnectionProvider - Closing connection
+DEBUG 96 NHibernate.Loader.Loader - total objects hydrated: 0
+DEBUG 96 NHibernate.Engine.StatefulPersistenceContext - initializing non-lazy collections
+DEBUG 96 NHibernate.AdoNet.ConnectionManager - after autocommit
+DEBUG 96 NHibernate.Impl.SessionImpl - transaction completion
+DEBUG 96 NHibernate.AdoNet.ConnectionManager - aggressively releasing database connection
+DEBUG 96 NHibernate.Impl.SessionImpl - [session-id=00d7a8d8-0962-4f6e-bdc8-58ac599c4600] running ISession.Dispose()
+DEBUG 96 NHibernate.Impl.SessionImpl - [session-id=00d7a8d8-0962-4f6e-bdc8-58ac599c4600] executing real Dispose(True)
+DEBUG 96 NHibernate.Impl.SessionImpl - closing session
+DEBUG 96 NHibernate.AdoNet.AbstractBatcher - running BatcherImpl.Dispose(true)
+DEBUG 96 NHibernate.Impl.SessionImpl - [session-id=f6036f26-641c-45cd-b439-5568e0d1d215] opened session at timestamp: 634803946309, for session factory: [/fe5e2ffa2d2c400890d52ef777f6d98e]
+DEBUG 96 NHibernate.Loader.Criteria.CriteriaQueryTranslator - put criteria= alias=this0_
+DEBUG 96 NHibernate.AdoNet.AbstractBatcher - Opened new IDbCommand, open IDbCommands: 1
+DEBUG 96 NHibernate.AdoNet.AbstractBatcher - Building an IDbCommand object for the SqlString: SELECT this_.Id as Id1_0_, this_.Name as Name1_0_, this_.IsActive as IsActive1_0_, this_.OrderInList as OrderInL4_1_0_, this_.ParentCategory as ParentCa5_1_0_ FROM [Category] this_
+INFO 96 NHibernate.Loader.Loader - SELECT this_.Id as Id1_0_, this_.Name as Name1_0_, this_.IsActive as IsActive1_0_, this_.OrderInList as OrderInL4_1_0_, this_.ParentCategory as ParentCa5_1_0_ FROM [Category] this_
+DEBUG 96 NHibernate.SQL - SELECT this_.Id as Id1_0_, this_.Name as Name1_0_, this_.IsActive as IsActive1_0_, this_.OrderInList as OrderInL4_1_0_, this_.ParentCategory as ParentCa5_1_0_ FROM [Category] this_
+DEBUG 96 NHibernate.Connection.DriverConnectionProvider - Obtaining IDbConnection from Driver
+DEBUG 96 NHibernate.AdoNet.AbstractBatcher - ExecuteReader took 0 ms
+DEBUG 96 NHibernate.AdoNet.AbstractBatcher - Opened IDataReader, open IDataReaders: 1
+DEBUG 96 NHibernate.Loader.Loader - processing result set
+DEBUG 96 NHibernate.Loader.Loader - result set row: 0
+DEBUG 96 NHibernate.Type.Int32Type - returning '1' as column: Id1_0_
+DEBUG 96 NHibernate.Loader.Loader - result row: EntityKey[CumbriaMD.Domain.Category#1]
+DEBUG 96 NHibernate.Loader.Loader - Initializing object from DataReader: [CumbriaMD.Domain.Category#1]
+DEBUG 96 NHibernate.Persister.Entity.AbstractEntityPersister - Hydrating entity: [CumbriaMD.Domain.Category#1]
+DEBUG 96 NHibernate.Type.StringType - returning 'TOP LEVEL CATEGORY' as column: Name1_0_
+DEBUG 96 NHibernate.Type.BooleanType - returning 'True' as column: IsActive1_0_
+DEBUG 96 NHibernate.Type.Int32Type - returning '1' as column: OrderInL4_1_0_
+DEBUG 96 NHibernate.Type.Int32Type - returning '1' as column: ParentCa5_1_0_
+DEBUG 96 NHibernate.Loader.Loader - result set row: 1
+DEBUG 96 NHibernate.Type.Int32Type - returning '2' as column: Id1_0_
+DEBUG 96 NHibernate.Loader.Loader - result row: EntityKey[CumbriaMD.Domain.Category#2]
+DEBUG 96 NHibernate.Loader.Loader - Initializing object from DataReader: [CumbriaMD.Domain.Category#2]
+DEBUG 96 NHibernate.Persister.Entity.AbstractEntityPersister - Hydrating entity: [CumbriaMD.Domain.Category#2]
+DEBUG 96 NHibernate.Type.StringType - returning 'Metal Detectors' as column: Name1_0_
+DEBUG 96 NHibernate.Type.BooleanType - returning 'True' as column: IsActive1_0_
+DEBUG 96 NHibernate.Type.Int32Type - returning '2' as column: OrderInL4_1_0_
+DEBUG 96 NHibernate.Type.Int32Type - returning '1' as column: ParentCa5_1_0_
+DEBUG 96 NHibernate.Loader.Loader - result set row: 2
+DEBUG 96 NHibernate.Type.Int32Type - returning '4' as column: Id1_0_
+DEBUG 96 NHibernate.Loader.Loader - result row: EntityKey[CumbriaMD.Domain.Category#4]
+DEBUG 96 NHibernate.Loader.Loader - Initializing object from DataReader: [CumbriaMD.Domain.Category#4]
+DEBUG 96 NHibernate.Persister.Entity.AbstractEntityPersister - Hydrating entity: [CumbriaMD.Domain.Category#4]
+DEBUG 96 NHibernate.Type.StringType - returning 'Books' as column: Name1_0_
+DEBUG 96 NHibernate.Type.BooleanType - returning 'True' as column: IsActive1_0_
+DEBUG 96 NHibernate.Type.Int32Type - returning '3' as column: OrderInL4_1_0_
+DEBUG 96 NHibernate.Type.Int32Type - returning '1' as column: ParentCa5_1_0_
+DEBUG 96 NHibernate.Loader.Loader - result set row: 3
+DEBUG 96 NHibernate.Type.Int32Type - returning '5' as column: Id1_0_
+DEBUG 96 NHibernate.Loader.Loader - result row: EntityKey[CumbriaMD.Domain.Category#5]
+DEBUG 96 NHibernate.Loader.Loader - Initializing object from DataReader: [CumbriaMD.Domain.Category#5]
+DEBUG 96 NHibernate.Persister.Entity.AbstractEntityPersister - Hydrating entity: [CumbriaMD.Domain.Category#5]
+DEBUG 96 NHibernate.Type.StringType - returning 'Maps' as column: Name1_0_
+DEBUG 96 NHibernate.Type.BooleanType - returning 'True' as column: IsActive1_0_
+DEBUG 96 NHibernate.Type.Int32Type - returning '2' as column: OrderInL4_1_0_
+DEBUG 96 NHibernate.Type.Int32Type - returning '4' as column: ParentCa5_1_0_
+DEBUG 96 NHibernate.Loader.Loader - result set row: 4
+DEBUG 96 NHibernate.Type.Int32Type - returning '6' as column: Id1_0_
+DEBUG 96 NHibernate.Loader.Loader - result row: EntityKey[CumbriaMD.Domain.Category#6]
+DEBUG 96 NHibernate.Loader.Loader - Initializing object from DataReader: [CumbriaMD.Domain.Category#6]
+DEBUG 96 NHibernate.Persister.Entity.AbstractEntityPersister - Hydrating entity: [CumbriaMD.Domain.Category#6]
+DEBUG 96 NHibernate.Type.StringType - returning 'Magazines' as column: Name1_0_
+DEBUG 96 NHibernate.Type.BooleanType - returning 'True' as column: IsActive1_0_
+DEBUG 96 NHibernate.Type.Int32Type - returning '1' as column: OrderInL4_1_0_
+DEBUG 96 NHibernate.Type.Int32Type - returning '4' as column: ParentCa5_1_0_
+DEBUG 96 NHibernate.Loader.Loader - done processing result set (5 rows)
+DEBUG 96 NHibernate.Driver.NHybridDataReader - running NHybridDataReader.Dispose()
+DEBUG 96 NHibernate.AdoNet.AbstractBatcher - Closed IDataReader, open IDataReaders :0
+DEBUG 96 NHibernate.AdoNet.AbstractBatcher - DataReader was closed after 0 ms
+DEBUG 96 NHibernate.AdoNet.AbstractBatcher - Closed IDbCommand, open IDbCommands: 0
+DEBUG 96 NHibernate.AdoNet.ConnectionManager - aggressively releasing database connection
+DEBUG 96 NHibernate.Connection.ConnectionProvider - Closing connection
+DEBUG 96 NHibernate.Loader.Loader - total objects hydrated: 5
+DEBUG 96 NHibernate.Engine.TwoPhaseLoad - resolving associations for [CumbriaMD.Domain.Category#1]
+DEBUG 96 NHibernate.Engine.Loading.LoadContexts - creating collection wrapper:[CumbriaMD.Domain.Category.Products#1]
+DEBUG 96 NHibernate.Engine.Loading.LoadContexts - creating collection wrapper:[CumbriaMD.Domain.Category.Subcategories#1]
+DEBUG 96 NHibernate.Event.Default.DefaultLoadEventListener - loading entity: [CumbriaMD.Domain.Category#1]
+DEBUG 96 NHibernate.Event.Default.DefaultLoadEventListener - entity found in session cache
+DEBUG 96 NHibernate.Engine.TwoPhaseLoad - done materializing entity [CumbriaMD.Domain.Category#1]
+DEBUG 96 NHibernate.Engine.TwoPhaseLoad - resolving associations for [CumbriaMD.Domain.Category#2]
+DEBUG 96 NHibernate.Engine.Loading.LoadContexts - creating collection wrapper:[CumbriaMD.Domain.Category.Products#2]
+DEBUG 96 NHibernate.Engine.Loading.LoadContexts - creating collection wrapper:[CumbriaMD.Domain.Category.Subcategories#2]
+DEBUG 96 NHibernate.Event.Default.DefaultLoadEventListener - loading entity: [CumbriaMD.Domain.Category#1]
+DEBUG 96 NHibernate.Event.Default.DefaultLoadEventListener - entity found in session cache
+DEBUG 96 NHibernate.Engine.TwoPhaseLoad - done materializing entity [CumbriaMD.Domain.Category#2]
+DEBUG 96 NHibernate.Engine.TwoPhaseLoad - resolving associations for [CumbriaMD.Domain.Category#4]
+DEBUG 96 NHibernate.Engine.Loading.LoadContexts - creating collection wrapper:[CumbriaMD.Domain.Category.Products#4]
+DEBUG 96 NHibernate.Engine.Loading.LoadContexts - creating collection wrapper:[CumbriaMD.Domain.Category.Subcategories#4]
+DEBUG 96 NHibernate.Event.Default.DefaultLoadEventListener - loading entity: [CumbriaMD.Domain.Category#1]
+DEBUG 96 NHibernate.Event.Default.DefaultLoadEventListener - entity found in session cache
+DEBUG 96 NHibernate.Engine.TwoPhaseLoad - done materializing entity [CumbriaMD.Domain.Category#4]
+DEBUG 96 NHibernate.Engine.TwoPhaseLoad - resolving associations for [CumbriaMD.Domain.Category#5]
+DEBUG 96 NHibernate.Engine.Loading.LoadContexts - creating collection wrapper:[CumbriaMD.Domain.Category.Products#5]
+DEBUG 96 NHibernate.Engine.Loading.LoadContexts - creating collection wrapper:[CumbriaMD.Domain.Category.Subcategories#5]
+DEBUG 96 NHibernate.Event.Default.DefaultLoadEventListener - loading entity: [CumbriaMD.Domain.Category#4]
+DEBUG 96 NHibernate.Event.Default.DefaultLoadEventListener - entity found in session cache
+DEBUG 96 NHibernate.Engine.TwoPhaseLoad - done materializing entity [CumbriaMD.Domain.Category#5]
+DEBUG 96 NHibernate.Engine.TwoPhaseLoad - resolving associations for [CumbriaMD.Domain.Category#6]
+DEBUG 96 NHibernate.Engine.Loading.LoadContexts - creating collection wrapper:[CumbriaMD.Domain.Category.Products#6]
+DEBUG 96 NHibernate.Engine.Loading.LoadContexts - creating collection wrapper:[CumbriaMD.Domain.Category.Subcategories#6]
+DEBUG 96 NHibernate.Event.Default.DefaultLoadEventListener - loading entity: [CumbriaMD.Domain.Category#4]
+DEBUG 96 NHibernate.Event.Default.DefaultLoadEventListener - entity found in session cache
+DEBUG 96 NHibernate.Engine.TwoPhaseLoad - done materializing entity [CumbriaMD.Domain.Category#6]
+DEBUG 96 NHibernate.Engine.StatefulPersistenceContext - initializing non-lazy collections
+DEBUG 96 NHibernate.AdoNet.ConnectionManager - after autocommit
+DEBUG 96 NHibernate.Impl.SessionImpl - transaction completion
+DEBUG 96 NHibernate.AdoNet.ConnectionManager - aggressively releasing database connection
+DEBUG 96 NHibernate.Loader.Criteria.CriteriaQueryTranslator - put criteria=Parent.Id = 4
+OrderInList asc alias=this0_
+DEBUG 96 NHibernate.Loader.Criteria.CriteriaQueryTranslator - returning alias=this_ for criteria=Parent.Id = 4
+OrderInList asc
+DEBUG 96 NHibernate.Loader.Criteria.CriteriaQueryTranslator - returning alias=this_ for criteria=Parent.Id = 4
+OrderInList asc
+DEBUG 96 NHibernate.SqlCommand.SqlSelectBuilder - The initial capacity was set too low at: 8 for the SelectSqlBuilder that needed a capacity of: 9 for the table [Category] this_
+DEBUG 96 NHibernate.AdoNet.AbstractBatcher - Opened new IDbCommand, open IDbCommands: 1
+DEBUG 96 NHibernate.AdoNet.AbstractBatcher - Building an IDbCommand object for the SqlString: SELECT this_.Id as Id1_0_, this_.Name as Name1_0_, this_.IsActive as IsActive1_0_, this_.OrderInList as OrderInL4_1_0_, this_.ParentCategory as ParentCa5_1_0_ FROM [Category] this_ WHERE this_.ParentCategory = ? ORDER BY this_.OrderInList asc
+DEBUG 96 NHibernate.Type.Int32Type - binding '4' to parameter: 0
+INFO 96 NHibernate.Loader.Loader - SELECT this_.Id as Id1_0_, this_.Name as Name1_0_, this_.IsActive as IsActive1_0_, this_.OrderInList as OrderInL4_1_0_, this_.ParentCategory as ParentCa5_1_0_ FROM [Category] this_ WHERE this_.ParentCategory = @p0 ORDER BY this_.OrderInList asc
+DEBUG 96 NHibernate.SQL - SELECT this_.Id as Id1_0_, this_.Name as Name1_0_, this_.IsActive as IsActive1_0_, this_.OrderInList as OrderInL4_1_0_, this_.ParentCategory as ParentCa5_1_0_ FROM [Category] this_ WHERE this_.ParentCategory = @p0 ORDER BY this_.OrderInList asc;@p0 = 4 [Type: Int32 (0)]
+DEBUG 96 NHibernate.Connection.DriverConnectionProvider - Obtaining IDbConnection from Driver
+DEBUG 96 NHibernate.AdoNet.AbstractBatcher - ExecuteReader took 1 ms
+DEBUG 96 NHibernate.AdoNet.AbstractBatcher - Opened IDataReader, open IDataReaders: 1
+DEBUG 96 NHibernate.Loader.Loader - processing result set
+DEBUG 96 NHibernate.Loader.Loader - result set row: 0
+DEBUG 96 NHibernate.Type.Int32Type - returning '6' as column: Id1_0_
+DEBUG 96 NHibernate.Loader.Loader - result row: EntityKey[CumbriaMD.Domain.Category#6]
+DEBUG 96 NHibernate.Loader.Loader - result set row: 1
+DEBUG 96 NHibernate.Type.Int32Type - returning '5' as column: Id1_0_
+DEBUG 96 NHibernate.Loader.Loader - result row: EntityKey[CumbriaMD.Domain.Category#5]
+DEBUG 96 NHibernate.Loader.Loader - done processing result set (2 rows)
+DEBUG 96 NHibernate.Driver.NHybridDataReader - running NHybridDataReader.Dispose()
+DEBUG 96 NHibernate.AdoNet.AbstractBatcher - Closed IDataReader, open IDataReaders :0
+DEBUG 96 NHibernate.AdoNet.AbstractBatcher - DataReader was closed after 1 ms
+DEBUG 96 NHibernate.AdoNet.AbstractBatcher - Closed IDbCommand, open IDbCommands: 0
+DEBUG 96 NHibernate.AdoNet.ConnectionManager - aggressively releasing database connection
+DEBUG 96 NHibernate.Connection.ConnectionProvider - Closing connection
+DEBUG 96 NHibernate.Loader.Loader - total objects hydrated: 0
+DEBUG 96 NHibernate.Engine.StatefulPersistenceContext - initializing non-lazy collections
+DEBUG 96 NHibernate.AdoNet.ConnectionManager - after autocommit
+DEBUG 96 NHibernate.Impl.SessionImpl - transaction completion
+DEBUG 96 NHibernate.AdoNet.ConnectionManager - aggressively releasing database connection
+DEBUG 96 NHibernate.Impl.SessionImpl - [session-id=f6036f26-641c-45cd-b439-5568e0d1d215] running ISession.Dispose()
+DEBUG 96 NHibernate.Impl.SessionImpl - [session-id=f6036f26-641c-45cd-b439-5568e0d1d215] executing real Dispose(True)
+DEBUG 96 NHibernate.Impl.SessionImpl - closing session
+DEBUG 96 NHibernate.AdoNet.AbstractBatcher - running BatcherImpl.Dispose(true)
+DEBUG 79 NHibernate.Impl.SessionImpl - [session-id=e16a846e-cddc-440f-a3f8-10420761c545] opened session at timestamp: 634803946352, for session factory: [/fe5e2ffa2d2c400890d52ef777f6d98e]
+DEBUG 79 NHibernate.Loader.Criteria.CriteriaQueryTranslator - put criteria= alias=this0_
+DEBUG 79 NHibernate.AdoNet.AbstractBatcher - Opened new IDbCommand, open IDbCommands: 1
+DEBUG 79 NHibernate.AdoNet.AbstractBatcher - Building an IDbCommand object for the SqlString: SELECT this_.Id as Id1_0_, this_.Name as Name1_0_, this_.IsActive as IsActive1_0_, this_.OrderInList as OrderInL4_1_0_, this_.ParentCategory as ParentCa5_1_0_ FROM [Category] this_
+INFO 79 NHibernate.Loader.Loader - SELECT this_.Id as Id1_0_, this_.Name as Name1_0_, this_.IsActive as IsActive1_0_, this_.OrderInList as OrderInL4_1_0_, this_.ParentCategory as ParentCa5_1_0_ FROM [Category] this_
+DEBUG 79 NHibernate.SQL - SELECT this_.Id as Id1_0_, this_.Name as Name1_0_, this_.IsActive as IsActive1_0_, this_.OrderInList as OrderInL4_1_0_, this_.ParentCategory as ParentCa5_1_0_ FROM [Category] this_
+DEBUG 79 NHibernate.Connection.DriverConnectionProvider - Obtaining IDbConnection from Driver
+DEBUG 79 NHibernate.AdoNet.AbstractBatcher - ExecuteReader took 0 ms
+DEBUG 79 NHibernate.AdoNet.AbstractBatcher - Opened IDataReader, open IDataReaders: 1
+DEBUG 79 NHibernate.Loader.Loader - processing result set
+DEBUG 79 NHibernate.Loader.Loader - result set row: 0
+DEBUG 79 NHibernate.Type.Int32Type - returning '1' as column: Id1_0_
+DEBUG 79 NHibernate.Loader.Loader - result row: EntityKey[CumbriaMD.Domain.Category#1]
+DEBUG 79 NHibernate.Loader.Loader - Initializing object from DataReader: [CumbriaMD.Domain.Category#1]
+DEBUG 79 NHibernate.Persister.Entity.AbstractEntityPersister - Hydrating entity: [CumbriaMD.Domain.Category#1]
+DEBUG 79 NHibernate.Type.StringType - returning 'TOP LEVEL CATEGORY' as column: Name1_0_
+DEBUG 79 NHibernate.Type.BooleanType - returning 'True' as column: IsActive1_0_
+DEBUG 79 NHibernate.Type.Int32Type - returning '1' as column: OrderInL4_1_0_
+DEBUG 79 NHibernate.Type.Int32Type - returning '1' as column: ParentCa5_1_0_
+DEBUG 79 NHibernate.Loader.Loader - result set row: 1
+DEBUG 79 NHibernate.Type.Int32Type - returning '2' as column: Id1_0_
+DEBUG 79 NHibernate.Loader.Loader - result row: EntityKey[CumbriaMD.Domain.Category#2]
+DEBUG 79 NHibernate.Loader.Loader - Initializing object from DataReader: [CumbriaMD.Domain.Category#2]
+DEBUG 79 NHibernate.Persister.Entity.AbstractEntityPersister - Hydrating entity: [CumbriaMD.Domain.Category#2]
+DEBUG 79 NHibernate.Type.StringType - returning 'Metal Detectors' as column: Name1_0_
+DEBUG 79 NHibernate.Type.BooleanType - returning 'True' as column: IsActive1_0_
+DEBUG 79 NHibernate.Type.Int32Type - returning '2' as column: OrderInL4_1_0_
+DEBUG 79 NHibernate.Type.Int32Type - returning '1' as column: ParentCa5_1_0_
+DEBUG 79 NHibernate.Loader.Loader - result set row: 2
+DEBUG 79 NHibernate.Type.Int32Type - returning '4' as column: Id1_0_
+DEBUG 79 NHibernate.Loader.Loader - result row: EntityKey[CumbriaMD.Domain.Category#4]
+DEBUG 79 NHibernate.Loader.Loader - Initializing object from DataReader: [CumbriaMD.Domain.Category#4]
+DEBUG 79 NHibernate.Persister.Entity.AbstractEntityPersister - Hydrating entity: [CumbriaMD.Domain.Category#4]
+DEBUG 79 NHibernate.Type.StringType - returning 'Books' as column: Name1_0_
+DEBUG 79 NHibernate.Type.BooleanType - returning 'True' as column: IsActive1_0_
+DEBUG 79 NHibernate.Type.Int32Type - returning '3' as column: OrderInL4_1_0_
+DEBUG 79 NHibernate.Type.Int32Type - returning '1' as column: ParentCa5_1_0_
+DEBUG 79 NHibernate.Loader.Loader - result set row: 3
+DEBUG 79 NHibernate.Type.Int32Type - returning '5' as column: Id1_0_
+DEBUG 79 NHibernate.Loader.Loader - result row: EntityKey[CumbriaMD.Domain.Category#5]
+DEBUG 79 NHibernate.Loader.Loader - Initializing object from DataReader: [CumbriaMD.Domain.Category#5]
+DEBUG 79 NHibernate.Persister.Entity.AbstractEntityPersister - Hydrating entity: [CumbriaMD.Domain.Category#5]
+DEBUG 79 NHibernate.Type.StringType - returning 'Maps' as column: Name1_0_
+DEBUG 79 NHibernate.Type.BooleanType - returning 'True' as column: IsActive1_0_
+DEBUG 79 NHibernate.Type.Int32Type - returning '2' as column: OrderInL4_1_0_
+DEBUG 79 NHibernate.Type.Int32Type - returning '4' as column: ParentCa5_1_0_
+DEBUG 79 NHibernate.Loader.Loader - result set row: 4
+DEBUG 79 NHibernate.Type.Int32Type - returning '6' as column: Id1_0_
+DEBUG 79 NHibernate.Loader.Loader - result row: EntityKey[CumbriaMD.Domain.Category#6]
+DEBUG 79 NHibernate.Loader.Loader - Initializing object from DataReader: [CumbriaMD.Domain.Category#6]
+DEBUG 79 NHibernate.Persister.Entity.AbstractEntityPersister - Hydrating entity: [CumbriaMD.Domain.Category#6]
+DEBUG 79 NHibernate.Type.StringType - returning 'Magazines' as column: Name1_0_
+DEBUG 79 NHibernate.Type.BooleanType - returning 'True' as column: IsActive1_0_
+DEBUG 79 NHibernate.Type.Int32Type - returning '1' as column: OrderInL4_1_0_
+DEBUG 79 NHibernate.Type.Int32Type - returning '4' as column: ParentCa5_1_0_
+DEBUG 79 NHibernate.Loader.Loader - done processing result set (5 rows)
+DEBUG 79 NHibernate.Driver.NHybridDataReader - running NHybridDataReader.Dispose()
+DEBUG 79 NHibernate.AdoNet.AbstractBatcher - Closed IDataReader, open IDataReaders :0
+DEBUG 79 NHibernate.AdoNet.AbstractBatcher - DataReader was closed after 0 ms
+DEBUG 79 NHibernate.AdoNet.AbstractBatcher - Closed IDbCommand, open IDbCommands: 0
+DEBUG 79 NHibernate.AdoNet.ConnectionManager - aggressively releasing database connection
+DEBUG 79 NHibernate.Connection.ConnectionProvider - Closing connection
+DEBUG 79 NHibernate.Loader.Loader - total objects hydrated: 5
+DEBUG 79 NHibernate.Engine.TwoPhaseLoad - resolving associations for [CumbriaMD.Domain.Category#1]
+DEBUG 79 NHibernate.Engine.Loading.LoadContexts - creating collection wrapper:[CumbriaMD.Domain.Category.Products#1]
+DEBUG 79 NHibernate.Engine.Loading.LoadContexts - creating collection wrapper:[CumbriaMD.Domain.Category.Subcategories#1]
+DEBUG 79 NHibernate.Event.Default.DefaultLoadEventListener - loading entity: [CumbriaMD.Domain.Category#1]
+DEBUG 79 NHibernate.Event.Default.DefaultLoadEventListener - entity found in session cache
+DEBUG 79 NHibernate.Engine.TwoPhaseLoad - done materializing entity [CumbriaMD.Domain.Category#1]
+DEBUG 79 NHibernate.Engine.TwoPhaseLoad - resolving associations for [CumbriaMD.Domain.Category#2]
+DEBUG 79 NHibernate.Engine.Loading.LoadContexts - creating collection wrapper:[CumbriaMD.Domain.Category.Products#2]
+DEBUG 79 NHibernate.Engine.Loading.LoadContexts - creating collection wrapper:[CumbriaMD.Domain.Category.Subcategories#2]
+DEBUG 79 NHibernate.Event.Default.DefaultLoadEventListener - loading entity: [CumbriaMD.Domain.Category#1]
+DEBUG 79 NHibernate.Event.Default.DefaultLoadEventListener - entity found in session cache
+DEBUG 79 NHibernate.Engine.TwoPhaseLoad - done materializing entity [CumbriaMD.Domain.Category#2]
+DEBUG 79 NHibernate.Engine.TwoPhaseLoad - resolving associations for [CumbriaMD.Domain.Category#4]
+DEBUG 79 NHibernate.Engine.Loading.LoadContexts - creating collection wrapper:[CumbriaMD.Domain.Category.Products#4]
+DEBUG 79 NHibernate.Engine.Loading.LoadContexts - creating collection wrapper:[CumbriaMD.Domain.Category.Subcategories#4]
+DEBUG 79 NHibernate.Event.Default.DefaultLoadEventListener - loading entity: [CumbriaMD.Domain.Category#1]
+DEBUG 79 NHibernate.Event.Default.DefaultLoadEventListener - entity found in session cache
+DEBUG 79 NHibernate.Engine.TwoPhaseLoad - done materializing entity [CumbriaMD.Domain.Category#4]
+DEBUG 79 NHibernate.Engine.TwoPhaseLoad - resolving associations for [CumbriaMD.Domain.Category#5]
+DEBUG 79 NHibernate.Engine.Loading.LoadContexts - creating collection wrapper:[CumbriaMD.Domain.Category.Products#5]
+DEBUG 79 NHibernate.Engine.Loading.LoadContexts - creating collection wrapper:[CumbriaMD.Domain.Category.Subcategories#5]
+DEBUG 79 NHibernate.Event.Default.DefaultLoadEventListener - loading entity: [CumbriaMD.Domain.Category#4]
+DEBUG 79 NHibernate.Event.Default.DefaultLoadEventListener - entity found in session cache
+DEBUG 79 NHibernate.Engine.TwoPhaseLoad - done materializing entity [CumbriaMD.Domain.Category#5]
+DEBUG 79 NHibernate.Engine.TwoPhaseLoad - resolving associations for [CumbriaMD.Domain.Category#6]
+DEBUG 79 NHibernate.Engine.Loading.LoadContexts - creating collection wrapper:[CumbriaMD.Domain.Category.Products#6]
+DEBUG 79 NHibernate.Engine.Loading.LoadContexts - creating collection wrapper:[CumbriaMD.Domain.Category.Subcategories#6]
+DEBUG 79 NHibernate.Event.Default.DefaultLoadEventListener - loading entity: [CumbriaMD.Domain.Category#4]
+DEBUG 79 NHibernate.Event.Default.DefaultLoadEventListener - entity found in session cache
+DEBUG 79 NHibernate.Engine.TwoPhaseLoad - done materializing entity [CumbriaMD.Domain.Category#6]
+DEBUG 79 NHibernate.Engine.StatefulPersistenceContext - initializing non-lazy collections
+DEBUG 79 NHibernate.AdoNet.ConnectionManager - after autocommit
+DEBUG 79 NHibernate.Impl.SessionImpl - transaction completion
+DEBUG 79 NHibernate.AdoNet.ConnectionManager - aggressively releasing database connection
+DEBUG 79 NHibernate.Loader.Criteria.CriteriaQueryTranslator - put criteria=Parent.Id = 1
+OrderInList asc alias=this0_
+DEBUG 79 NHibernate.Loader.Criteria.CriteriaQueryTranslator - returning alias=this_ for criteria=Parent.Id = 1
+OrderInList asc
+DEBUG 79 NHibernate.Loader.Criteria.CriteriaQueryTranslator - returning alias=this_ for criteria=Parent.Id = 1
+OrderInList asc
+DEBUG 79 NHibernate.SqlCommand.SqlSelectBuilder - The initial capacity was set too low at: 8 for the SelectSqlBuilder that needed a capacity of: 9 for the table [Category] this_
+DEBUG 79 NHibernate.AdoNet.AbstractBatcher - Opened new IDbCommand, open IDbCommands: 1
+DEBUG 79 NHibernate.AdoNet.AbstractBatcher - Building an IDbCommand object for the SqlString: SELECT this_.Id as Id1_0_, this_.Name as Name1_0_, this_.IsActive as IsActive1_0_, this_.OrderInList as OrderInL4_1_0_, this_.ParentCategory as ParentCa5_1_0_ FROM [Category] this_ WHERE this_.ParentCategory = ? ORDER BY this_.OrderInList asc
+DEBUG 79 NHibernate.Type.Int32Type - binding '1' to parameter: 0
+INFO 79 NHibernate.Loader.Loader - SELECT this_.Id as Id1_0_, this_.Name as Name1_0_, this_.IsActive as IsActive1_0_, this_.OrderInList as OrderInL4_1_0_, this_.ParentCategory as ParentCa5_1_0_ FROM [Category] this_ WHERE this_.ParentCategory = @p0 ORDER BY this_.OrderInList asc
+DEBUG 79 NHibernate.SQL - SELECT this_.Id as Id1_0_, this_.Name as Name1_0_, this_.IsActive as IsActive1_0_, this_.OrderInList as OrderInL4_1_0_, this_.ParentCategory as ParentCa5_1_0_ FROM [Category] this_ WHERE this_.ParentCategory = @p0 ORDER BY this_.OrderInList asc;@p0 = 1 [Type: Int32 (0)]
+DEBUG 79 NHibernate.Connection.DriverConnectionProvider - Obtaining IDbConnection from Driver
+DEBUG 79 NHibernate.AdoNet.AbstractBatcher - ExecuteReader took 0 ms
+DEBUG 79 NHibernate.AdoNet.AbstractBatcher - Opened IDataReader, open IDataReaders: 1
+DEBUG 79 NHibernate.Loader.Loader - processing result set
+DEBUG 79 NHibernate.Loader.Loader - result set row: 0
+DEBUG 79 NHibernate.Type.Int32Type - returning '1' as column: Id1_0_
+DEBUG 79 NHibernate.Loader.Loader - result row: EntityKey[CumbriaMD.Domain.Category#1]
+DEBUG 79 NHibernate.Loader.Loader - result set row: 1
+DEBUG 79 NHibernate.Type.Int32Type - returning '2' as column: Id1_0_
+DEBUG 79 NHibernate.Loader.Loader - result row: EntityKey[CumbriaMD.Domain.Category#2]
+DEBUG 79 NHibernate.Loader.Loader - result set row: 2
+DEBUG 79 NHibernate.Type.Int32Type - returning '4' as column: Id1_0_
+DEBUG 79 NHibernate.Loader.Loader - result row: EntityKey[CumbriaMD.Domain.Category#4]
+DEBUG 79 NHibernate.Loader.Loader - done processing result set (3 rows)
+DEBUG 79 NHibernate.Driver.NHybridDataReader - running NHybridDataReader.Dispose()
+DEBUG 79 NHibernate.AdoNet.AbstractBatcher - Closed IDataReader, open IDataReaders :0
+DEBUG 79 NHibernate.AdoNet.AbstractBatcher - DataReader was closed after 0 ms
+DEBUG 79 NHibernate.AdoNet.AbstractBatcher - Closed IDbCommand, open IDbCommands: 0
+DEBUG 79 NHibernate.AdoNet.ConnectionManager - aggressively releasing database connection
+DEBUG 79 NHibernate.Connection.ConnectionProvider - Closing connection
+DEBUG 79 NHibernate.Loader.Loader - total objects hydrated: 0
+DEBUG 79 NHibernate.Engine.StatefulPersistenceContext - initializing non-lazy collections
+DEBUG 79 NHibernate.AdoNet.ConnectionManager - after autocommit
+DEBUG 79 NHibernate.Impl.SessionImpl - transaction completion
+DEBUG 79 NHibernate.AdoNet.ConnectionManager - aggressively releasing database connection
+DEBUG 79 NHibernate.Impl.SessionImpl - [session-id=e16a846e-cddc-440f-a3f8-10420761c545] running ISession.Dispose()
+DEBUG 79 NHibernate.Impl.SessionImpl - [session-id=e16a846e-cddc-440f-a3f8-10420761c545] executing real Dispose(True)
+DEBUG 79 NHibernate.Impl.SessionImpl - closing session
+DEBUG 79 NHibernate.AdoNet.AbstractBatcher - running BatcherImpl.Dispose(true)
+DEBUG 97 NHibernate.Impl.SessionImpl - [session-id=1b0e0793-f7ee-4576-892e-2938ce91df9f] opened session at timestamp: 634803946664, for session factory: [/fe5e2ffa2d2c400890d52ef777f6d98e]
+DEBUG 97 NHibernate.Loader.Criteria.CriteriaQueryTranslator - put criteria= alias=this0_
+DEBUG 97 NHibernate.AdoNet.AbstractBatcher - Opened new IDbCommand, open IDbCommands: 1
+DEBUG 97 NHibernate.AdoNet.AbstractBatcher - Building an IDbCommand object for the SqlString: SELECT this_.Id as Id1_0_, this_.Name as Name1_0_, this_.IsActive as IsActive1_0_, this_.OrderInList as OrderInL4_1_0_, this_.ParentCategory as ParentCa5_1_0_ FROM [Category] this_
+INFO 97 NHibernate.Loader.Loader - SELECT this_.Id as Id1_0_, this_.Name as Name1_0_, this_.IsActive as IsActive1_0_, this_.OrderInList as OrderInL4_1_0_, this_.ParentCategory as ParentCa5_1_0_ FROM [Category] this_
+DEBUG 97 NHibernate.SQL - SELECT this_.Id as Id1_0_, this_.Name as Name1_0_, this_.IsActive as IsActive1_0_, this_.OrderInList as OrderInL4_1_0_, this_.ParentCategory as ParentCa5_1_0_ FROM [Category] this_
+DEBUG 97 NHibernate.Connection.DriverConnectionProvider - Obtaining IDbConnection from Driver
+DEBUG 97 NHibernate.AdoNet.AbstractBatcher - ExecuteReader took 0 ms
+DEBUG 97 NHibernate.AdoNet.AbstractBatcher - Opened IDataReader, open IDataReaders: 1
+DEBUG 97 NHibernate.Loader.Loader - processing result set
+DEBUG 97 NHibernate.Loader.Loader - result set row: 0
+DEBUG 97 NHibernate.Type.Int32Type - returning '1' as column: Id1_0_
+DEBUG 97 NHibernate.Loader.Loader - result row: EntityKey[CumbriaMD.Domain.Category#1]
+DEBUG 97 NHibernate.Loader.Loader - Initializing object from DataReader: [CumbriaMD.Domain.Category#1]
+DEBUG 97 NHibernate.Persister.Entity.AbstractEntityPersister - Hydrating entity: [CumbriaMD.Domain.Category#1]
+DEBUG 97 NHibernate.Type.StringType - returning 'TOP LEVEL CATEGORY' as column: Name1_0_
+DEBUG 97 NHibernate.Type.BooleanType - returning 'True' as column: IsActive1_0_
+DEBUG 97 NHibernate.Type.Int32Type - returning '1' as column: OrderInL4_1_0_
+DEBUG 97 NHibernate.Type.Int32Type - returning '1' as column: ParentCa5_1_0_
+DEBUG 97 NHibernate.Loader.Loader - result set row: 1
+DEBUG 97 NHibernate.Type.Int32Type - returning '2' as column: Id1_0_
+DEBUG 97 NHibernate.Loader.Loader - result row: EntityKey[CumbriaMD.Domain.Category#2]
+DEBUG 97 NHibernate.Loader.Loader - Initializing object from DataReader: [CumbriaMD.Domain.Category#2]
+DEBUG 97 NHibernate.Persister.Entity.AbstractEntityPersister - Hydrating entity: [CumbriaMD.Domain.Category#2]
+DEBUG 97 NHibernate.Type.StringType - returning 'Metal Detectors' as column: Name1_0_
+DEBUG 97 NHibernate.Type.BooleanType - returning 'True' as column: IsActive1_0_
+DEBUG 97 NHibernate.Type.Int32Type - returning '2' as column: OrderInL4_1_0_
+DEBUG 97 NHibernate.Type.Int32Type - returning '1' as column: ParentCa5_1_0_
+DEBUG 97 NHibernate.Loader.Loader - result set row: 2
+DEBUG 97 NHibernate.Type.Int32Type - returning '4' as column: Id1_0_
+DEBUG 97 NHibernate.Loader.Loader - result row: EntityKey[CumbriaMD.Domain.Category#4]
+DEBUG 97 NHibernate.Loader.Loader - Initializing object from DataReader: [CumbriaMD.Domain.Category#4]
+DEBUG 97 NHibernate.Persister.Entity.AbstractEntityPersister - Hydrating entity: [CumbriaMD.Domain.Category#4]
+DEBUG 97 NHibernate.Type.StringType - returning 'Books' as column: Name1_0_
+DEBUG 97 NHibernate.Type.BooleanType - returning 'True' as column: IsActive1_0_
+DEBUG 97 NHibernate.Type.Int32Type - returning '3' as column: OrderInL4_1_0_
+DEBUG 97 NHibernate.Type.Int32Type - returning '1' as column: ParentCa5_1_0_
+DEBUG 97 NHibernate.Loader.Loader - result set row: 3
+DEBUG 97 NHibernate.Type.Int32Type - returning '5' as column: Id1_0_
+DEBUG 97 NHibernate.Loader.Loader - result row: EntityKey[CumbriaMD.Domain.Category#5]
+DEBUG 97 NHibernate.Loader.Loader - Initializing object from DataReader: [CumbriaMD.Domain.Category#5]
+DEBUG 97 NHibernate.Persister.Entity.AbstractEntityPersister - Hydrating entity: [CumbriaMD.Domain.Category#5]
+DEBUG 97 NHibernate.Type.StringType - returning 'Maps' as column: Name1_0_
+DEBUG 97 NHibernate.Type.BooleanType - returning 'True' as column: IsActive1_0_
+DEBUG 97 NHibernate.Type.Int32Type - returning '2' as column: OrderInL4_1_0_
+DEBUG 97 NHibernate.Type.Int32Type - returning '4' as column: ParentCa5_1_0_
+DEBUG 97 NHibernate.Loader.Loader - result set row: 4
+DEBUG 97 NHibernate.Type.Int32Type - returning '6' as column: Id1_0_
+DEBUG 97 NHibernate.Loader.Loader - result row: EntityKey[CumbriaMD.Domain.Category#6]
+DEBUG 97 NHibernate.Loader.Loader - Initializing object from DataReader: [CumbriaMD.Domain.Category#6]
+DEBUG 97 NHibernate.Persister.Entity.AbstractEntityPersister - Hydrating entity: [CumbriaMD.Domain.Category#6]
+DEBUG 97 NHibernate.Type.StringType - returning 'Magazines' as column: Name1_0_
+DEBUG 97 NHibernate.Type.BooleanType - returning 'True' as column: IsActive1_0_
+DEBUG 97 NHibernate.Type.Int32Type - returning '1' as column: OrderInL4_1_0_
+DEBUG 97 NHibernate.Type.Int32Type - returning '4' as column: ParentCa5_1_0_
+DEBUG 97 NHibernate.Loader.Loader - done processing result set (5 rows)
+DEBUG 97 NHibernate.Driver.NHybridDataReader - running NHybridDataReader.Dispose()
+DEBUG 97 NHibernate.AdoNet.AbstractBatcher - Closed IDataReader, open IDataReaders :0
+DEBUG 97 NHibernate.AdoNet.AbstractBatcher - DataReader was closed after 1 ms
+DEBUG 97 NHibernate.AdoNet.AbstractBatcher - Closed IDbCommand, open IDbCommands: 0
+DEBUG 97 NHibernate.AdoNet.ConnectionManager - aggressively releasing database connection
+DEBUG 97 NHibernate.Connection.ConnectionProvider - Closing connection
+DEBUG 97 NHibernate.Loader.Loader - total objects hydrated: 5
+DEBUG 97 NHibernate.Engine.TwoPhaseLoad - resolving associations for [CumbriaMD.Domain.Category#1]
+DEBUG 97 NHibernate.Engine.Loading.LoadContexts - creating collection wrapper:[CumbriaMD.Domain.Category.Products#1]
+DEBUG 97 NHibernate.Engine.Loading.LoadContexts - creating collection wrapper:[CumbriaMD.Domain.Category.Subcategories#1]
+DEBUG 97 NHibernate.Event.Default.DefaultLoadEventListener - loading entity: [CumbriaMD.Domain.Category#1]
+DEBUG 97 NHibernate.Event.Default.DefaultLoadEventListener - entity found in session cache
+DEBUG 97 NHibernate.Engine.TwoPhaseLoad - done materializing entity [CumbriaMD.Domain.Category#1]
+DEBUG 97 NHibernate.Engine.TwoPhaseLoad - resolving associations for [CumbriaMD.Domain.Category#2]
+DEBUG 97 NHibernate.Engine.Loading.LoadContexts - creating collection wrapper:[CumbriaMD.Domain.Category.Products#2]
+DEBUG 97 NHibernate.Engine.Loading.LoadContexts - creating collection wrapper:[CumbriaMD.Domain.Category.Subcategories#2]
+DEBUG 97 NHibernate.Event.Default.DefaultLoadEventListener - loading entity: [CumbriaMD.Domain.Category#1]
+DEBUG 97 NHibernate.Event.Default.DefaultLoadEventListener - entity found in session cache
+DEBUG 97 NHibernate.Engine.TwoPhaseLoad - done materializing entity [CumbriaMD.Domain.Category#2]
+DEBUG 97 NHibernate.Engine.TwoPhaseLoad - resolving associations for [CumbriaMD.Domain.Category#4]
+DEBUG 97 NHibernate.Engine.Loading.LoadContexts - creating collection wrapper:[CumbriaMD.Domain.Category.Products#4]
+DEBUG 97 NHibernate.Engine.Loading.LoadContexts - creating collection wrapper:[CumbriaMD.Domain.Category.Subcategories#4]
+DEBUG 97 NHibernate.Event.Default.DefaultLoadEventListener - loading entity: [CumbriaMD.Domain.Category#1]
+DEBUG 97 NHibernate.Event.Default.DefaultLoadEventListener - entity found in session cache
+DEBUG 97 NHibernate.Engine.TwoPhaseLoad - done materializing entity [CumbriaMD.Domain.Category#4]
+DEBUG 97 NHibernate.Engine.TwoPhaseLoad - resolving associations for [CumbriaMD.Domain.Category#5]
+DEBUG 97 NHibernate.Engine.Loading.LoadContexts - creating collection wrapper:[CumbriaMD.Domain.Category.Products#5]
+DEBUG 97 NHibernate.Engine.Loading.LoadContexts - creating collection wrapper:[CumbriaMD.Domain.Category.Subcategories#5]
+DEBUG 97 NHibernate.Event.Default.DefaultLoadEventListener - loading entity: [CumbriaMD.Domain.Category#4]
+DEBUG 97 NHibernate.Event.Default.DefaultLoadEventListener - entity found in session cache
+DEBUG 97 NHibernate.Engine.TwoPhaseLoad - done materializing entity [CumbriaMD.Domain.Category#5]
+DEBUG 97 NHibernate.Engine.TwoPhaseLoad - resolving associations for [CumbriaMD.Domain.Category#6]
+DEBUG 97 NHibernate.Engine.Loading.LoadContexts - creating collection wrapper:[CumbriaMD.Domain.Category.Products#6]
+DEBUG 97 NHibernate.Engine.Loading.LoadContexts - creating collection wrapper:[CumbriaMD.Domain.Category.Subcategories#6]
+DEBUG 97 NHibernate.Event.Default.DefaultLoadEventListener - loading entity: [CumbriaMD.Domain.Category#4]
+DEBUG 97 NHibernate.Event.Default.DefaultLoadEventListener - entity found in session cache
+DEBUG 97 NHibernate.Engine.TwoPhaseLoad - done materializing entity [CumbriaMD.Domain.Category#6]
+DEBUG 97 NHibernate.Engine.StatefulPersistenceContext - initializing non-lazy collections
+DEBUG 97 NHibernate.AdoNet.ConnectionManager - after autocommit
+DEBUG 97 NHibernate.Impl.SessionImpl - transaction completion
+DEBUG 97 NHibernate.AdoNet.ConnectionManager - aggressively releasing database connection
+DEBUG 97 NHibernate.Loader.Criteria.CriteriaQueryTranslator - put criteria= alias=this0_
+DEBUG 97 NHibernate.AdoNet.AbstractBatcher - Opened new IDbCommand, open IDbCommands: 1
+DEBUG 97 NHibernate.AdoNet.AbstractBatcher - Building an IDbCommand object for the SqlString: SELECT this_.Id as Id1_0_, this_.Name as Name1_0_, this_.IsActive as IsActive1_0_, this_.OrderInList as OrderInL4_1_0_, this_.ParentCategory as ParentCa5_1_0_ FROM [Category] this_
+INFO 97 NHibernate.Loader.Loader - SELECT this_.Id as Id1_0_, this_.Name as Name1_0_, this_.IsActive as IsActive1_0_, this_.OrderInList as OrderInL4_1_0_, this_.ParentCategory as ParentCa5_1_0_ FROM [Category] this_
+DEBUG 97 NHibernate.SQL - SELECT this_.Id as Id1_0_, this_.Name as Name1_0_, this_.IsActive as IsActive1_0_, this_.OrderInList as OrderInL4_1_0_, this_.ParentCategory as ParentCa5_1_0_ FROM [Category] this_
+DEBUG 97 NHibernate.Connection.DriverConnectionProvider - Obtaining IDbConnection from Driver
+DEBUG 97 NHibernate.AdoNet.AbstractBatcher - ExecuteReader took 0 ms
+DEBUG 97 NHibernate.AdoNet.AbstractBatcher - Opened IDataReader, open IDataReaders: 1
+DEBUG 97 NHibernate.Loader.Loader - processing result set
+DEBUG 97 NHibernate.Loader.Loader - result set row: 0
+DEBUG 97 NHibernate.Type.Int32Type - returning '1' as column: Id1_0_
+DEBUG 97 NHibernate.Loader.Loader - result row: EntityKey[CumbriaMD.Domain.Category#1]
+DEBUG 97 NHibernate.Loader.Loader - result set row: 1
+DEBUG 97 NHibernate.Type.Int32Type - returning '2' as column: Id1_0_
+DEBUG 97 NHibernate.Loader.Loader - result row: EntityKey[CumbriaMD.Domain.Category#2]
+DEBUG 97 NHibernate.Loader.Loader - result set row: 2
+DEBUG 97 NHibernate.Type.Int32Type - returning '4' as column: Id1_0_
+DEBUG 97 NHibernate.Loader.Loader - result row: EntityKey[CumbriaMD.Domain.Category#4]
+DEBUG 97 NHibernate.Loader.Loader - result set row: 3
+DEBUG 97 NHibernate.Type.Int32Type - returning '5' as column: Id1_0_
+DEBUG 97 NHibernate.Loader.Loader - result row: EntityKey[CumbriaMD.Domain.Category#5]
+DEBUG 97 NHibernate.Loader.Loader - result set row: 4
+DEBUG 97 NHibernate.Type.Int32Type - returning '6' as column: Id1_0_
+DEBUG 97 NHibernate.Loader.Loader - result row: EntityKey[CumbriaMD.Domain.Category#6]
+DEBUG 97 NHibernate.Loader.Loader - done processing result set (5 rows)
+DEBUG 97 NHibernate.Driver.NHybridDataReader - running NHybridDataReader.Dispose()
+DEBUG 97 NHibernate.AdoNet.AbstractBatcher - Closed IDataReader, open IDataReaders :0
+DEBUG 97 NHibernate.AdoNet.AbstractBatcher - DataReader was closed after 0 ms
+DEBUG 97 NHibernate.AdoNet.AbstractBatcher - Closed IDbCommand, open IDbCommands: 0
+DEBUG 97 NHibernate.AdoNet.ConnectionManager - aggressively releasing database connection
+DEBUG 97 NHibernate.Connection.ConnectionProvider - Closing connection
+DEBUG 97 NHibernate.Loader.Loader - total objects hydrated: 0
+DEBUG 97 NHibernate.Engine.StatefulPersistenceContext - initializing non-lazy collections
+DEBUG 97 NHibernate.AdoNet.ConnectionManager - after autocommit
+DEBUG 97 NHibernate.Impl.SessionImpl - transaction completion
+DEBUG 97 NHibernate.AdoNet.ConnectionManager - aggressively releasing database connection
+DEBUG 97 NHibernate.Impl.SessionImpl - [session-id=1b0e0793-f7ee-4576-892e-2938ce91df9f] running ISession.Dispose()
+DEBUG 97 NHibernate.Impl.SessionImpl - [session-id=1b0e0793-f7ee-4576-892e-2938ce91df9f] executing real Dispose(True)
+DEBUG 97 NHibernate.Impl.SessionImpl - closing session
+DEBUG 97 NHibernate.AdoNet.AbstractBatcher - running BatcherImpl.Dispose(true)
+DEBUG 93 NHibernate.Impl.SessionImpl - [session-id=b4b1dcb3-98e5-4d97-8e12-adfa088efd02] opened session at timestamp: 634803946689, for session factory: [/fe5e2ffa2d2c400890d52ef777f6d98e]
+DEBUG 93 NHibernate.Loader.Criteria.CriteriaQueryTranslator - put criteria= alias=this0_
+DEBUG 93 NHibernate.AdoNet.AbstractBatcher - Opened new IDbCommand, open IDbCommands: 1
+DEBUG 93 NHibernate.AdoNet.AbstractBatcher - Building an IDbCommand object for the SqlString: SELECT this_.Id as Id1_0_, this_.Name as Name1_0_, this_.IsActive as IsActive1_0_, this_.OrderInList as OrderInL4_1_0_, this_.ParentCategory as ParentCa5_1_0_ FROM [Category] this_
+INFO 93 NHibernate.Loader.Loader - SELECT this_.Id as Id1_0_, this_.Name as Name1_0_, this_.IsActive as IsActive1_0_, this_.OrderInList as OrderInL4_1_0_, this_.ParentCategory as ParentCa5_1_0_ FROM [Category] this_
+DEBUG 93 NHibernate.SQL - SELECT this_.Id as Id1_0_, this_.Name as Name1_0_, this_.IsActive as IsActive1_0_, this_.OrderInList as OrderInL4_1_0_, this_.ParentCategory as ParentCa5_1_0_ FROM [Category] this_
+DEBUG 93 NHibernate.Connection.DriverConnectionProvider - Obtaining IDbConnection from Driver
+DEBUG 93 NHibernate.AdoNet.AbstractBatcher - ExecuteReader took 0 ms
+DEBUG 93 NHibernate.AdoNet.AbstractBatcher - Opened IDataReader, open IDataReaders: 1
+DEBUG 93 NHibernate.Loader.Loader - processing result set
+DEBUG 93 NHibernate.Loader.Loader - result set row: 0
+DEBUG 93 NHibernate.Type.Int32Type - returning '1' as column: Id1_0_
+DEBUG 93 NHibernate.Loader.Loader - result row: EntityKey[CumbriaMD.Domain.Category#1]
+DEBUG 93 NHibernate.Loader.Loader - Initializing object from DataReader: [CumbriaMD.Domain.Category#1]
+DEBUG 93 NHibernate.Persister.Entity.AbstractEntityPersister - Hydrating entity: [CumbriaMD.Domain.Category#1]
+DEBUG 93 NHibernate.Type.StringType - returning 'TOP LEVEL CATEGORY' as column: Name1_0_
+DEBUG 93 NHibernate.Type.BooleanType - returning 'True' as column: IsActive1_0_
+DEBUG 93 NHibernate.Type.Int32Type - returning '1' as column: OrderInL4_1_0_
+DEBUG 93 NHibernate.Type.Int32Type - returning '1' as column: ParentCa5_1_0_
+DEBUG 93 NHibernate.Loader.Loader - result set row: 1
+DEBUG 93 NHibernate.Type.Int32Type - returning '2' as column: Id1_0_
+DEBUG 93 NHibernate.Loader.Loader - result row: EntityKey[CumbriaMD.Domain.Category#2]
+DEBUG 93 NHibernate.Loader.Loader - Initializing object from DataReader: [CumbriaMD.Domain.Category#2]
+DEBUG 93 NHibernate.Persister.Entity.AbstractEntityPersister - Hydrating entity: [CumbriaMD.Domain.Category#2]
+DEBUG 93 NHibernate.Type.StringType - returning 'Metal Detectors' as column: Name1_0_
+DEBUG 93 NHibernate.Type.BooleanType - returning 'True' as column: IsActive1_0_
+DEBUG 93 NHibernate.Type.Int32Type - returning '2' as column: OrderInL4_1_0_
+DEBUG 93 NHibernate.Type.Int32Type - returning '1' as column: ParentCa5_1_0_
+DEBUG 93 NHibernate.Loader.Loader - result set row: 2
+DEBUG 93 NHibernate.Type.Int32Type - returning '4' as column: Id1_0_
+DEBUG 93 NHibernate.Loader.Loader - result row: EntityKey[CumbriaMD.Domain.Category#4]
+DEBUG 93 NHibernate.Loader.Loader - Initializing object from DataReader: [CumbriaMD.Domain.Category#4]
+DEBUG 93 NHibernate.Persister.Entity.AbstractEntityPersister - Hydrating entity: [CumbriaMD.Domain.Category#4]
+DEBUG 93 NHibernate.Type.StringType - returning 'Books' as column: Name1_0_
+DEBUG 93 NHibernate.Type.BooleanType - returning 'True' as column: IsActive1_0_
+DEBUG 93 NHibernate.Type.Int32Type - returning '3' as column: OrderInL4_1_0_
+DEBUG 93 NHibernate.Type.Int32Type - returning '1' as column: ParentCa5_1_0_
+DEBUG 93 NHibernate.Loader.Loader - result set row: 3
+DEBUG 93 NHibernate.Type.Int32Type - returning '5' as column: Id1_0_
+DEBUG 93 NHibernate.Loader.Loader - result row: EntityKey[CumbriaMD.Domain.Category#5]
+DEBUG 93 NHibernate.Loader.Loader - Initializing object from DataReader: [CumbriaMD.Domain.Category#5]
+DEBUG 93 NHibernate.Persister.Entity.AbstractEntityPersister - Hydrating entity: [CumbriaMD.Domain.Category#5]
+DEBUG 93 NHibernate.Type.StringType - returning 'Maps' as column: Name1_0_
+DEBUG 93 NHibernate.Type.BooleanType - returning 'True' as column: IsActive1_0_
+DEBUG 93 NHibernate.Type.Int32Type - returning '2' as column: OrderInL4_1_0_
+DEBUG 93 NHibernate.Type.Int32Type - returning '4' as column: ParentCa5_1_0_
+DEBUG 93 NHibernate.Loader.Loader - result set row: 4
+DEBUG 93 NHibernate.Type.Int32Type - returning '6' as column: Id1_0_
+DEBUG 93 NHibernate.Loader.Loader - result row: EntityKey[CumbriaMD.Domain.Category#6]
+DEBUG 93 NHibernate.Loader.Loader - Initializing object from DataReader: [CumbriaMD.Domain.Category#6]
+DEBUG 93 NHibernate.Persister.Entity.AbstractEntityPersister - Hydrating entity: [CumbriaMD.Domain.Category#6]
+DEBUG 93 NHibernate.Type.StringType - returning 'Magazines' as column: Name1_0_
+DEBUG 93 NHibernate.Type.BooleanType - returning 'True' as column: IsActive1_0_
+DEBUG 93 NHibernate.Type.Int32Type - returning '1' as column: OrderInL4_1_0_
+DEBUG 93 NHibernate.Type.Int32Type - returning '4' as column: ParentCa5_1_0_
+DEBUG 93 NHibernate.Loader.Loader - done processing result set (5 rows)
+DEBUG 93 NHibernate.Driver.NHybridDataReader - running NHybridDataReader.Dispose()
+DEBUG 93 NHibernate.AdoNet.AbstractBatcher - Closed IDataReader, open IDataReaders :0
+DEBUG 93 NHibernate.AdoNet.AbstractBatcher - DataReader was closed after 0 ms
+DEBUG 93 NHibernate.AdoNet.AbstractBatcher - Closed IDbCommand, open IDbCommands: 0
+DEBUG 93 NHibernate.AdoNet.ConnectionManager - aggressively releasing database connection
+DEBUG 93 NHibernate.Connection.ConnectionProvider - Closing connection
+DEBUG 93 NHibernate.Loader.Loader - total objects hydrated: 5
+DEBUG 93 NHibernate.Engine.TwoPhaseLoad - resolving associations for [CumbriaMD.Domain.Category#1]
+DEBUG 93 NHibernate.Engine.Loading.LoadContexts - creating collection wrapper:[CumbriaMD.Domain.Category.Products#1]
+DEBUG 93 NHibernate.Engine.Loading.LoadContexts - creating collection wrapper:[CumbriaMD.Domain.Category.Subcategories#1]
+DEBUG 93 NHibernate.Event.Default.DefaultLoadEventListener - loading entity: [CumbriaMD.Domain.Category#1]
+DEBUG 93 NHibernate.Event.Default.DefaultLoadEventListener - entity found in session cache
+DEBUG 93 NHibernate.Engine.TwoPhaseLoad - done materializing entity [CumbriaMD.Domain.Category#1]
+DEBUG 93 NHibernate.Engine.TwoPhaseLoad - resolving associations for [CumbriaMD.Domain.Category#2]
+DEBUG 93 NHibernate.Engine.Loading.LoadContexts - creating collection wrapper:[CumbriaMD.Domain.Category.Products#2]
+DEBUG 93 NHibernate.Engine.Loading.LoadContexts - creating collection wrapper:[CumbriaMD.Domain.Category.Subcategories#2]
+DEBUG 93 NHibernate.Event.Default.DefaultLoadEventListener - loading entity: [CumbriaMD.Domain.Category#1]
+DEBUG 93 NHibernate.Event.Default.DefaultLoadEventListener - entity found in session cache
+DEBUG 93 NHibernate.Engine.TwoPhaseLoad - done materializing entity [CumbriaMD.Domain.Category#2]
+DEBUG 93 NHibernate.Engine.TwoPhaseLoad - resolving associations for [CumbriaMD.Domain.Category#4]
+DEBUG 93 NHibernate.Engine.Loading.LoadContexts - creating collection wrapper:[CumbriaMD.Domain.Category.Products#4]
+DEBUG 93 NHibernate.Engine.Loading.LoadContexts - creating collection wrapper:[CumbriaMD.Domain.Category.Subcategories#4]
+DEBUG 93 NHibernate.Event.Default.DefaultLoadEventListener - loading entity: [CumbriaMD.Domain.Category#1]
+DEBUG 93 NHibernate.Event.Default.DefaultLoadEventListener - entity found in session cache
+DEBUG 93 NHibernate.Engine.TwoPhaseLoad - done materializing entity [CumbriaMD.Domain.Category#4]
+DEBUG 93 NHibernate.Engine.TwoPhaseLoad - resolving associations for [CumbriaMD.Domain.Category#5]
+DEBUG 93 NHibernate.Engine.Loading.LoadContexts - creating collection wrapper:[CumbriaMD.Domain.Category.Products#5]
+DEBUG 93 NHibernate.Engine.Loading.LoadContexts - creating collection wrapper:[CumbriaMD.Domain.Category.Subcategories#5]
+DEBUG 93 NHibernate.Event.Default.DefaultLoadEventListener - loading entity: [CumbriaMD.Domain.Category#4]
+DEBUG 93 NHibernate.Event.Default.DefaultLoadEventListener - entity found in session cache
+DEBUG 93 NHibernate.Engine.TwoPhaseLoad - done materializing entity [CumbriaMD.Domain.Category#5]
+DEBUG 93 NHibernate.Engine.TwoPhaseLoad - resolving associations for [CumbriaMD.Domain.Category#6]
+DEBUG 93 NHibernate.Engine.Loading.LoadContexts - creating collection wrapper:[CumbriaMD.Domain.Category.Products#6]
+DEBUG 93 NHibernate.Engine.Loading.LoadContexts - creating collection wrapper:[CumbriaMD.Domain.Category.Subcategories#6]
+DEBUG 93 NHibernate.Event.Default.DefaultLoadEventListener - loading entity: [CumbriaMD.Domain.Category#4]
+DEBUG 93 NHibernate.Event.Default.DefaultLoadEventListener - entity found in session cache
+DEBUG 93 NHibernate.Engine.TwoPhaseLoad - done materializing entity [CumbriaMD.Domain.Category#6]
+DEBUG 93 NHibernate.Engine.StatefulPersistenceContext - initializing non-lazy collections
+DEBUG 93 NHibernate.AdoNet.ConnectionManager - after autocommit
+DEBUG 93 NHibernate.Impl.SessionImpl - transaction completion
+DEBUG 93 NHibernate.AdoNet.ConnectionManager - aggressively releasing database connection
+DEBUG 93 NHibernate.Loader.Criteria.CriteriaQueryTranslator - put criteria=Parent.Id = 2
+OrderInList asc alias=this0_
+DEBUG 93 NHibernate.Loader.Criteria.CriteriaQueryTranslator - returning alias=this_ for criteria=Parent.Id = 2
+OrderInList asc
+DEBUG 93 NHibernate.Loader.Criteria.CriteriaQueryTranslator - returning alias=this_ for criteria=Parent.Id = 2
+OrderInList asc
+DEBUG 93 NHibernate.SqlCommand.SqlSelectBuilder - The initial capacity was set too low at: 8 for the SelectSqlBuilder that needed a capacity of: 9 for the table [Category] this_
+DEBUG 93 NHibernate.AdoNet.AbstractBatcher - Opened new IDbCommand, open IDbCommands: 1
+DEBUG 93 NHibernate.AdoNet.AbstractBatcher - Building an IDbCommand object for the SqlString: SELECT this_.Id as Id1_0_, this_.Name as Name1_0_, this_.IsActive as IsActive1_0_, this_.OrderInList as OrderInL4_1_0_, this_.ParentCategory as ParentCa5_1_0_ FROM [Category] this_ WHERE this_.ParentCategory = ? ORDER BY this_.OrderInList asc
+DEBUG 93 NHibernate.Type.Int32Type - binding '2' to parameter: 0
+INFO 93 NHibernate.Loader.Loader - SELECT this_.Id as Id1_0_, this_.Name as Name1_0_, this_.IsActive as IsActive1_0_, this_.OrderInList as OrderInL4_1_0_, this_.ParentCategory as ParentCa5_1_0_ FROM [Category] this_ WHERE this_.ParentCategory = @p0 ORDER BY this_.OrderInList asc
+DEBUG 93 NHibernate.SQL - SELECT this_.Id as Id1_0_, this_.Name as Name1_0_, this_.IsActive as IsActive1_0_, this_.OrderInList as OrderInL4_1_0_, this_.ParentCategory as ParentCa5_1_0_ FROM [Category] this_ WHERE this_.ParentCategory = @p0 ORDER BY this_.OrderInList asc;@p0 = 2 [Type: Int32 (0)]
+DEBUG 93 NHibernate.Connection.DriverConnectionProvider - Obtaining IDbConnection from Driver
+DEBUG 93 NHibernate.AdoNet.AbstractBatcher - ExecuteReader took 0 ms
+DEBUG 93 NHibernate.AdoNet.AbstractBatcher - Opened IDataReader, open IDataReaders: 1
+DEBUG 93 NHibernate.Loader.Loader - processing result set
+DEBUG 93 NHibernate.Loader.Loader - done processing result set (0 rows)
+DEBUG 93 NHibernate.Driver.NHybridDataReader - running NHybridDataReader.Dispose()
+DEBUG 93 NHibernate.AdoNet.AbstractBatcher - Closed IDataReader, open IDataReaders :0
+DEBUG 93 NHibernate.AdoNet.AbstractBatcher - DataReader was closed after 0 ms
+DEBUG 93 NHibernate.AdoNet.AbstractBatcher - Closed IDbCommand, open IDbCommands: 0
+DEBUG 93 NHibernate.AdoNet.ConnectionManager - aggressively releasing database connection
+DEBUG 93 NHibernate.Connection.ConnectionProvider - Closing connection
+DEBUG 93 NHibernate.Loader.Loader - total objects hydrated: 0
+DEBUG 93 NHibernate.Engine.StatefulPersistenceContext - initializing non-lazy collections
+DEBUG 93 NHibernate.AdoNet.ConnectionManager - after autocommit
+DEBUG 93 NHibernate.Impl.SessionImpl - transaction completion
+DEBUG 93 NHibernate.AdoNet.ConnectionManager - aggressively releasing database connection
+DEBUG 93 NHibernate.Impl.SessionImpl - [session-id=b4b1dcb3-98e5-4d97-8e12-adfa088efd02] running ISession.Dispose()
+DEBUG 93 NHibernate.Impl.SessionImpl - [session-id=b4b1dcb3-98e5-4d97-8e12-adfa088efd02] executing real Dispose(True)
+DEBUG 93 NHibernate.Impl.SessionImpl - closing session
+DEBUG 93 NHibernate.AdoNet.AbstractBatcher - running BatcherImpl.Dispose(true)
+DEBUG 97 NHibernate.Impl.SessionImpl - [session-id=2d29ce53-c31e-4d29-b9ce-543c6589bf63] opened session at timestamp: 634803946727, for session factory: [/fe5e2ffa2d2c400890d52ef777f6d98e]
+DEBUG 97 NHibernate.Loader.Criteria.CriteriaQueryTranslator - put criteria= alias=this0_
+DEBUG 97 NHibernate.AdoNet.AbstractBatcher - Opened new IDbCommand, open IDbCommands: 1
+DEBUG 97 NHibernate.AdoNet.AbstractBatcher - Building an IDbCommand object for the SqlString: SELECT this_.Id as Id1_0_, this_.Name as Name1_0_, this_.IsActive as IsActive1_0_, this_.OrderInList as OrderInL4_1_0_, this_.ParentCategory as ParentCa5_1_0_ FROM [Category] this_
+INFO 97 NHibernate.Loader.Loader - SELECT this_.Id as Id1_0_, this_.Name as Name1_0_, this_.IsActive as IsActive1_0_, this_.OrderInList as OrderInL4_1_0_, this_.ParentCategory as ParentCa5_1_0_ FROM [Category] this_
+DEBUG 97 NHibernate.SQL - SELECT this_.Id as Id1_0_, this_.Name as Name1_0_, this_.IsActive as IsActive1_0_, this_.OrderInList as OrderInL4_1_0_, this_.ParentCategory as ParentCa5_1_0_ FROM [Category] this_
+DEBUG 97 NHibernate.Connection.DriverConnectionProvider - Obtaining IDbConnection from Driver
+DEBUG 97 NHibernate.AdoNet.AbstractBatcher - ExecuteReader took 0 ms
+DEBUG 97 NHibernate.AdoNet.AbstractBatcher - Opened IDataReader, open IDataReaders: 1
+DEBUG 97 NHibernate.Loader.Loader - processing result set
+DEBUG 97 NHibernate.Loader.Loader - result set row: 0
+DEBUG 97 NHibernate.Type.Int32Type - returning '1' as column: Id1_0_
+DEBUG 97 NHibernate.Loader.Loader - result row: EntityKey[CumbriaMD.Domain.Category#1]
+DEBUG 97 NHibernate.Loader.Loader - Initializing object from DataReader: [CumbriaMD.Domain.Category#1]
+DEBUG 97 NHibernate.Persister.Entity.AbstractEntityPersister - Hydrating entity: [CumbriaMD.Domain.Category#1]
+DEBUG 97 NHibernate.Type.StringType - returning 'TOP LEVEL CATEGORY' as column: Name1_0_
+DEBUG 97 NHibernate.Type.BooleanType - returning 'True' as column: IsActive1_0_
+DEBUG 97 NHibernate.Type.Int32Type - returning '1' as column: OrderInL4_1_0_
+DEBUG 97 NHibernate.Type.Int32Type - returning '1' as column: ParentCa5_1_0_
+DEBUG 97 NHibernate.Loader.Loader - result set row: 1
+DEBUG 97 NHibernate.Type.Int32Type - returning '2' as column: Id1_0_
+DEBUG 97 NHibernate.Loader.Loader - result row: EntityKey[CumbriaMD.Domain.Category#2]
+DEBUG 97 NHibernate.Loader.Loader - Initializing object from DataReader: [CumbriaMD.Domain.Category#2]
+DEBUG 97 NHibernate.Persister.Entity.AbstractEntityPersister - Hydrating entity: [CumbriaMD.Domain.Category#2]
+DEBUG 97 NHibernate.Type.StringType - returning 'Metal Detectors' as column: Name1_0_
+DEBUG 97 NHibernate.Type.BooleanType - returning 'True' as column: IsActive1_0_
+DEBUG 97 NHibernate.Type.Int32Type - returning '2' as column: OrderInL4_1_0_
+DEBUG 97 NHibernate.Type.Int32Type - returning '1' as column: ParentCa5_1_0_
+DEBUG 97 NHibernate.Loader.Loader - result set row: 2
+DEBUG 97 NHibernate.Type.Int32Type - returning '4' as column: Id1_0_
+DEBUG 97 NHibernate.Loader.Loader - result row: EntityKey[CumbriaMD.Domain.Category#4]
+DEBUG 97 NHibernate.Loader.Loader - Initializing object from DataReader: [CumbriaMD.Domain.Category#4]
+DEBUG 97 NHibernate.Persister.Entity.AbstractEntityPersister - Hydrating entity: [CumbriaMD.Domain.Category#4]
+DEBUG 97 NHibernate.Type.StringType - returning 'Books' as column: Name1_0_
+DEBUG 97 NHibernate.Type.BooleanType - returning 'True' as column: IsActive1_0_
+DEBUG 97 NHibernate.Type.Int32Type - returning '3' as column: OrderInL4_1_0_
+DEBUG 97 NHibernate.Type.Int32Type - returning '1' as column: ParentCa5_1_0_
+DEBUG 97 NHibernate.Loader.Loader - result set row: 3
+DEBUG 97 NHibernate.Type.Int32Type - returning '5' as column: Id1_0_
+DEBUG 97 NHibernate.Loader.Loader - result row: EntityKey[CumbriaMD.Domain.Category#5]
+DEBUG 97 NHibernate.Loader.Loader - Initializing object from DataReader: [CumbriaMD.Domain.Category#5]
+DEBUG 97 NHibernate.Persister.Entity.AbstractEntityPersister - Hydrating entity: [CumbriaMD.Domain.Category#5]
+DEBUG 97 NHibernate.Type.StringType - returning 'Maps' as column: Name1_0_
+DEBUG 97 NHibernate.Type.BooleanType - returning 'True' as column: IsActive1_0_
+DEBUG 97 NHibernate.Type.Int32Type - returning '2' as column: OrderInL4_1_0_
+DEBUG 97 NHibernate.Type.Int32Type - returning '4' as column: ParentCa5_1_0_
+DEBUG 97 NHibernate.Loader.Loader - result set row: 4
+DEBUG 97 NHibernate.Type.Int32Type - returning '6' as column: Id1_0_
+DEBUG 97 NHibernate.Loader.Loader - result row: EntityKey[CumbriaMD.Domain.Category#6]
+DEBUG 97 NHibernate.Loader.Loader - Initializing object from DataReader: [CumbriaMD.Domain.Category#6]
+DEBUG 97 NHibernate.Persister.Entity.AbstractEntityPersister - Hydrating entity: [CumbriaMD.Domain.Category#6]
+DEBUG 97 NHibernate.Type.StringType - returning 'Magazines' as column: Name1_0_
+DEBUG 97 NHibernate.Type.BooleanType - returning 'True' as column: IsActive1_0_
+DEBUG 97 NHibernate.Type.Int32Type - returning '1' as column: OrderInL4_1_0_
+DEBUG 97 NHibernate.Type.Int32Type - returning '4' as column: ParentCa5_1_0_
+DEBUG 97 NHibernate.Loader.Loader - done processing result set (5 rows)
+DEBUG 97 NHibernate.Driver.NHybridDataReader - running NHybridDataReader.Dispose()
+DEBUG 97 NHibernate.AdoNet.AbstractBatcher - Closed IDataReader, open IDataReaders :0
+DEBUG 97 NHibernate.AdoNet.AbstractBatcher - DataReader was closed after 1 ms
+DEBUG 97 NHibernate.AdoNet.AbstractBatcher - Closed IDbCommand, open IDbCommands: 0
+DEBUG 97 NHibernate.AdoNet.ConnectionManager - aggressively releasing database connection
+DEBUG 97 NHibernate.Connection.ConnectionProvider - Closing connection
+DEBUG 97 NHibernate.Loader.Loader - total objects hydrated: 5
+DEBUG 97 NHibernate.Engine.TwoPhaseLoad - resolving associations for [CumbriaMD.Domain.Category#1]
+DEBUG 97 NHibernate.Engine.Loading.LoadContexts - creating collection wrapper:[CumbriaMD.Domain.Category.Products#1]
+DEBUG 97 NHibernate.Engine.Loading.LoadContexts - creating collection wrapper:[CumbriaMD.Domain.Category.Subcategories#1]
+DEBUG 97 NHibernate.Event.Default.DefaultLoadEventListener - loading entity: [CumbriaMD.Domain.Category#1]
+DEBUG 97 NHibernate.Event.Default.DefaultLoadEventListener - entity found in session cache
+DEBUG 97 NHibernate.Engine.TwoPhaseLoad - done materializing entity [CumbriaMD.Domain.Category#1]
+DEBUG 97 NHibernate.Engine.TwoPhaseLoad - resolving associations for [CumbriaMD.Domain.Category#2]
+DEBUG 97 NHibernate.Engine.Loading.LoadContexts - creating collection wrapper:[CumbriaMD.Domain.Category.Products#2]
+DEBUG 97 NHibernate.Engine.Loading.LoadContexts - creating collection wrapper:[CumbriaMD.Domain.Category.Subcategories#2]
+DEBUG 97 NHibernate.Event.Default.DefaultLoadEventListener - loading entity: [CumbriaMD.Domain.Category#1]
+DEBUG 97 NHibernate.Event.Default.DefaultLoadEventListener - entity found in session cache
+DEBUG 97 NHibernate.Engine.TwoPhaseLoad - done materializing entity [CumbriaMD.Domain.Category#2]
+DEBUG 97 NHibernate.Engine.TwoPhaseLoad - resolving associations for [CumbriaMD.Domain.Category#4]
+DEBUG 97 NHibernate.Engine.Loading.LoadContexts - creating collection wrapper:[CumbriaMD.Domain.Category.Products#4]
+DEBUG 97 NHibernate.Engine.Loading.LoadContexts - creating collection wrapper:[CumbriaMD.Domain.Category.Subcategories#4]
+DEBUG 97 NHibernate.Event.Default.DefaultLoadEventListener - loading entity: [CumbriaMD.Domain.Category#1]
+DEBUG 97 NHibernate.Event.Default.DefaultLoadEventListener - entity found in session cache
+DEBUG 97 NHibernate.Engine.TwoPhaseLoad - done materializing entity [CumbriaMD.Domain.Category#4]
+DEBUG 97 NHibernate.Engine.TwoPhaseLoad - resolving associations for [CumbriaMD.Domain.Category#5]
+DEBUG 97 NHibernate.Engine.Loading.LoadContexts - creating collection wrapper:[CumbriaMD.Domain.Category.Products#5]
+DEBUG 97 NHibernate.Engine.Loading.LoadContexts - creating collection wrapper:[CumbriaMD.Domain.Category.Subcategories#5]
+DEBUG 97 NHibernate.Event.Default.DefaultLoadEventListener - loading entity: [CumbriaMD.Domain.Category#4]
+DEBUG 97 NHibernate.Event.Default.DefaultLoadEventListener - entity found in session cache
+DEBUG 97 NHibernate.Engine.TwoPhaseLoad - done materializing entity [CumbriaMD.Domain.Category#5]
+DEBUG 97 NHibernate.Engine.TwoPhaseLoad - resolving associations for [CumbriaMD.Domain.Category#6]
+DEBUG 97 NHibernate.Engine.Loading.LoadContexts - creating collection wrapper:[CumbriaMD.Domain.Category.Products#6]
+DEBUG 97 NHibernate.Engine.Loading.LoadContexts - creating collection wrapper:[CumbriaMD.Domain.Category.Subcategories#6]
+DEBUG 97 NHibernate.Event.Default.DefaultLoadEventListener - loading entity: [CumbriaMD.Domain.Category#4]
+DEBUG 97 NHibernate.Event.Default.DefaultLoadEventListener - entity found in session cache
+DEBUG 97 NHibernate.Engine.TwoPhaseLoad - done materializing entity [CumbriaMD.Domain.Category#6]
+DEBUG 97 NHibernate.Engine.StatefulPersistenceContext - initializing non-lazy collections
+DEBUG 97 NHibernate.AdoNet.ConnectionManager - after autocommit
+DEBUG 97 NHibernate.Impl.SessionImpl - transaction completion
+DEBUG 97 NHibernate.AdoNet.ConnectionManager - aggressively releasing database connection
+DEBUG 97 NHibernate.Loader.Criteria.CriteriaQueryTranslator - put criteria= alias=this0_
+DEBUG 97 NHibernate.AdoNet.AbstractBatcher - Opened new IDbCommand, open IDbCommands: 1
+DEBUG 97 NHibernate.AdoNet.AbstractBatcher - Building an IDbCommand object for the SqlString: SELECT this_.Id as Id1_0_, this_.Name as Name1_0_, this_.IsActive as IsActive1_0_, this_.OrderInList as OrderInL4_1_0_, this_.ParentCategory as ParentCa5_1_0_ FROM [Category] this_
+INFO 97 NHibernate.Loader.Loader - SELECT this_.Id as Id1_0_, this_.Name as Name1_0_, this_.IsActive as IsActive1_0_, this_.OrderInList as OrderInL4_1_0_, this_.ParentCategory as ParentCa5_1_0_ FROM [Category] this_
+DEBUG 97 NHibernate.SQL - SELECT this_.Id as Id1_0_, this_.Name as Name1_0_, this_.IsActive as IsActive1_0_, this_.OrderInList as OrderInL4_1_0_, this_.ParentCategory as ParentCa5_1_0_ FROM [Category] this_
+DEBUG 97 NHibernate.Connection.DriverConnectionProvider - Obtaining IDbConnection from Driver
+DEBUG 97 NHibernate.AdoNet.AbstractBatcher - ExecuteReader took 0 ms
+DEBUG 97 NHibernate.AdoNet.AbstractBatcher - Opened IDataReader, open IDataReaders: 1
+DEBUG 97 NHibernate.Loader.Loader - processing result set
+DEBUG 97 NHibernate.Loader.Loader - result set row: 0
+DEBUG 97 NHibernate.Type.Int32Type - returning '1' as column: Id1_0_
+DEBUG 97 NHibernate.Loader.Loader - result row: EntityKey[CumbriaMD.Domain.Category#1]
+DEBUG 97 NHibernate.Loader.Loader - result set row: 1
+DEBUG 97 NHibernate.Type.Int32Type - returning '2' as column: Id1_0_
+DEBUG 97 NHibernate.Loader.Loader - result row: EntityKey[CumbriaMD.Domain.Category#2]
+DEBUG 97 NHibernate.Loader.Loader - result set row: 2
+DEBUG 97 NHibernate.Type.Int32Type - returning '4' as column: Id1_0_
+DEBUG 97 NHibernate.Loader.Loader - result row: EntityKey[CumbriaMD.Domain.Category#4]
+DEBUG 97 NHibernate.Loader.Loader - result set row: 3
+DEBUG 97 NHibernate.Type.Int32Type - returning '5' as column: Id1_0_
+DEBUG 97 NHibernate.Loader.Loader - result row: EntityKey[CumbriaMD.Domain.Category#5]
+DEBUG 97 NHibernate.Loader.Loader - result set row: 4
+DEBUG 97 NHibernate.Type.Int32Type - returning '6' as column: Id1_0_
+DEBUG 97 NHibernate.Loader.Loader - result row: EntityKey[CumbriaMD.Domain.Category#6]
+DEBUG 97 NHibernate.Loader.Loader - done processing result set (5 rows)
+DEBUG 97 NHibernate.Driver.NHybridDataReader - running NHybridDataReader.Dispose()
+DEBUG 97 NHibernate.AdoNet.AbstractBatcher - Closed IDataReader, open IDataReaders :0
+DEBUG 97 NHibernate.AdoNet.AbstractBatcher - DataReader was closed after 0 ms
+DEBUG 97 NHibernate.AdoNet.AbstractBatcher - Closed IDbCommand, open IDbCommands: 0
+DEBUG 97 NHibernate.AdoNet.ConnectionManager - aggressively releasing database connection
+DEBUG 97 NHibernate.Connection.ConnectionProvider - Closing connection
+DEBUG 97 NHibernate.Loader.Loader - total objects hydrated: 0
+DEBUG 97 NHibernate.Engine.StatefulPersistenceContext - initializing non-lazy collections
+DEBUG 97 NHibernate.AdoNet.ConnectionManager - after autocommit
+DEBUG 97 NHibernate.Impl.SessionImpl - transaction completion
+DEBUG 97 NHibernate.AdoNet.ConnectionManager - aggressively releasing database connection
+DEBUG 97 NHibernate.Impl.SessionImpl - [session-id=2d29ce53-c31e-4d29-b9ce-543c6589bf63] running ISession.Dispose()
+DEBUG 97 NHibernate.Impl.SessionImpl - [session-id=2d29ce53-c31e-4d29-b9ce-543c6589bf63] executing real Dispose(True)
+DEBUG 97 NHibernate.Impl.SessionImpl - closing session
+DEBUG 97 NHibernate.AdoNet.AbstractBatcher - running BatcherImpl.Dispose(true)
+DEBUG 93 NHibernate.Impl.SessionImpl - [session-id=3030a2b5-c443-4383-a705-4babad9876cf] opened session at timestamp: 634803946747, for session factory: [/fe5e2ffa2d2c400890d52ef777f6d98e]
+DEBUG 93 NHibernate.Loader.Criteria.CriteriaQueryTranslator - put criteria= alias=this0_
+DEBUG 93 NHibernate.AdoNet.AbstractBatcher - Opened new IDbCommand, open IDbCommands: 1
+DEBUG 93 NHibernate.AdoNet.AbstractBatcher - Building an IDbCommand object for the SqlString: SELECT this_.Id as Id1_0_, this_.Name as Name1_0_, this_.IsActive as IsActive1_0_, this_.OrderInList as OrderInL4_1_0_, this_.ParentCategory as ParentCa5_1_0_ FROM [Category] this_
+INFO 93 NHibernate.Loader.Loader - SELECT this_.Id as Id1_0_, this_.Name as Name1_0_, this_.IsActive as IsActive1_0_, this_.OrderInList as OrderInL4_1_0_, this_.ParentCategory as ParentCa5_1_0_ FROM [Category] this_
+DEBUG 93 NHibernate.SQL - SELECT this_.Id as Id1_0_, this_.Name as Name1_0_, this_.IsActive as IsActive1_0_, this_.OrderInList as OrderInL4_1_0_, this_.ParentCategory as ParentCa5_1_0_ FROM [Category] this_
+DEBUG 93 NHibernate.Connection.DriverConnectionProvider - Obtaining IDbConnection from Driver
+DEBUG 93 NHibernate.AdoNet.AbstractBatcher - ExecuteReader took 0 ms
+DEBUG 93 NHibernate.AdoNet.AbstractBatcher - Opened IDataReader, open IDataReaders: 1
+DEBUG 93 NHibernate.Loader.Loader - processing result set
+DEBUG 93 NHibernate.Loader.Loader - result set row: 0
+DEBUG 93 NHibernate.Type.Int32Type - returning '1' as column: Id1_0_
+DEBUG 93 NHibernate.Loader.Loader - result row: EntityKey[CumbriaMD.Domain.Category#1]
+DEBUG 93 NHibernate.Loader.Loader - Initializing object from DataReader: [CumbriaMD.Domain.Category#1]
+DEBUG 93 NHibernate.Persister.Entity.AbstractEntityPersister - Hydrating entity: [CumbriaMD.Domain.Category#1]
+DEBUG 93 NHibernate.Type.StringType - returning 'TOP LEVEL CATEGORY' as column: Name1_0_
+DEBUG 93 NHibernate.Type.BooleanType - returning 'True' as column: IsActive1_0_
+DEBUG 93 NHibernate.Type.Int32Type - returning '1' as column: OrderInL4_1_0_
+DEBUG 93 NHibernate.Type.Int32Type - returning '1' as column: ParentCa5_1_0_
+DEBUG 93 NHibernate.Loader.Loader - result set row: 1
+DEBUG 93 NHibernate.Type.Int32Type - returning '2' as column: Id1_0_
+DEBUG 93 NHibernate.Loader.Loader - result row: EntityKey[CumbriaMD.Domain.Category#2]
+DEBUG 93 NHibernate.Loader.Loader - Initializing object from DataReader: [CumbriaMD.Domain.Category#2]
+DEBUG 93 NHibernate.Persister.Entity.AbstractEntityPersister - Hydrating entity: [CumbriaMD.Domain.Category#2]
+DEBUG 93 NHibernate.Type.StringType - returning 'Metal Detectors' as column: Name1_0_
+DEBUG 93 NHibernate.Type.BooleanType - returning 'True' as column: IsActive1_0_
+DEBUG 93 NHibernate.Type.Int32Type - returning '2' as column: OrderInL4_1_0_
+DEBUG 93 NHibernate.Type.Int32Type - returning '1' as column: ParentCa5_1_0_
+DEBUG 93 NHibernate.Loader.Loader - result set row: 2
+DEBUG 93 NHibernate.Type.Int32Type - returning '4' as column: Id1_0_
+DEBUG 93 NHibernate.Loader.Loader - result row: EntityKey[CumbriaMD.Domain.Category#4]
+DEBUG 93 NHibernate.Loader.Loader - Initializing object from DataReader: [CumbriaMD.Domain.Category#4]
+DEBUG 93 NHibernate.Persister.Entity.AbstractEntityPersister - Hydrating entity: [CumbriaMD.Domain.Category#4]
+DEBUG 93 NHibernate.Type.StringType - returning 'Books' as column: Name1_0_
+DEBUG 93 NHibernate.Type.BooleanType - returning 'True' as column: IsActive1_0_
+DEBUG 93 NHibernate.Type.Int32Type - returning '3' as column: OrderInL4_1_0_
+DEBUG 93 NHibernate.Type.Int32Type - returning '1' as column: ParentCa5_1_0_
+DEBUG 93 NHibernate.Loader.Loader - result set row: 3
+DEBUG 93 NHibernate.Type.Int32Type - returning '5' as column: Id1_0_
+DEBUG 93 NHibernate.Loader.Loader - result row: EntityKey[CumbriaMD.Domain.Category#5]
+DEBUG 93 NHibernate.Loader.Loader - Initializing object from DataReader: [CumbriaMD.Domain.Category#5]
+DEBUG 93 NHibernate.Persister.Entity.AbstractEntityPersister - Hydrating entity: [CumbriaMD.Domain.Category#5]
+DEBUG 93 NHibernate.Type.StringType - returning 'Maps' as column: Name1_0_
+DEBUG 93 NHibernate.Type.BooleanType - returning 'True' as column: IsActive1_0_
+DEBUG 93 NHibernate.Type.Int32Type - returning '2' as column: OrderInL4_1_0_
+DEBUG 93 NHibernate.Type.Int32Type - returning '4' as column: ParentCa5_1_0_
+DEBUG 93 NHibernate.Loader.Loader - result set row: 4
+DEBUG 93 NHibernate.Type.Int32Type - returning '6' as column: Id1_0_
+DEBUG 93 NHibernate.Loader.Loader - result row: EntityKey[CumbriaMD.Domain.Category#6]
+DEBUG 93 NHibernate.Loader.Loader - Initializing object from DataReader: [CumbriaMD.Domain.Category#6]
+DEBUG 93 NHibernate.Persister.Entity.AbstractEntityPersister - Hydrating entity: [CumbriaMD.Domain.Category#6]
+DEBUG 93 NHibernate.Type.StringType - returning 'Magazines' as column: Name1_0_
+DEBUG 93 NHibernate.Type.BooleanType - returning 'True' as column: IsActive1_0_
+DEBUG 93 NHibernate.Type.Int32Type - returning '1' as column: OrderInL4_1_0_
+DEBUG 93 NHibernate.Type.Int32Type - returning '4' as column: ParentCa5_1_0_
+DEBUG 93 NHibernate.Loader.Loader - done processing result set (5 rows)
+DEBUG 93 NHibernate.Driver.NHybridDataReader - running NHybridDataReader.Dispose()
+DEBUG 93 NHibernate.AdoNet.AbstractBatcher - Closed IDataReader, open IDataReaders :0
+DEBUG 93 NHibernate.AdoNet.AbstractBatcher - DataReader was closed after 0 ms
+DEBUG 93 NHibernate.AdoNet.AbstractBatcher - Closed IDbCommand, open IDbCommands: 0
+DEBUG 93 NHibernate.AdoNet.ConnectionManager - aggressively releasing database connection
+DEBUG 93 NHibernate.Connection.ConnectionProvider - Closing connection
+DEBUG 93 NHibernate.Loader.Loader - total objects hydrated: 5
+DEBUG 93 NHibernate.Engine.TwoPhaseLoad - resolving associations for [CumbriaMD.Domain.Category#1]
+DEBUG 93 NHibernate.Engine.Loading.LoadContexts - creating collection wrapper:[CumbriaMD.Domain.Category.Products#1]
+DEBUG 93 NHibernate.Engine.Loading.LoadContexts - creating collection wrapper:[CumbriaMD.Domain.Category.Subcategories#1]
+DEBUG 93 NHibernate.Event.Default.DefaultLoadEventListener - loading entity: [CumbriaMD.Domain.Category#1]
+DEBUG 93 NHibernate.Event.Default.DefaultLoadEventListener - entity found in session cache
+DEBUG 93 NHibernate.Engine.TwoPhaseLoad - done materializing entity [CumbriaMD.Domain.Category#1]
+DEBUG 93 NHibernate.Engine.TwoPhaseLoad - resolving associations for [CumbriaMD.Domain.Category#2]
+DEBUG 93 NHibernate.Engine.Loading.LoadContexts - creating collection wrapper:[CumbriaMD.Domain.Category.Products#2]
+DEBUG 93 NHibernate.Engine.Loading.LoadContexts - creating collection wrapper:[CumbriaMD.Domain.Category.Subcategories#2]
+DEBUG 93 NHibernate.Event.Default.DefaultLoadEventListener - loading entity: [CumbriaMD.Domain.Category#1]
+DEBUG 93 NHibernate.Event.Default.DefaultLoadEventListener - entity found in session cache
+DEBUG 93 NHibernate.Engine.TwoPhaseLoad - done materializing entity [CumbriaMD.Domain.Category#2]
+DEBUG 93 NHibernate.Engine.TwoPhaseLoad - resolving associations for [CumbriaMD.Domain.Category#4]
+DEBUG 93 NHibernate.Engine.Loading.LoadContexts - creating collection wrapper:[CumbriaMD.Domain.Category.Products#4]
+DEBUG 93 NHibernate.Engine.Loading.LoadContexts - creating collection wrapper:[CumbriaMD.Domain.Category.Subcategories#4]
+DEBUG 93 NHibernate.Event.Default.DefaultLoadEventListener - loading entity: [CumbriaMD.Domain.Category#1]
+DEBUG 93 NHibernate.Event.Default.DefaultLoadEventListener - entity found in session cache
+DEBUG 93 NHibernate.Engine.TwoPhaseLoad - done materializing entity [CumbriaMD.Domain.Category#4]
+DEBUG 93 NHibernate.Engine.TwoPhaseLoad - resolving associations for [CumbriaMD.Domain.Category#5]
+DEBUG 93 NHibernate.Engine.Loading.LoadContexts - creating collection wrapper:[CumbriaMD.Domain.Category.Products#5]
+DEBUG 93 NHibernate.Engine.Loading.LoadContexts - creating collection wrapper:[CumbriaMD.Domain.Category.Subcategories#5]
+DEBUG 93 NHibernate.Event.Default.DefaultLoadEventListener - loading entity: [CumbriaMD.Domain.Category#4]
+DEBUG 93 NHibernate.Event.Default.DefaultLoadEventListener - entity found in session cache
+DEBUG 93 NHibernate.Engine.TwoPhaseLoad - done materializing entity [CumbriaMD.Domain.Category#5]
+DEBUG 93 NHibernate.Engine.TwoPhaseLoad - resolving associations for [CumbriaMD.Domain.Category#6]
+DEBUG 93 NHibernate.Engine.Loading.LoadContexts - creating collection wrapper:[CumbriaMD.Domain.Category.Products#6]
+DEBUG 93 NHibernate.Engine.Loading.LoadContexts - creating collection wrapper:[CumbriaMD.Domain.Category.Subcategories#6]
+DEBUG 93 NHibernate.Event.Default.DefaultLoadEventListener - loading entity: [CumbriaMD.Domain.Category#4]
+DEBUG 93 NHibernate.Event.Default.DefaultLoadEventListener - entity found in session cache
+DEBUG 93 NHibernate.Engine.TwoPhaseLoad - done materializing entity [CumbriaMD.Domain.Category#6]
+DEBUG 93 NHibernate.Engine.StatefulPersistenceContext - initializing non-lazy collections
+DEBUG 93 NHibernate.AdoNet.ConnectionManager - after autocommit
+DEBUG 93 NHibernate.Impl.SessionImpl - transaction completion
+DEBUG 93 NHibernate.AdoNet.ConnectionManager - aggressively releasing database connection
+DEBUG 93 NHibernate.Loader.Criteria.CriteriaQueryTranslator - put criteria=Parent.Id = 1
+OrderInList asc alias=this0_
+DEBUG 93 NHibernate.Loader.Criteria.CriteriaQueryTranslator - returning alias=this_ for criteria=Parent.Id = 1
+OrderInList asc
+DEBUG 93 NHibernate.Loader.Criteria.CriteriaQueryTranslator - returning alias=this_ for criteria=Parent.Id = 1
+OrderInList asc
+DEBUG 93 NHibernate.SqlCommand.SqlSelectBuilder - The initial capacity was set too low at: 8 for the SelectSqlBuilder that needed a capacity of: 9 for the table [Category] this_
+DEBUG 93 NHibernate.AdoNet.AbstractBatcher - Opened new IDbCommand, open IDbCommands: 1
+DEBUG 93 NHibernate.AdoNet.AbstractBatcher - Building an IDbCommand object for the SqlString: SELECT this_.Id as Id1_0_, this_.Name as Name1_0_, this_.IsActive as IsActive1_0_, this_.OrderInList as OrderInL4_1_0_, this_.ParentCategory as ParentCa5_1_0_ FROM [Category] this_ WHERE this_.ParentCategory = ? ORDER BY this_.OrderInList asc
+DEBUG 93 NHibernate.Type.Int32Type - binding '1' to parameter: 0
+INFO 93 NHibernate.Loader.Loader - SELECT this_.Id as Id1_0_, this_.Name as Name1_0_, this_.IsActive as IsActive1_0_, this_.OrderInList as OrderInL4_1_0_, this_.ParentCategory as ParentCa5_1_0_ FROM [Category] this_ WHERE this_.ParentCategory = @p0 ORDER BY this_.OrderInList asc
+DEBUG 93 NHibernate.SQL - SELECT this_.Id as Id1_0_, this_.Name as Name1_0_, this_.IsActive as IsActive1_0_, this_.OrderInList as OrderInL4_1_0_, this_.ParentCategory as ParentCa5_1_0_ FROM [Category] this_ WHERE this_.ParentCategory = @p0 ORDER BY this_.OrderInList asc;@p0 = 1 [Type: Int32 (0)]
+DEBUG 93 NHibernate.Connection.DriverConnectionProvider - Obtaining IDbConnection from Driver
+DEBUG 93 NHibernate.AdoNet.AbstractBatcher - ExecuteReader took 0 ms
+DEBUG 93 NHibernate.AdoNet.AbstractBatcher - Opened IDataReader, open IDataReaders: 1
+DEBUG 93 NHibernate.Loader.Loader - processing result set
