@@ -1,5 +1,5 @@
-2012/08/18-13:14:15.166 d2c Recovering log #80
-2012/08/18-13:14:15.166 d2c Level-0 table #83: started
-2012/08/18-13:14:15.276 d2c Level-0 table #83: 29720 bytes OK
-2012/08/18-13:14:15.326 d2c Delete type=0 #80
-2012/08/18-13:14:15.326 d2c Delete type=3 #78
+2012/08/18-17:51:09.284 11a0 Recovering log #84
+2012/08/18-17:51:09.284 11a0 Level-0 table #86: started
+2012/08/18-17:51:09.454 11a0 Level-0 table #86: 217679 bytes OK
+2012/08/18-17:51:09.504 11a0 Delete type=0 #84
+2012/08/18-17:51:09.504 11a0 Delete type=3 #82
